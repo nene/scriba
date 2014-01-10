@@ -57,3 +57,27 @@ Kas kodulehele saaks juurde tekitada mingi lisalehe, mida me saaksime
 ise nt positiivse klienditagasisidega täiendada (natuke nagu blogi
 moodi), sest jõle ebamugav on iga väiksema lisanduse pärast sind või
 Indrekut paluda???
+
+
+# Pildid
+
+- http://www.flickr.com/photos/49333775@N00/5489312169
+  images/flickr-broken-book.jpg
+
+- http://www.flickr.com/photos/chanycrystal/2126955281
+  images/flickr-arabic.jpg
+
+- http://www.flickr.com/photos/pixagraphic/3414730395
+  images/flickr-old-books.jpg
+
+- http://www.flickr.com/photos/hoshi7/5561228178
+  images/flickr-measure.jpg
+
+- http://www.flickr.com/photos/31433424@N00/3221166562
+  images/flickr-multi-measure.jpg
+
+- http://www.flickr.com/photos/polandmfa/4862870480
+  images/flickr-agreement.jpg
+
+- http://www.flickr.com/photos/8536261@N07/6140792529
+  images/flickr-document.jpg

@@ -1,0 +1,160 @@
+@font: Georgia, serif;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: @font;
+
+    background: url("images/bg.gif") repeat-x;
+}
+
+.clear {
+    clear: both;
+}
+
+#container {
+    max-width: 911px;
+    margin: 0 auto;
+}
+
+header {
+    display: block;
+
+    #logo {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2em;
+        clear: both;
+
+        a {
+            display: block;
+            height: 120px;
+            background: url("images/logo.png") no-repeat;
+            text-indent: -1000em;
+        }
+    }
+
+
+    #top-menu {
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+            list-style-type: none;
+            padding-right: 1em;
+            line-height: 50px;
+            height: 50px;
+        }
+
+        a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.ask-price {
+    text-align: right;
+    margin-top: 0;
+
+    a {
+        display: inline-block;
+        background: orange;
+        border: 2px solid darken(orange, 20%);
+        border-radius: 8px;
+        padding: 0 2em;
+        color: white;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+    }
+    a:hover {
+        background: lighten(orange, 10%);
+        text-decoration: none;
+    }
+}
+
+#slides {
+    display: none;
+    position: relative;
+    .slide {
+        height: 300px;
+        .nr {
+            position: absolute;
+            top: -35px;
+            left: 40px;
+            width: 100px;
+            text-align: right;
+            font-size: 8em;
+            color: orange;
+            opacity: 0.8;
+            -outline: 1px dashed red;
+        }
+        p {
+            margin: 2em 1em 1em 9.5em;
+            max-width: 600px;
+            background: white;
+            padding: 0.5em;
+            opacity: 0.8;
+            border-radius: 8px;
+            strong {
+                display: block;
+            }
+        }
+    }
+
+    .slide-1 {
+        background: url("images/flickr-old-books.jpg") ;
+    }
+    .slide-2 {
+        background: url("images/flickr-multi-measure.jpg") ;
+    }
+    .slide-3 {
+        background: url("images/flickr-agreement.jpg");
+    }
+    .slide-4 {
+        background: url("images/flickr-document.jpg") ;
+    }
+
+    .slidesjs-navigation {
+        font-size: 2em;
+        font-weight: bold;
+        color: black;
+    }
+    .slidesjs-navigation:hover {
+        color: #666;
+        text-decoration: none;
+    }
+}
+
+article {
+    line-height: 1.5;
+
+    a {
+        color: lighten(blue, 10%);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .col-1 {
+        width: 45%;
+        float: left;
+    }
+
+    .col-2 {
+        width: 45%;
+        float: right;
+    }
+
+}
+
+
