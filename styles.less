@@ -60,52 +60,93 @@ header {
 
 }
 
+#ordering-presentation {
+    position: relative;
+
+    h2 {
+        margin-bottom: 0;
+        background: black;
+        color: orange;
+        padding: 0.2em 1em;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
 .ask-price {
     text-align: right;
-    margin-top: 0;
+    margin: 0;
+    float: right;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    z-index: 500;
 
     a {
         display: inline-block;
         background: orange;
-        border: 2px solid darken(orange, 20%);
-        border-radius: 8px;
+        border: 2px solid orange;
+        border-radius: 20px;
         padding: 0 2em;
         color: white;
         font-size: 20px;
+        font-weight: bold;
         line-height: 40px;
         text-decoration: none;
+        box-shadow: 2px 2px 5px 0px rgba(55, 55, 55, 0.75);
     }
     a:hover {
-        background: lighten(orange, 10%);
+        background: white;
+        opacity: 0.8;
+        color: orange;
         text-decoration: none;
     }
 }
 
 #slides {
     display: none;
-    position: relative;
     .slide {
         height: 300px;
         .nr {
-            position: absolute;
-            top: -35px;
-            left: 40px;
+            float: left;
             width: 100px;
-            text-align: right;
+            position: relative;
+            top: -70px;
+            text-align: center;
             font-size: 8em;
             color: orange;
             opacity: 0.8;
-            -outline: 1px dashed red;
         }
         p {
-            margin: 2em 1em 1em 9.5em;
-            max-width: 600px;
+            position: relative;
+            margin: 2em 1em 1em 2em;
+            max-width: 400px;
+            min-height: 100px;
             background: white;
-            padding: 0.5em;
+            padding: 1em 0.5em;
             opacity: 0.8;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 0px rgba(55, 55, 55, 0.75);
             strong {
                 display: block;
+            }
+            .slidesjs-next {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                font-family: "Arial black", Arial, sans-serif;
+                border: 2px solid orange;
+                border-radius: 20px;
+                width: 25px;
+                text-indent: 7px;
+                font-weight: bold;
+                background: orange;
+                color: white;
+            }
+            .slidesjs-next:hover {
+                background: white;
+                color: orange;
+                text-decoration: none;
             }
         }
     }
@@ -123,15 +164,6 @@ header {
         background: url("images/flickr-document.jpg") ;
     }
 
-    .slidesjs-navigation {
-        font-size: 2em;
-        font-weight: bold;
-        color: black;
-    }
-    .slidesjs-navigation:hover {
-        color: #666;
-        text-decoration: none;
-    }
 }
 
 article {
