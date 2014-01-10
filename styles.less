@@ -1,11 +1,16 @@
 @font: Georgia, serif;
 
-body {
+html, body {
     padding: 0;
     margin: 0;
+}
+
+body {
     font-family: @font;
 
-    background: url("images/bg.gif") repeat-x;
+    background-image: url("images/bg.gif");
+    background-repeat: repeat-x;
+    background-color: #ededed;
 }
 
 .clear {
@@ -20,11 +25,19 @@ body {
 header {
     display: block;
 
+    #language-menu {
+        float: right;
+        li {
+            float: left;
+            list-style: none;
+            margin-left: 0.5em;
+        }
+    }
+
     #logo {
         margin: 0;
-        padding: 0;
-        padding-bottom: 2em;
-        clear: both;
+        height: 120px;
+        padding: 22px 0;
 
         a {
             display: block;
@@ -37,12 +50,14 @@ header {
 
     #top-menu {
         margin: 0;
+        margin-bottom: 3em;
         padding: 0;
+        height: 50px;
 
         li {
             float: left;
             list-style-type: none;
-            padding-right: 1em;
+            padding-right: 2.5em;
             line-height: 50px;
             height: 50px;
         }
@@ -54,7 +69,7 @@ header {
             display: block;
         }
         a:hover {
-            text-decoration: underline;
+            color: orange;
         }
     }
 
@@ -172,6 +187,7 @@ header {
 }
 
 article {
+    clear: both;
     line-height: 1.5;
 
     a {
