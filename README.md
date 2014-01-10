@@ -81,3 +81,6 @@ Indrekut paluda???
 
 - http://www.flickr.com/photos/8536261@N07/6140792529
   images/flickr-document.jpg
+
+- http://www.flickr.com/photos/53326337@N00/2021672445
+  images/flickr-grading.jpg
