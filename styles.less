@@ -186,6 +186,33 @@ header {
 
 }
 
+.client-quotes {
+    blockquote {
+        margin: 0;
+        font-style: italic;
+    }
+
+    blockquote:before {
+        content: " ";
+        display: block;
+        float: left;
+        width: 45px;
+        height: 37px;
+        padding-top: 7px;
+        padding-right: 10px;
+        background: url("images/quote.png") no-repeat 0 7px;
+    }
+    .client {
+        margin-top: 0;
+        text-align: right;
+        font-style: italic;
+    }
+    .client:before {
+        content: "... ";
+    }
+}
+
+
 article {
     clear: both;
     line-height: 1.5;
@@ -206,7 +233,6 @@ article {
         width: 45%;
         float: right;
     }
-
 }
 
 
