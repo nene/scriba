@@ -1,4 +1,17 @@
-@font: Georgia, serif;
+// Fonts
+@base-font: Georgia, serif;
+
+// Colors
+@text-color: black;
+@highlight-color: orange;
+@link-color: darken(orange, 10%);
+@background-color: #ededed;
+
+// Boxes
+@default-border-radius: 10px;
+@default-box-shadow: 2px 2px 5px 0px rgba(55, 55, 55, 0.75);
+
+
 
 html, body {
     padding: 0;
@@ -6,11 +19,12 @@ html, body {
 }
 
 body {
-    font-family: @font;
+    font-family: @base-font;
 
     background-image: url("images/bg.gif");
     background-repeat: repeat-x;
-    background-color: #ededed;
+    background-color: @background-color;
+    color: @text-color;
 }
 
 .clear {
@@ -69,7 +83,7 @@ header {
             display: block;
         }
         a:hover {
-            color: orange;
+            color: @highlight-color;
         }
     }
 
@@ -81,7 +95,7 @@ header {
     h2 {
         position: absolute;
         margin: 0;
-        color: orange;
+        color: @highlight-color;
         top: 20px;
         left: 33px;
         z-index: 500;
@@ -99,21 +113,21 @@ header {
 
         a {
             display: inline-block;
-            background: orange;
-            border: 2px solid orange;
+            background: @highlight-color;
+            border: 2px solid @highlight-color;
             border-radius: 20px;
+            box-shadow: @default-box-shadow;
             padding: 0 2em;
             color: white;
             font-size: 20px;
             font-weight: bold;
             line-height: 40px;
             text-decoration: none;
-            box-shadow: 2px 2px 5px 0px rgba(55, 55, 55, 0.75);
         }
         a:hover {
             background: white;
             opacity: 0.8;
-            color: orange;
+            color: @highlight-color;
             text-decoration: none;
         }
     }
@@ -131,8 +145,8 @@ header {
             background: white;
             padding: 1em 0.5em;
             opacity: 0.8;
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px 0px rgba(55, 55, 55, 0.75);
+            border-radius: @default-border-radius;
+            box-shadow: @default-border-radius;
             .nr {
                 float: left;
                 width: 100px;
@@ -140,7 +154,7 @@ header {
                 top: -70px;
                 text-align: center;
                 font-size: 8em;
-                color: orange;
+                color: @highlight-color;
                 opacity: 0.8;
             }
             strong {
@@ -151,18 +165,18 @@ header {
                 right: 10px;
                 bottom: 10px;
                 font-family: "Arial black", Arial, sans-serif;
-                border: 2px solid orange;
+                border: 2px solid @highlight-color;
                 border-radius: 20px;
                 width: 25px;
                 text-indent: 7px;
                 font-weight: bold;
-                background: orange;
+                background: @highlight-color;
                 text-decoration: none;
                 color: white;
             }
             .slidesjs-next:hover {
                 background: white;
-                color: orange;
+                color: @highlight-color;
                 text-decoration: none;
             }
         }
@@ -190,10 +204,10 @@ header {
 
     .client-quote {
         border: 1px solid white;
-        border-radius: 10px;
+        border-radius: @default-border-radius;
+        box-shadow: @default-border-radius;
         padding: 1em 2em;
         margin-bottom: 2em;
-        box-shadow: 2px 2px 5px 0px rgba(55, 55, 55, 0.75);
     }
 
     h3 {
@@ -231,14 +245,14 @@ article {
     line-height: 1.5;
 
     a {
-        color: darken(orange, 10%);
+        color: @link-color;
     }
     a:hover {
         text-decoration: none;
     }
 
     h2 {
-        color: orange;
+        color: @highlight-color;
         text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
     }
 
