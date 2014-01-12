@@ -1,0 +1,52 @@
+header {
+    display: block;
+
+    #language-menu {
+        float: right;
+        li {
+            float: left;
+            list-style: none;
+            margin-left: 0.5em;
+        }
+    }
+
+    #logo {
+        margin: 0;
+        height: 120px;
+        padding: 22px 0;
+
+        a {
+            display: block;
+            height: 120px;
+            background: url("@{img-path}logo.png") no-repeat;
+            text-indent: -1000em;
+        }
+    }
+
+
+    #top-menu {
+        margin: 0;
+        margin-bottom: 3em;
+        padding: 0;
+        height: 50px;
+
+        li {
+            float: left;
+            list-style-type: none;
+            padding-right: 2.5em;
+            line-height: 50px;
+            height: 50px;
+        }
+
+        a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+        a:hover {
+            color: @highlight-color;
+        }
+    }
+
+}
