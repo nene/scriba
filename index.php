@@ -1,4 +1,6 @@
 <?php
+require_once "lib/php-markdown/Michelf/Markdown.inc.php";
+use \Michelf\Markdown;
 
 /**
  * Applies template to given variables.
@@ -12,6 +14,27 @@ function template($name, $vars=array())
     return ob_get_clean();
 }
 
+/**
+ * Helper function for markdown conversion of content.
+ */
+function markdown($name)
+{
+    $text = file_get_contents("content/".$name.".md");
+    return Markdown::defaultTransform($text);
+}
+
+
+// Select page
+switch ($_GET["page"]) {
+case "kkk":
+    $article = markdown("kkk");
+    break;
+default:
+    $article = template("front-page");
+}
+
+
+
 echo template("index", array(
-    "article" => template("front-page"),
+    "article" => $article,
 ));
