@@ -110,6 +110,19 @@
 
 }
 
+article {
+    .col-1 {
+        width: 60%;
+        float: left;
+    }
+
+    .col-2 {
+        width: 39%;
+        float: right;
+    }
+}
+
+
 #client-quotes {
 
     .client-quote {
@@ -155,18 +168,69 @@
     padding: 0;
 
     li {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
         list-style: none;
+        padding-right: 1em;
+
         h3 {
-            background-size: 70%;
+            background-size: 100%;
             background-repeat: no-repeat;
-            padding-top: 150px;
+            padding-top: 75px;
+            margin: 0;
+            a {
+                text-decoration: none;
+                color: @highlight-color;
+                text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
+                padding-top: 0.4em;
+                background-color: @background-color;
+                display: block;
+            }
         }
-        h3.written-translation {
-            background-image: url("@{img-path}flickr-writing.jpg");
+        p {
+            margin-top: 0.5em;
         }
-        h3.oral-translation {
-            background-image: url("@{img-path}flickr-mouth.jpg");
-        }
+    }
+
+    li.written-translation h3 {
+        background-position: 0 -50px;
+        background-image: url("@{img-path}flickr-writing.jpg");
+    }
+    li.oral-translation h3 {
+        background-position: 0 -25px;
+        background-image: url("@{img-path}flickr-mouth.jpg");
+    }
+    li.referative-translation h3 {
+        background-position: 0 -25px;
+        background-image: url("@{img-path}flickr-reference.jpg");
+    }
+    li.proofreading h3 {
+        background-position: 0 -25px;
+        background-image: url("@{img-path}flickr-grading2.jpg");
+    }
+    li.notarisation h3 {
+        background-image: url("@{img-path}flickr-notary.jpg");
+    }
+    li.apostilling h3 {
+        background-image: url("@{img-path}flickr-apostille.jpg");
+    }
+    li.legal-translation h3 {
+        background-image: url("@{img-path}flickr-document.jpg");
+    }
+    li.technical-translation h3 {
+        background-position: 0 -20px;
+        background-image: url("@{img-path}flickr-gears.jpg");
+    }
+    li.web-translation h3 {
+        background-position: 0 -20px;
+        background-image: url("@{img-path}flickr-social.jpg");
+    }
+    li.manual-translation h3 {
+        background-image: url("@{img-path}flickr-manual.jpg");
+    }
+    li.movie-translation h3 {
+        background-image: url("@{img-path}flickr-social.jpg");
     }
 
 }
