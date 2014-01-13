@@ -35,7 +35,7 @@
 
 </div>
 
-<p class="ask-price"><a href="price.html">Küsi hinnapakkumist &nbsp; &gt;</a></p>
+<p class="ask-price"><a href="<?=$base_url?>/kusi-hinnapakkumist">Küsi hinnapakkumist &nbsp; &gt;</a></p>
 </div>
 
 
@@ -44,80 +44,80 @@
 
   <ul id="services">
     <li class="written-translation">
-      <h3><a href="#lblbl">Kirjalik tõlge</a></h3>
+      <h3><a href="<?=$base_url?>/kirjalik-tolge">Kirjalik tõlge</a></h3>
       <p>Tõlke saadame tagasi võimalikult originaalilähedase
       kujundusega. Keerukamate formaatide ja trükiste puhul pakume
       ka küljendusteenust.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/kirjalik-tolge">Loe edasi</a></p>
     </li>
     <li class="oral-translation">
-      <h3><a href="#lblbl">Suuline tõlge</a></h3>
+      <h3><a href="<?=$base_url?>/suuline-tolge">Suuline tõlge</a></h3>
       <p>Konverentsidel, koosolekutel kui ka muudel üritustel, kus
       on oluline, et info jõuaks kõikide kuulajateni võimalikult
       kiiresti.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/suuline-tolge">Loe edasi</a></p>
     </li>
     <li class="referative-translation">
-      <h3><a href="#lblbl">Referatiivne tõlge</a></h3>
+      <h3><a href="<?=$base_url?>/referatiivne-tolge">Referatiivne tõlge</a></h3>
       <p>Kui teil pole tarvis täielikku viimistletud tõlget, vaid
       tarvis saada pigem kirjalik või suuline ülevaade teksti
       sisust.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/referatiivne-tolge">Loe edasi</a></p>
     </li>
     <li class="proofreading">
-      <h3><a href="#lblbl">Korrektuur ja toimetamine</a></h3>
+      <h3><a href="<?=$base_url?>/korrektuur-ja-toimetamine">Korrektuur ja toimetamine</a></h3>
       <p>Teksti korrektuur tähendab teksti õigekeelsusnõuetega
       vastavusse viimist ja trükivigade parandamist.  Toimetamine
       sisaldab teksti keelelist ja ka sisulist parandamist.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/korrektuur-ja-toimetamine">Loe edasi</a></p>
     </li>
     <li class="notarisation">
-      <h3><a href="#lblbl">Notariaalne kinnitamine</a></h3>
+      <h3><a href="<?=$base_url?>/notariaalne-kinnitamine">Notariaalne kinnitamine</a></h3>
       <p>Tõlgitud dokumentide välisriigis kasutamiseks võidakse
       nõuda notariaalselt kinnitatud tõlkeid.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/notariaalne-kinnitamine">Loe edasi</a></p>
     </li>
     <li class="apostilling">
-      <h3><a href="#lblbl">Apostillimine</a></h3>
+      <h3><a href="<?=$base_url?>/apostillimine">Apostillimine</a></h3>
       <p>Apostill näitab välisriigi ametnikule, et mis tahes
       apostilliga kinnitatud dokumendi välja andnud asutus
       eksisteerib ning tohib taolisi dokumente välja anda.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/apostillimine">Loe edasi</a></p>
     </li>
     <li class="legal-translation">
-      <h3><a href="#lblbl">Õigustõlge</a></h3>
+      <h3><a href="<?=$base_url?>/oigustolge">Õigustõlge</a></h3>
       <p>Õigustekstide tõlke alla kuuluvad tõlkijalt ülimat
       täpsust ja korrektsust nõudvad õigusaktide ja muude
       juriidiliste dokumentide tõlked.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/oigustolge">Loe edasi</a></p>
     </li>
     <li class="technical-translation">
-      <h3><a href="#lblbl">Tehnikatõlge</a></h3>
+      <h3><a href="<?=$base_url?>/tehnikatolge">Tehnikatõlge</a></h3>
       <p>Tehnikatõlge on ala, kus saavad kokku tõlkijate
       keelelised teadmised ja tehnikainimeste erialateadmised.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/tehnikatolge">Loe edasi</a></p>
     </li>
     <li class="web-translation">
-      <h3><a href="#lblbl">Kodulehe tõlge</a></h3>
+      <h3><a href="<?=$base_url?>/kodulehe-tolge">Kodulehe tõlge</a></h3>
       <p>Meil on laialdased kogemused kodulehtede tõlkimisel:
       oleme teinud nii eesti- kui ka võõrkeelsele tekstile
       korrektuuri, parandanud trüki- ja kirjavigu.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/kodulehe-tolge">Loe edasi</a></p>
     </li>
     <li class="manual-translation">
-      <h3><a href="#lblbl">Kasutusjuhendi tõlge</a></h3>
+      <h3><a href="<?=$base_url?>/kasutusjuhendi-tolge">Kasutusjuhendi tõlge</a></h3>
       <p>Kasutusjuhendid erinevad teistest tekstidest oma
       ülesehituse ja keelekasutuse poolest, mistõttu on vajalik,
       et tõlkijal oleks selles vallas piisavalt kogemust, et
       tagada parim tulemus.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/kasutusjuhendi-tolge">Loe edasi</a></p>
     </li>
     <li class="movie-translation">
-      <h3><a href="#lblbl">Filmitõlge</a></h3>
+      <h3><a href="<?=$base_url?>/filmitolge">Filmitõlge</a></h3>
       <p>Kuigi filmiklipp võib lühike tunduda, võib tõlkimist
       vajav tekst üsnagi pikk tulla ning seega soovitame selleks
       tööks piisavalt aega varuda.
-      <a href="#edasi">Loe edasi</a></p>
+      <a href="<?=$base_url?>/filmitolge">Loe edasi</a></p>
     </li>
   </ul>
 
@@ -169,4 +169,4 @@
 
 </div>
 
-<p class="ask-price clear"><a href="price.html">Küsi hinnapakkumist &nbsp; &gt;</a></p>
+<p class="ask-price clear"><a href="<?=$base_url?>/kusi-hinnapakkumist">Küsi hinnapakkumist &nbsp; &gt;</a></p>

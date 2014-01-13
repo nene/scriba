@@ -10,6 +10,7 @@ function template($name, $vars=array())
 {
     ob_start();
     extract($vars, EXTR_SKIP);
+    $base_url = "/scriba";
     include "tpl/".$name.".php";
     return ob_get_clean();
 }
@@ -23,13 +24,19 @@ function markdown($name)
     return Markdown::defaultTransform($text);
 }
 
+/**
+ * True when Markdown content-page exists with given name.
+ */
+function is_content_page($name)
+{
+    return file_exists("content/".$name.".md");
+}
+
 
 // Select page
-switch ($_GET["page"]) {
-case "kkk":
-    $article = markdown("kkk");
-    break;
-default:
+if (isset($_GET["page"]) && is_content_page($_GET["page"])) {
+    $article = markdown($_GET["page"]);
+} else {
     $article = template("front-page");
 }
 

@@ -22,17 +22,17 @@
         <li><a href="ru.html" title="По русски"><img src="images/ru.gif"/></a></li>
     </ul>
 
-    <h1 id="logo"><a href="index.html">Scriba &ndash; kirjalik ja suuline tõlge</a></h1>
+    <h1 id="logo"><a href="<?=$base_url?>/">Scriba &ndash; kirjalik ja suuline tõlge</a></h1>
 
     <div id="iso-9001">
-      <a href="kontakt.html"><img src="images/ISO9001.png" alt="ISO 9001" width="147"/></a>
+      <a href="<?=$base_url?>/kontakt"><img src="images/ISO9001.png" alt="ISO 9001" width="147"/></a>
     </div>
 
     <ul id="top-menu">
-	  <li><a href="hinnakiri.html">Hinnakiri</a></li>
-	  <li><a href="kkk.html" title="Korduma Kippuvad Küsimused">KKK</a></li>
-	  <li><a href="toopakkumine.php">Tule tööle</a></li>
-	  <li><a href="kontakt.php">Kontakt</a></li>
+	  <li><a href="<?=$base_url?>/hinnakiri">Hinnakiri</a></li>
+	  <li><a href="<?=$base_url?>/kkk" title="Korduma Kippuvad Küsimused">KKK</a></li>
+	  <li><a href="<?=$base_url?>/toopakkumine">Tule tööle</a></li>
+	  <li><a href="<?=$base_url?>/kontakt">Kontakt</a></li>
     </ul>
   </header>
 
