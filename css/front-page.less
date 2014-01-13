@@ -190,7 +190,19 @@ article {
         }
         p {
             margin-top: 0.5em;
+            a {
+                display: block;
+                font-size: smaller;
+                margin-top: 0.5em;
+            }
+            a:after {
+                content: "...";
+            }
         }
+    }
+
+    li:nth-child(odd) {
+        clear: both;
     }
 
     li.written-translation h3 {
@@ -230,7 +242,7 @@ article {
         background-image: url("@{img-path}flickr-manual.jpg");
     }
     li.movie-translation h3 {
-        background-image: url("@{img-path}flickr-social.jpg");
+        background-image: url("@{img-path}flickr-cinema.jpg");
     }
 
 }
