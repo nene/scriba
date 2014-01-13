@@ -113,12 +113,12 @@
 
 article {
     .col-1 {
-        width: 60%;
+        width: 65%;
         float: left;
     }
 
     .col-2 {
-        width: 39%;
+        width: 34%;
         float: right;
     }
 }
@@ -126,12 +126,19 @@ article {
 
 #client-quotes {
 
+    h2 {
+        // to align with quote-bubble content (not border).
+        margin-left: 20px;
+    }
+
     .client-quote {
+        font-size: 0.8em;
         border: 1px solid white;
         border-radius: @default-border-radius;
         box-shadow: @default-box-shadow;
         padding: 1em 2em;
         margin-bottom: 2em;
+        line-height: 1.7;
     }
 
     h3 {
