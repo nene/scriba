@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+
 require_once "lib/php-markdown/Michelf/Markdown.inc.php";
 use \Michelf\Markdown;
 
@@ -32,11 +34,26 @@ function is_content_page($name)
     return file_exists("content/".$name.".md");
 }
 
+/**
+ * Generates data for main menu.
+ */
+function main_menu()
+{
+    return array(
+        "hinnakiri" => "Hinnakiri",
+        "kkk" => "KKK",
+        "toopakkumine" => "Tule tööle",
+        "kontakt" => "Kontakt",
+    );
+}
+
 
 // Select page
 if (isset($_GET["page"]) && is_content_page($_GET["page"])) {
+    $page_name = $_GET["page"];
     $article = markdown($_GET["page"]);
 } else {
+    $page_name = "index";
     $article = template("front-page");
 }
 
@@ -45,4 +62,6 @@ if (isset($_GET["page"]) && is_content_page($_GET["page"])) {
 echo template("index", array(
     "article" => $article,
     "show_ask_price_button" => true,
+    "page_name" => $page_name,
+    "main_menu" => main_menu(),
 ));

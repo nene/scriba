@@ -29,10 +29,15 @@
     </div>
 
     <ul id="top-menu">
-	  <li><a href="<?=$base_url?>/hinnakiri">Hinnakiri</a></li>
-	  <li><a href="<?=$base_url?>/kkk" title="Korduma Kippuvad Küsimused">KKK</a></li>
-	  <li><a href="<?=$base_url?>/toopakkumine">Tule tööle</a></li>
-	  <li><a href="<?=$base_url?>/kontakt">Kontakt</a></li>
+<?php
+    foreach ($main_menu as $name => $title) {
+        if ($page_name==$name) {
+            echo "<li><strong>$title</strong></li>";
+        } else {
+            echo "<li><a href='$base_url/$name'>$title</a></li>";
+        }
+    }
+?>
     </ul>
   </header>
 
