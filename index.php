@@ -44,4 +44,5 @@ if (isset($_GET["page"]) && is_content_page($_GET["page"])) {
 
 echo template("index", array(
     "article" => $article,
+    "show_ask_price_button" => true,
 ));

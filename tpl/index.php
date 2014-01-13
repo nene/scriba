@@ -40,6 +40,13 @@
 
     <?=$article?>
 
+    <?php if ($show_ask_price_button) { ?>
+    <p class="ask-price clear">
+        <a href="<?=$base_url?>/kusi-hinnapakkumist">Küsi hinnapakkumist &nbsp; &gt;</a>
+    </p>
+    <?php } ?>
+
+
   </article>
 
   </div>
