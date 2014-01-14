@@ -1,10 +1,11 @@
-<h2>Tõlkebüroo hinnapäring</h2>
+<h2>Hinnapäring</h2>
 
-<p>Scriba tõlkebüroo kindlustab Teie tellimusele lühikese tarneaja,
-tasemel küljenduse ja <i>native speaker</i>’i korrektuuri. Kui Teie firmal on
-vaja tellida tõlkeid võrdlemisi tihti, soovitame pöörduda meie poole,
-et küsida püsikliendilepingut, millega kaasneb
-<strong>hinnaalandus</strong> meie tavalisest hinnakirjast.</p>
+<p>Scriba tõlkebüroo kindlustab tellimusele lühikese tarneaja,
+  tasemel küljenduse ja <i>native speaker</i>’i korrektuuri.</p>
+
+<p>Kui soovid tellida tõlkeid võrdlemisi tihti,
+  <a href="<?=$base_url?>/kontakt">küsi püsikliendilepingut</a>,
+  millega kaasneb <strong>hinnaalandus</strong>.</p>
 
 <form action="" method="post" id="ask-price-form">
 
@@ -38,15 +39,14 @@ et küsida püsikliendilepingut, millega kaasneb
     <p class="required"><label>Lisainformatsioon:</label>
       <textarea name="description" rows="10" cols="40"></textarea></p>
 
-    <p><label>Tõlke tähtaeg (valikuline):</label>
+    <p><label>Tõlke tähtaeg:</label>
       <input type="text" name="deadline"></p>
   </fieldset>
 
   <fieldset>
     <legend>Failid</legend>
 
-    <p>Soovitame lisada hinnapäringule kindlasti tõlkimist vajav tekst,
-      et saaksime Teile täpsema pakkumise teha.</p>
+    <p>Lisa tõlkimist vajav tekst, et saaksime täpsema pakkumise teha.</p>
 
     <p><button type="button" class="upload-button">Vali failid...</button></p>
 
