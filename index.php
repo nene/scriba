@@ -4,6 +4,8 @@ error_reporting(E_ALL);
 require_once "lib/php-markdown/Michelf/Markdown.inc.php";
 use \Michelf\Markdown;
 
+require_once "lib/Form.php";
+
 /**
  * Applies template to given variables.
  * Returns the rendered template as a string.

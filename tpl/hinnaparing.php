@@ -1,3 +1,55 @@
+<?php
+
+$form = new Form();
+
+$name = $form->field(
+    "text",
+    array("name" => "name", "required" => true)
+);
+$email = $form->field(
+    "text",
+    array("name" => "email", "required" => true)
+);
+$phone = $form->field(
+    "text",
+    array("name" => "phone", "required" => true)
+);
+$fromLang = $form->field(
+    "select",
+    array(
+        "name" => "from_lang",
+        "required" => true,
+        "options" => array_merge(array("keelest..."), languages(), array("muu...")),
+    )
+);
+$toLang = $form->field(
+    "select",
+    array(
+        "name" => "to_lang",
+        "required" => true,
+        "options" => array_merge(array("keelde..."), languages(), array("muu..."))
+    )
+);
+$description = $form->field(
+    "textarea",
+    array("name" => "description", "required" => true)
+);
+$deadline = $form->field(
+    "text",
+    array("name" => "deadline")
+);
+$files = $form->field(
+    "file",
+    array("name" => "files")
+);
+
+if (!empty($_POST)) {
+    $form->fill($_POST);
+    $form->validate();
+}
+
+?>
+
 <h2>Hinnapäring</h2>
 
 <p>Scriba tõlkebüroo kindlustab tellimusele lühikese tarneaja,
@@ -9,38 +61,42 @@
 
 <form action="" method="post" id="ask-price-form">
 
+  <?php if (!$form->valid()) { ?>
+  <p class="error-summary">Palun täitke kohustuslikud väljad</p>
+  <?php } ?>
+
   <fieldset>
     <legend>Tellija</legend>
 
-    <p class="required"><label>Firma või eraisiku nimi:</label>
-      <input type="text" name="name"></p>
+    <p class="<?=$name->cssCls();?>">
+      <label>Firma või eraisiku nimi:</label>
+      <?=$name->html(); ?></p>
 
-    <p class="required"><label>E-post:</label>
-      <input type="text" name="email"></p>
+    <p class="<?=$email->cssCls();?>">
+      <label>E-post:</label>
+      <?=$email->html(); ?></p>
 
-    <p class="required"><label>Telefoninumber:</label>
-      <input type="text" name="phone"></p>
+    <p class="<?=$phone->cssCls();?>">
+      <label>Telefoninumber:</label>
+      <?=$phone->html(); ?></p>
   </fieldset>
 
   <fieldset>
     <legend>Tõlge</legend>
 
-    <p class="required"><label>Tõlkesuund:</label>
-      <select name="from_lang">
-        <option selected="selected">Keelest...</option>
-        <?php foreach(languages() as $lang) { echo "<option value='$lang'>$lang</option>"; } ?>
-      </select>
-      <select name="to_lang">
-        <option selected="selected">Keelde...</option>
-        <?php foreach(languages() as $lang) { echo "<option value='$lang'>$lang</option>"; } ?>
-      </select>
+    <p class="<?=$fromLang->cssCls();?> <?=$toLang->cssCls();?>">
+      <label>Tõlkesuund:</label>
+      <?=$fromLang->html(); ?>
+      <?=$toLang->html(); ?>
     </p>
 
-    <p class="required"><label>Lisainformatsioon:</label>
-      <textarea name="description" rows="10" cols="40"></textarea></p>
+    <p class="<?=$description->cssCls();?>">
+      <label>Lisainformatsioon:</label>
+      <?=$description->html(); ?></p>
 
-    <p><label>Tõlke tähtaeg:</label>
-      <input type="text" name="deadline"></p>
+    <p class="<?=$deadline->cssCls();?>">
+      <label>Tõlke tähtaeg:</label>
+      <?=$deadline->html(); ?></p>
   </fieldset>
 
   <fieldset>
@@ -48,10 +104,12 @@
 
     <p>Lisa tõlkimist vajav tekst, et saaksime täpsema pakkumise teha.</p>
 
-    <p><button type="button" class="upload-button">Vali failid...</button></p>
+    <p class="<?=$files->cssCls();?>">
+      <button type="button" class="upload-button">Vali failid...</button>
+    </p>
 
     <!-- The actual file input field that we hide away -->
-    <div class="file-input"><input type="file" name="files[]" multiple="multiple"></div>
+    <div class="file-input"><?=$files->html(); ?></div>
 
     <!-- Empty list that gets populated with selected files -->
     <ul class="upload-filelist"></ul>
