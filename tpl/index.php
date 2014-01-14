@@ -61,32 +61,7 @@
     <div id="languages">
       <h2>Keelevalik</h2>
       <ul>
-        <li>aserbaidžaani keel</li>
-        <li>bulgaaria keel</li>
-        <li>hiina keel</li>
-        <li>hispaania keel</li>
-        <li>hollandi keel</li>
-        <li>inglise keel</li>
-        <li>itaalia keel</li>
-        <li>jaapani keel</li>
-        <li>kreeka keel</li>
-        <li>ladina keel</li>
-        <li>leedu keel</li>
-        <li>läti keel</li>
-        <li>norra keel</li>
-        <li>poola keel</li>
-        <li>portugali keel</li>
-        <li>prantsuse keel</li>
-        <li>rootsi keel</li>
-        <li>rumeenia keel</li>
-        <li>saksa keel</li>
-        <li>soome keel</li>
-        <li>taani keel</li>
-        <li>tšehhi keel</li>
-        <li>türgi keel</li>
-        <li>ungari keel</li>
-        <li>ukraina keel</li>
-        <li>vene keel</li>
+          <?php foreach(languages() as $lang) { echo "<li>$lang</li>"; } ?>
       </ul>
     </div>
 

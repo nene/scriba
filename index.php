@@ -56,6 +56,41 @@ function main_menu()
 }
 
 /**
+ * Returns array of all the languages supported by Scriba.
+ */
+function languages()
+{
+    return array(
+        "aserbaidžaani keel",
+        "bulgaaria keel",
+        "hiina keel",
+        "hispaania keel",
+        "hollandi keel",
+        "inglise keel",
+        "itaalia keel",
+        "jaapani keel",
+        "kreeka keel",
+        "ladina keel",
+        "leedu keel",
+        "läti keel",
+        "norra keel",
+        "poola keel",
+        "portugali keel",
+        "prantsuse keel",
+        "rootsi keel",
+        "rumeenia keel",
+        "saksa keel",
+        "soome keel",
+        "taani keel",
+        "tšehhi keel",
+        "türgi keel",
+        "ungari keel",
+        "ukraina keel",
+        "vene keel",
+    );
+}
+
+/**
  * True when the ask price button should be shown on given page.
  */
 function has_ask_button($page_name)

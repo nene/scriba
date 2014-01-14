@@ -27,9 +27,11 @@ et küsida püsikliendilepingut, millega kaasneb
     <p class="required"><label>Tõlkesuund:</label>
       <select name="from_lang">
         <option selected="selected">Keelest...</option>
+        <?php foreach(languages() as $lang) { echo "<option value='$lang'>$lang</option>"; } ?>
       </select>
       <select name="to_lang">
         <option selected="selected">Keelde...</option>
+        <?php foreach(languages() as $lang) { echo "<option value='$lang'>$lang</option>"; } ?>
       </select>
     </p>
 
