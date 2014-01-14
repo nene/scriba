@@ -35,6 +35,14 @@ function is_content_page($name)
 }
 
 /**
+ * True when Markdown content-page exists with given name.
+ */
+function is_template_page($name)
+{
+    return file_exists("tpl/".$name.".php");
+}
+
+/**
  * Generates data for main menu.
  */
 function main_menu()
@@ -47,14 +55,14 @@ function main_menu()
     );
 }
 
-
 // Select page
-if (isset($_GET["page"]) && is_content_page($_GET["page"])) {
-    $page_name = $_GET["page"];
-    $article = markdown($_GET["page"]);
+$page_name = isset($_GET["page"]) && !empty($_GET["page"]) ? $_GET["page"] : "front-page";
+if (is_content_page($page_name)) {
+    $article = markdown($page_name);
+} elseif (is_template_page($page_name)) {
+    $article = template($page_name);
 } else {
-    $page_name = "index";
-    $article = template("front-page");
+    $article = markdown("404");
 }
 
 
