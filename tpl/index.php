@@ -47,7 +47,7 @@
 
     <?php if ($show_ask_price_button) { ?>
     <p class="clear">
-        <a href="<?=$base_url?>/kusi-hinnapakkumist" class="button">Küsi hinnapakkumist &nbsp; &gt;</a>
+        <a href="<?=$base_url?>/hinnaparing" class="button">Küsi hinnapakkumist &nbsp; &gt;</a>
     </p>
     <?php } ?>
 
