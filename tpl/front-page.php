@@ -35,7 +35,7 @@
 
 </div>
 
-<p class="ask-price"><a href="<?=$base_url?>/kusi-hinnapakkumist">Küsi hinnapakkumist &nbsp; &gt;</a></p>
+<p class="ask-price"><a href="<?=$base_url?>/kusi-hinnapakkumist" class="button">Küsi hinnapakkumist &nbsp; &gt;</a></p>
 </div>
 
 

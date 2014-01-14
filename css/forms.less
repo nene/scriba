@@ -1,0 +1,56 @@
+// Styles for all the forms.
+
+@label-width: 200px;
+@field-width: 300px;
+
+form {
+    padding: 0;
+    margin: 2em 3em;
+}
+
+fieldset {
+    border: none;
+    border-top: 2px solid @highlight-color;
+
+    legend {
+        font-weight: bold;
+    }
+}
+
+label {
+    display: block;
+    float: left;
+    width: @label-width;
+}
+
+input[type="text"], textarea, select {
+    border: 2px solid @highlight-color;
+    background: lighten(@background-color, 5%);
+    color: @text-color;
+    padding: 2px;
+}
+
+input[type="text"] {
+    width: @field-width;
+}
+
+textarea {
+    width: @field-width;
+}
+
+select {
+    width: (@field-width / 2);
+}
+select+select {
+    margin-left: 2px;
+}
+
+.required label:after {
+    content: " *";
+    color: @highlight-color;
+    font-weight: bold;
+}
+
+p.submit {
+    text-align: center;
+}

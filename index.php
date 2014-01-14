@@ -55,6 +55,17 @@ function main_menu()
     );
 }
 
+/**
+ * True when the ask price button should be shown on given page.
+ */
+function has_ask_button($page_name)
+{
+    $exclude = array(
+        "kusi-hinnapakkumist" => true,
+    );
+    return !array_key_exists($page_name, $exclude);
+}
+
 // Select page
 $page_name = isset($_GET["page"]) && !empty($_GET["page"]) ? $_GET["page"] : "front-page";
 if (is_content_page($page_name)) {
@@ -62,6 +73,7 @@ if (is_content_page($page_name)) {
 } elseif (is_template_page($page_name)) {
     $article = template($page_name);
 } else {
+    header('HTTP/1.0 404 Not Found');
     $article = markdown("404");
 }
 
@@ -69,7 +81,7 @@ if (is_content_page($page_name)) {
 
 echo template("index", array(
     "article" => $article,
-    "show_ask_price_button" => true,
+    "show_ask_price_button" => has_ask_button($page_name),
     "page_name" => $page_name,
     "main_menu" => main_menu(),
 ));
