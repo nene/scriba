@@ -48,9 +48,18 @@ et küsida püsikliendilepingut, millega kaasneb
     <p>Soovitame lisada hinnapäringule kindlasti tõlkimist vajav tekst,
       et saaksime Teile täpsema pakkumise teha.</p>
 
-    <p>Failide lisamine...</p>
+    <p><button type="button" class="upload-button">Vali failid...</button></p>
+
+    <!-- The actual file input field that we hide away -->
+    <div class="file-input"><input type="file" name="files[]" multiple="multiple"></div>
+
+    <!-- Empty list that gets populated with selected files -->
+    <ul class="upload-filelist"></ul>
+
   </fieldset>
 
   <p class="submit"><button type="submit" class="button">Saada</button></p>
 
 </form>
+
+<script src="js/fileupload.js"></script>

@@ -55,4 +55,38 @@ select+select {
 
 p.submit {
     text-align: center;
+    button {
+        font-family: @base-font
+    }
+}
+
+
+// Hide the actual file input field
+.file-input {
+    display: block;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+// Style our custom file-selection button
+.upload-button {
+    padding: 0.7em 2em;
+    border-radius: @default-border-radius;
+    box-shadow: @default-box-shadow;
+    border: none;
+    background-color: #80bd77;
+    font-size: 16px;
+    font-family: @base-font;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+// Some styles for the list of selected files
+.upload-filelist {
+    font-size: smaller;
+    margin: 0;
+    list-style-type: square;
 }
