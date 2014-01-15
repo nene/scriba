@@ -104,7 +104,7 @@ class Field
      */
     function fill($data)
     {
-        $this->value = isset($data[$this->name]) ? trim($data[$this->name]) : "";
+        $this->value = isset($data[$this->name]) ? $data[$this->name] : "";
     }
 
     /**
@@ -129,11 +129,11 @@ class Field
      */
     function validate()
     {
-        if ($this->required && empty($this->val())) {
+        if ($this->required && !$this->val()) {
             $this->valid = false;
         }
 
-        if (!empty($this->val()) && $this->validator) {
+        if ($this->val() && $this->validator) {
             $this->valid = $this->validator->validate($this->val());
         }
 
