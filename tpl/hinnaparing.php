@@ -8,7 +8,7 @@ $name = $form->field(
 );
 $email = $form->field(
     "text",
-    array("name" => "email", "required" => true)
+    array("name" => "email", "required" => true, "validator" => "email")
 );
 $phone = $form->field(
     "text",

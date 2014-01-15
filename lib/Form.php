@@ -80,6 +80,7 @@ class Field
     protected $opts;
     protected $valid;
     protected $value;
+    protected $validator = null;
 
     function __construct($opts)
     {
@@ -88,6 +89,14 @@ class Field
         $this->opts = $opts;
         $this->valid = true;
         $this->value = "";
+        $this->initValidator($opts);
+    }
+
+    private function initValidator($opts) {
+        if (isset($opts["validator"]) && $opts["validator"]) {
+            $className = ucfirst($opts["validator"])."Validator";
+            $this->validator = new $className();
+        }
     }
 
     /**
@@ -122,6 +131,10 @@ class Field
     {
         if ($this->required && empty($this->val())) {
             $this->valid = false;
+        }
+
+        if (!empty($this->val()) && $this->validator) {
+            $this->valid = $this->validator->validate($this->val());
         }
 
         return $this->valid;
@@ -210,4 +223,13 @@ class FileField extends Field
     }
 }
 
-
+/**
+ * Simple e-mail validation.
+ */
+class EmailValidator
+{
+    function validate($value)
+    {
+        return !!preg_match('/^\S+@\S+\.\S+$/', $value);
+    }
+}
