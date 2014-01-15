@@ -61,7 +61,7 @@
     <div id="languages">
       <h2>Keelevalik</h2>
       <ul>
-          <?php foreach(languages() as $lang) { echo "<li>$lang</li>"; } ?>
+          <?php foreach($scriba->languages() as $lang) { echo "<li>$lang</li>"; } ?>
       </ul>
     </div>
 

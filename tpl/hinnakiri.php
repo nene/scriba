@@ -1,11 +1,11 @@
 <?php
 
 // Pull the content from Markdown file
-$content = markdown("hinnakiri");
+$content = $scriba->markdown("hinnakiri");
 
 // Generate table of all supported languages
 $languages_table = "<ul>";
-foreach (languages() as $lang) {
+foreach ($scriba->languages() as $lang) {
     $languages_table .= "<li>$lang</li>";
 }
 $languages_table .= "</ul>";

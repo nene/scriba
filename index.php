@@ -7,127 +7,148 @@ use \Michelf\Markdown;
 require_once "lib/Form.php";
 
 class Scriba {
-    public static $config;
+    private $config;
+
+    public function __construct($config)
+    {
+        $this->config = $config;
+    }
+
+    /**
+     * Renders and displays the specified page.
+     * @param string $page_name
+     */
+    public function route($page_name)
+    {
+        if ($this->isTemplatePage($page_name)) {
+            $article = $this->template($page_name);
+        } elseif ($this->isContentPage($page_name)) {
+            $article = $this->markdown($page_name);
+        } else {
+            header('HTTP/1.0 404 Not Found');
+            $article = $this->markdown("404");
+        }
+
+        echo $this->template("index", array(
+            "article" => $article,
+            "show_ask_price_button" => $this->hasAskButton($page_name),
+            "page_name" => $page_name,
+            "main_menu" => $this->mainMenu(),
+        ));
+    }
+
+    /**
+     * Applies template to given variables.
+     * Returns the rendered template as a string.
+     */
+    public function template($name, $vars=array())
+    {
+        ob_start();
+        extract($vars, EXTR_SKIP);
+        $base_url = $this->config["base_url"];
+        $scriba = $this;
+        include "tpl/".$name.".php";
+        return ob_get_clean();
+    }
+
+    /**
+     * Helper function for markdown conversion of content.
+     */
+    public function markdown($name)
+    {
+        $text = file_get_contents("content/".$name.".md");
+        return Markdown::defaultTransform($text);
+    }
+
+    /**
+     * Returns array of all the languages supported by Scriba.
+     */
+    public function languages()
+    {
+        return array(
+            "aserbaidžaani keel",
+            "bulgaaria keel",
+            "hiina keel",
+            "hispaania keel",
+            "hollandi keel",
+            "inglise keel",
+            "itaalia keel",
+            "jaapani keel",
+            "kreeka keel",
+            "ladina keel",
+            "leedu keel",
+            "läti keel",
+            "norra keel",
+            "poola keel",
+            "portugali keel",
+            "prantsuse keel",
+            "rootsi keel",
+            "rumeenia keel",
+            "saksa keel",
+            "soome keel",
+            "taani keel",
+            "tšehhi keel",
+            "türgi keel",
+            "ungari keel",
+            "ukraina keel",
+            "vene keel",
+        );
+    }
+
+    /**
+     * True when Markdown content-page exists with given name.
+     */
+    private function isContentPage($name)
+    {
+        return file_exists("content/".$name.".md");
+    }
+
+    /**
+     * True when Markdown content-page exists with given name.
+     */
+    private function isTemplatePage($name)
+    {
+        return file_exists("tpl/".$name.".php");
+    }
+
+    /**
+     * Generates data for main menu.
+     */
+    private function mainMenu()
+    {
+        return array(
+            "hinnakiri" => "Hinnakiri",
+            "kkk" => "KKK",
+            "toopakkumine" => "Tule tööle",
+            "kontakt" => "Kontakt",
+        );
+    }
+
+    /**
+     * True when the ask price button should be shown on given page.
+     */
+    private function hasAskButton($page_name)
+    {
+        $exclude = array(
+            "hinnaparing" => true,
+            "kontakt" => true,
+            "toopakkumine" => true,
+        );
+        return !array_key_exists($page_name, $exclude);
+    }
+
 }
 
-Scriba::$config = include("config.php");
+$config = include("config.php");
 
+$scriba = new Scriba($config);
 
-/**
- * Applies template to given variables.
- * Returns the rendered template as a string.
- */
-function template($name, $vars=array())
-{
-    ob_start();
-    extract($vars, EXTR_SKIP);
-    $base_url = Scriba::$config["base_url"];
-    include "tpl/".$name.".php";
-    return ob_get_clean();
-}
-
-/**
- * Helper function for markdown conversion of content.
- */
-function markdown($name)
-{
-    $text = file_get_contents("content/".$name.".md");
-    return Markdown::defaultTransform($text);
-}
-
-/**
- * True when Markdown content-page exists with given name.
- */
-function is_content_page($name)
-{
-    return file_exists("content/".$name.".md");
-}
-
-/**
- * True when Markdown content-page exists with given name.
- */
-function is_template_page($name)
-{
-    return file_exists("tpl/".$name.".php");
-}
-
-/**
- * Generates data for main menu.
- */
-function main_menu()
-{
-    return array(
-        "hinnakiri" => "Hinnakiri",
-        "kkk" => "KKK",
-        "toopakkumine" => "Tule tööle",
-        "kontakt" => "Kontakt",
-    );
-}
-
-/**
- * Returns array of all the languages supported by Scriba.
- */
-function languages()
-{
-    return array(
-        "aserbaidžaani keel",
-        "bulgaaria keel",
-        "hiina keel",
-        "hispaania keel",
-        "hollandi keel",
-        "inglise keel",
-        "itaalia keel",
-        "jaapani keel",
-        "kreeka keel",
-        "ladina keel",
-        "leedu keel",
-        "läti keel",
-        "norra keel",
-        "poola keel",
-        "portugali keel",
-        "prantsuse keel",
-        "rootsi keel",
-        "rumeenia keel",
-        "saksa keel",
-        "soome keel",
-        "taani keel",
-        "tšehhi keel",
-        "türgi keel",
-        "ungari keel",
-        "ukraina keel",
-        "vene keel",
-    );
-}
-
-/**
- * True when the ask price button should be shown on given page.
- */
-function has_ask_button($page_name)
-{
-    $exclude = array(
-        "hinnaparing" => true,
-        "kontakt" => true,
-        "toopakkumine" => true,
-    );
-    return !array_key_exists($page_name, $exclude);
-}
-
-// Select page
-$page_name = isset($_GET["page"]) && !empty($_GET["page"]) ? $_GET["page"] : "front-page";
-if (is_template_page($page_name)) {
-    $article = template($page_name);
-} elseif (is_content_page($page_name)) {
-    $article = markdown($page_name);
-} else {
-    header('HTTP/1.0 404 Not Found');
-    $article = markdown("404");
-}
+$scriba->route((isset($_GET["page"]) && $_GET["page"]) ? $_GET["page"] : "front-page");
 
 
 
-echo template("index", array(
-    "article" => $article,
-    "show_ask_price_button" => has_ask_button($page_name),
-    "page_name" => $page_name,
-    "main_menu" => main_menu(),
-));
+
+
+
+
+

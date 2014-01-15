@@ -19,7 +19,7 @@ $fromLang = $form->field(
     array(
         "name" => "from_lang",
         "required" => true,
-        "options" => array_merge(array("keelest..."), languages(), array("muu...")),
+        "options" => array_merge(array("keelest..."), $scriba->languages(), array("muu...")),
     )
 );
 $toLang = $form->field(
@@ -27,7 +27,7 @@ $toLang = $form->field(
     array(
         "name" => "to_lang",
         "required" => true,
-        "options" => array_merge(array("keelde..."), languages(), array("muu..."))
+        "options" => array_merge(array("keelde..."), $scriba->languages(), array("muu..."))
     )
 );
 $description = $form->field(
