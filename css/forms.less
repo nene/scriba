@@ -5,6 +5,8 @@
 @error-icon-size: 48px;
 @error-color: lighten(red, 10%);
 
+// Form, fieldset and labels
+
 form {
     padding: 0;
     margin: 2em 3em;
@@ -31,6 +33,14 @@ label {
     width: (@label-width - 10px);
     margin-right: 10px;
 }
+// "*" after required field labels
+.required label:after {
+    content: " *";
+    color: @highlight-color;
+    font-weight: bold;
+}
+
+// Invalid form fields
 
 .error-summary {
     background: url("@{img-path}/dialog-error.png") no-repeat;
@@ -45,6 +55,8 @@ label {
     color: @error-color;
     border-bottom: 1px dashed @error-color;
 }
+
+// Form fields
 
 input[type="text"], textarea, select {
     border: 2px solid @highlight-color;
@@ -70,11 +82,7 @@ select+select {
     margin-left: 2px;
 }
 
-.required label:after {
-    content: " *";
-    color: @highlight-color;
-    font-weight: bold;
-}
+// Submit button
 
 p.submit {
     text-align: center;
@@ -83,6 +91,7 @@ p.submit {
     }
 }
 
+// File upload
 
 // Hide the actual file input field
 .file-input {
