@@ -217,6 +217,11 @@ class SelectField extends Field
  */
 class FileField extends Field
 {
+    function fill($data)
+    {
+        $this->value = isset($data[$this->name]) ? $data[$this->name] : "";
+    }
+
     function html()
     {
         return "<input type='file' name='{$this->name}[]' multiple='multiple'>";

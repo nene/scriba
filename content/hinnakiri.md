@@ -6,9 +6,28 @@ hinnapakkumise. Meie töökeelte ja koostööpartnerite valik laieneb
 pidevalt, mistõttu võite meie poole pöörduda ka eksootiliste või
 tavapäratute päringutega.
 
-Kui Teie firmal on vaja tellida tõlkeid võrdlemisi tihti, soovitame
-pöörduda meie poole, et küsida püsikliendilepingut, millega kaasneb
-hinnaalandus.
+Kui soovid tellida tõlkeid võrdlemisi tihti, [küsi
+püsikliendilepingut][kontakt], millega kaasneb hinnaalandus.
 
 Tõlke miinimumtasu on ühe lehekülje hind. Tõlkehinnale lisandub
 käibemaks 20%.
+
+## Tõlge eesti keelde ja eesti keelest
+
+{languages_table}
+
+## Muud tõlkesuunad
+
+- Inglise &ndash; Läti
+- Inglise &ndash; Rootsi
+- Rootsi &ndash; Soome
+- Vene &ndash; Soome
+
+## Muud teenused
+
+- Suuline tõlge - alates 38 €/h
+- Teksti korrektuur - alates 3.80 €/h
+- Apostillimine - 30 € dokument
+- Notariaalne kinnitamine - 20 € dokument
+
+[kontakt]: /kontakt

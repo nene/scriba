@@ -105,10 +105,10 @@ function has_ask_button($page_name)
 
 // Select page
 $page_name = isset($_GET["page"]) && !empty($_GET["page"]) ? $_GET["page"] : "front-page";
-if (is_content_page($page_name)) {
-    $article = markdown($page_name);
-} elseif (is_template_page($page_name)) {
+if (is_template_page($page_name)) {
     $article = template($page_name);
+} elseif (is_content_page($page_name)) {
+    $article = markdown($page_name);
 } else {
     header('HTTP/1.0 404 Not Found');
     $article = markdown("404");
