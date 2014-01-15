@@ -99,6 +99,8 @@ function has_ask_button($page_name)
 {
     $exclude = array(
         "hinnaparing" => true,
+        "kontakt" => true,
+        "toopakkumine" => true,
     );
     return !array_key_exists($page_name, $exclude);
 }
