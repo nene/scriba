@@ -115,4 +115,5 @@ Indrekut paluda???
 - http://www.flickr.com/photos/peterme/1253748873
   images/flickr-manual.jpg
 
-
+- http://openiconlibrary.sourceforge.net/gallery2/?./Icons/status/dialog-error.png
+  images/dialog-error.png

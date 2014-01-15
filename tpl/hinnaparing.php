@@ -62,7 +62,7 @@ if (!empty($_POST)) {
 <form action="" method="post" id="ask-price-form">
 
   <?php if (!$form->valid()) { ?>
-  <p class="error-summary">Palun täitke kohustuslikud väljad</p>
+  <p class="error-summary">Palun täitke kohustuslikud väljad!</p>
   <?php } ?>
 
   <fieldset>

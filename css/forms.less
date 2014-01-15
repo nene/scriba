@@ -2,6 +2,8 @@
 
 @label-width: 200px;
 @field-width: 300px;
+@error-icon-size: 48px;
+@error-color: lighten(red, 10%);
 
 form {
     padding: 0;
@@ -26,14 +28,22 @@ fieldset {
 label {
     display: block;
     float: left;
-    width: @label-width;
+    width: (@label-width - 10px);
+    margin-right: 10px;
 }
 
 .error-summary {
-    color: red;
+    background: url("@{img-path}/dialog-error.png") no-repeat;
+    height: (@error-icon-size - 10px);
+    padding-top: 10px;
+    padding-left: (@error-icon-size + 20px);
+    font-weight: bold;
+    color: lighten(@error-color, 10%);
+    margin-bottom: 2em;
 }
 .invalid label {
-    color: red;
+    color: @error-color;
+    border-bottom: 1px dashed @error-color;
 }
 
 input[type="text"], textarea, select {
