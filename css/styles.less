@@ -40,6 +40,13 @@
     border-radius: @size;
 }
 
+// Box shadow mixin
+.box-shadow (@opts) {
+    -webkit-box-shadow: @opts;
+    -moz-box-shadow: @opts;
+    box-shadow: @opts;
+}
+
 
 html, body {
     padding: 0;
@@ -90,7 +97,7 @@ article {
     background: @highlight-color;
     border: 2px solid @highlight-color;
     .border-radius(20px);
-    box-shadow: @default-box-shadow;
+    .box-shadow(@default-box-shadow);
     padding: 0 2em;
     color: white;
     font-size: 20px;
