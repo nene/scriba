@@ -15,6 +15,12 @@ fieldset {
     legend {
         font-weight: bold;
     }
+
+    // Ensure the floated labels don't mess things up
+    // when they are too long.
+    p {
+        clear: both;
+    }
 }
 
 label {
