@@ -6,6 +6,13 @@ use \Michelf\Markdown;
 
 require_once "lib/Form.php";
 
+class Scriba {
+    public static $config;
+}
+
+Scriba::$config = include("config.php");
+
+
 /**
  * Applies template to given variables.
  * Returns the rendered template as a string.
@@ -14,7 +21,7 @@ function template($name, $vars=array())
 {
     ob_start();
     extract($vars, EXTR_SKIP);
-    $base_url = "/scriba";
+    $base_url = Scriba::$config["base_url"];
     include "tpl/".$name.".php";
     return ob_get_clean();
 }
