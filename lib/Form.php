@@ -5,13 +5,45 @@
  */
 class Form
 {
-    private $fields;
+    const DEFAULT_GROUP = "default";
+
     private $valid;
+    private $groups;
+    private $currentGroup;
 
     function __construct()
     {
-        $this->fields = array();
         $this->valid = true;
+        $this->groups = array();
+        $this->group(self::DEFAULT_GROUP);
+    }
+
+    /**
+     * Starts a new named group of fields.  All calls to field() after
+     * this will add fields to this group, until the next call to
+     * group().
+     * @param string $name
+     */
+    function group($name)
+    {
+        $this->groups[$name] = array();
+        $this->currentGroup = $name;
+    }
+
+    /**
+     * Returns assoc-array of all groups and fields inside them,
+     * except the default group.
+     * @return array
+     */
+    function allGroups()
+    {
+        $filtered = array();
+        foreach ($this->groups as $name => $group) {
+            if ($name != self::DEFAULT_GROUP) {
+                $filtered[$name] = $group;
+            }
+        }
+        return $filtered;
     }
 
     /**
@@ -30,7 +62,7 @@ class Form
         $className = ucfirst($type)."Field";
         $field = new $className($opts);
 
-        $this->fields[$opts["name"]] = $field;
+        $this->groups[$this->currentGroup][$opts["name"]] = $field;
 
         return $field;
     }
@@ -41,8 +73,10 @@ class Form
      */
     function fill($data)
     {
-        foreach ($this->fields as $field) {
-            $field->fill($data);
+        foreach ($this->groups as $fields) {
+            foreach ($fields as $field) {
+                $field->fill($data);
+            }
         }
     }
 
@@ -53,9 +87,11 @@ class Form
     function validate()
     {
         $this->valid = true;
-        foreach ($this->fields as $field) {
-            if (!$field->validate()) {
-                $this->valid = false;
+        foreach ($this->groups as $fields) {
+            foreach ($fields as $field) {
+                if (!$field->validate()) {
+                    $this->valid = false;
+                }
             }
         }
         return $this->valid;
