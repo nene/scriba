@@ -8,11 +8,11 @@ $name = $form->field(
 );
 $email = $form->field(
     "text",
-    array("name" => "email", "required" => true, "validator" => "email")
+    array("name" => "email", "size" => "small", "required" => true, "validator" => "email")
 );
 $phone = $form->field(
     "text",
-    array("name" => "phone", "required" => true)
+    array("name" => "phone", "size" => "small", "required" => true)
 );
 $fromLang = $form->field(
     "select",

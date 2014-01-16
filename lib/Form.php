@@ -114,6 +114,7 @@ class Field
     protected $name;
     protected $label;
     protected $required;
+    protected $size;
     protected $opts;
     protected $valid;
     protected $value;
@@ -124,6 +125,7 @@ class Field
         $this->name = $opts["name"];
         $this->label = isset($opts["label"]) ? $opts["label"] : "";
         $this->required = isset($opts["required"]) && $opts["required"];
+        $this->size = isset($opts["size"]) ? $opts["size"] : "";
         $this->opts = $opts;
         $this->valid = true;
         $this->value = "";
@@ -201,7 +203,8 @@ class Field
     {
         $required = $this->required ? "required" : "";
         $valid = $this->valid() ? "" : "invalid";
-        return $required." ".$valid;
+        $size = $this->size;
+        return $required." ".$valid." ".$size;
     }
 }
 
@@ -212,7 +215,7 @@ class TextField extends Field
 {
     function html()
     {
-        return "<input type='text' name='{$this->name}' value='{$this->val()}'>";
+       return "<input type='text' name='{$this->name}' value='{$this->val()}'>";
     }
 }
 

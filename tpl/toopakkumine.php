@@ -16,6 +16,7 @@ $form->field("text", array(
 $form->field("text", array(
     "label" => "Sünniaeg:",
     "name" => "birthDay",
+    "size" => "small",
     "required" => true
 ));
 
@@ -28,23 +29,27 @@ $form->field("text", array(
 $form->field("text", array(
     "label" => "Telefon:",
     "name" => "phone",
+    "size" => "small",
     "required" => true
 ));
 $form->field("text", array(
     "label" => "E-post:",
     "name" => "email",
+    "size" => "small",
     "required" => true,
     "validator" => "email"
 ));
 $form->field("text", array(
     "label" => "Skype kasutajatunnus:",
-    "name" => "skypeId"
+    "name" => "skypeId",
+    "size" => "small",
 ));
 
 $form->group("Kogemused");
 $form->field("text", array(
     "label" => "Emakeel:",
     "name" => "nativeLanguage",
+    "size" => "small",
     "required" => true
 ));
 $form->field("textarea", array(
@@ -86,6 +91,7 @@ $form->group("Palgasoov");
 $form->field("text", array(
     "label" => "Ühe lehekülje hind (neto):",
     "name" => "pricePerPage",
+    "size" => "small",
     "required" => true
 ));
 $form->field("radio", array(
