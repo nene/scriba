@@ -28,6 +28,22 @@ $(function() {
 		this.getEl = function() {
 			return editor;
 		};
+
+		this.getText = function() {
+			return field.val();
+		};
+	}
+
+	function getHtml(name, text, callback) {
+		$.ajax({
+			url: "/scriba/markdown",
+			data: {
+				name: name,
+				text: text
+			},
+			dataType: "html",
+			success: callback
+		});
 	}
 
 	// Switch to editor when an editable area is clicked on.
@@ -46,7 +62,9 @@ $(function() {
 					text: text,
 					height: oldHeight,
 					save: function() {
-						editor.getEl().replaceWith(editable);
+						getHtml(sectionName, editor.getText(), function(html) {
+							editor.getEl().replaceWith(html);
+						});
 					}
 				});
 

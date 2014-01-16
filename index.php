@@ -29,6 +29,11 @@ class Scriba {
             header("Content-type: text/plain");
             echo $this->markdownSource($request["name"]);
             return;
+        } elseif ($page_name == "markdown" && isset($request["text"])) {
+            // An ajax request to render Markdown into HTML
+            header("Content-type: text/html");
+            echo $this->toMarkdown($request["name"], $request["text"]);
+            return;
         } elseif ($this->isTemplatePage($page_name)) {
             $article = $this->template($page_name);
         } elseif ($this->isContentPage($page_name)) {
@@ -66,6 +71,13 @@ class Scriba {
     public function markdown($name)
     {
         $text = $this->markdownSource($name);
+        return $this->toMarkdown($name, $text);
+    }
+
+    /**
+     * Renders given markdown text as HTML
+     */
+    private function toMarkdown($name, $text) {
         $html = Markdown::defaultTransform($text);
 
         if ($this->admin) {
