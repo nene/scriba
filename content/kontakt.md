@@ -16,8 +16,15 @@ viimase lihvi.  Meie töökeelte ja koostööpartnerite valik laieneb
 pidevalt, mistõttu võite meie poole pöörduda ka eksootiliste või
 tavapäratute päringutega.
 
-Juhataja: Esper Linask<br>
-Aadress: Õpetaja 9, 51003 Tartu<br>
-Registrikood: 11439609<br>
-Tel:  738 0806 /  528 6768<br>
-E-post: info@scriba.ee
+### Kontaktandmed
+
+**Firma:** Scriba OÜ<br>
+**Registrikood:** 11439609<br>
+**KMKR:** EE101201465<br>
+**Kontakt:** Esper Linask<br>
+**E-post:** info[ät]scriba.ee<br>
+**Telefon:** + 372 52 86 768<br>
+**Skype:** scriba_tb<br>
+**Arveldusarve:** 334421510007<br>
+**Pank:** Sampo Pank<br>
+**SWIFT:** FOREEE2X
