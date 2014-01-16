@@ -269,7 +269,7 @@ class RadioField extends Field
         foreach ($this->opts["options"] as $v) {
             $checked = ($v == $this->val()) ? "checked='checked'" : "";
             $button = "<input type='radio' name='{$this->name}' value='{$v}' {$checked}>";
-            $radios .= "<label class='radio'>{$button} {$v}</label>";
+            $radios .= "<label class='radio-label'>{$button} {$v}</label>";
         }
         return $radios;
     }

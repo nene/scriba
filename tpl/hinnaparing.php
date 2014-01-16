@@ -69,15 +69,15 @@ if (!empty($_POST)) {
     <legend>Tellija</legend>
 
     <p class="<?=$name->cssCls();?>">
-      <label>Firma või eraisiku nimi:</label>
+      <label class="field-label">Firma või eraisiku nimi:</label>
       <?=$name->html(); ?></p>
 
     <p class="<?=$email->cssCls();?>">
-      <label>E-post:</label>
+      <label class="field-label">E-post:</label>
       <?=$email->html(); ?></p>
 
     <p class="<?=$phone->cssCls();?>">
-      <label>Telefoninumber:</label>
+      <label class="field-label">Telefoninumber:</label>
       <?=$phone->html(); ?></p>
   </fieldset>
 
@@ -85,17 +85,17 @@ if (!empty($_POST)) {
     <legend>Tõlge</legend>
 
     <p class="<?=$fromLang->cssCls();?> <?=$toLang->cssCls();?>">
-      <label>Tõlkesuund:</label>
+      <label class="field-label">Tõlkesuund:</label>
       <?=$fromLang->html(); ?>
       <?=$toLang->html(); ?>
     </p>
 
     <p class="<?=$description->cssCls();?>">
-      <label>Lisainformatsioon:</label>
+      <label class="field-label">Lisainformatsioon:</label>
       <?=$description->html(); ?></p>
 
     <p class="<?=$deadline->cssCls();?>">
-      <label>Tõlke tähtaeg:</label>
+      <label class="field-label">Tõlke tähtaeg:</label>
       <?=$deadline->html(); ?></p>
   </fieldset>
 

@@ -27,27 +27,17 @@ fieldset {
     }
 }
 
-label {
+.field-label {
     display: block;
     float: left;
     width: (@label-width - 10px);
     margin-right: 10px;
 }
-// no floating of radio-button label
-label.radio {
-    width: auto;
-    display: inline;
-    float: none;
-}
 // "*" after required field labels
-.required label:after {
+.required .field-label:after {
     content: " *";
     color: @highlight-color;
     font-weight: bold;
-}
-// No "*" after radio-button labels
-.required label.radio:after {
-    content: "";
 }
 
 // Invalid form fields
@@ -61,14 +51,9 @@ label.radio {
     color: lighten(@error-color, 10%);
     margin-bottom: 2em;
 }
-.invalid label {
+.invalid .field-label {
     color: @error-color;
     border-bottom: 1px dashed @error-color;
-}
-// don't apply for radio-labels
-.invalid label.radio {
-    color: inherit;
-    border-bottom: none;
 }
 
 // Form fields
@@ -97,6 +82,9 @@ select+select {
     margin-left: 2px;
 }
 
+.radio-label {
+    margin-right: 1em;
+}
 
 // Submit button
 

@@ -119,7 +119,7 @@ if (!empty($_POST)) {
     <?php foreach ($group as $field): ?>
 
         <p class="<?=$field->cssCls();?>">
-          <label><?=$field->label(); ?></label>
+          <label class="field-label"><?=$field->label(); ?></label>
           <?=$field->html();?></p>
 
     <?php endforeach; ?>
