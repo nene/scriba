@@ -8,19 +8,28 @@ require_once "lib/Form.php";
 
 class Scriba {
     private $config;
+    private $admin;
 
     public function __construct($config)
     {
         $this->config = $config;
+        $this->admin = true;
     }
 
     /**
      * Renders and displays the specified page.
-     * @param string $page_name
+     * @param array $query PHP $_GET array.
      */
-    public function route($page_name)
+    public function route($request)
     {
-        if ($this->isTemplatePage($page_name)) {
+        $page_name = (isset($request["page"]) && $request["page"]) ? $request["page"] : "front-page";
+
+        if ($page_name == "markdownSource" && isset($request["name"])) {
+            // An ajax request for Markdown source
+            header("Content-type: text/plain");
+            echo $this->markdownSource($request["name"]);
+            return;
+        } elseif ($this->isTemplatePage($page_name)) {
             $article = $this->template($page_name);
         } elseif ($this->isContentPage($page_name)) {
             $article = $this->markdown($page_name);
@@ -56,8 +65,23 @@ class Scriba {
      */
     public function markdown($name)
     {
-        $text = file_get_contents("content/".$name.".md");
-        return Markdown::defaultTransform($text);
+        $text = $this->markdownSource($name);
+        $html = Markdown::defaultTransform($text);
+
+        if ($this->admin) {
+            return "<div class='editable' data-name='{$name}'>{$html}</div>";
+        }
+        else {
+            return $html;
+        }
+    }
+
+    /**
+     * Retrieves the source markdown text.
+     */
+    private function markdownSource($name)
+    {
+        return file_get_contents("content/".$name.".md");
     }
 
     /**
@@ -143,7 +167,7 @@ $config = include("config.php");
 
 $scriba = new Scriba($config);
 
-$scriba->route((isset($_GET["page"]) && $_GET["page"]) ? $_GET["page"] : "front-page");
+$scriba->route($_GET);
 
 
 

@@ -1,0 +1,13 @@
+//
+// Styles related to administration view
+//
+
+// Editable content areas on page.
+.editable {
+    outline: 1px dotted lighten(gray, 20%);
+    cursor: pointer;
+    &:hover {
+        outline: 2px solid @highlight-color;
+        .box-shadow(@default-box-shadow);
+    }
+}
