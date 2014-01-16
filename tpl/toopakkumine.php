@@ -5,82 +5,98 @@ $form = new Form();
 $sections = array();
 
 $personal = array();
-$personal["Eesnimi:"] = $form->field(
-    "text",
-    array("name" => "firstName", "required" => true)
-);
-$personal["Perenimi:"] = $form->field(
-    "text",
-    array("name" => "lastName", "required" => true)
-);
-$personal["Sünniaeg:"] = $form->field(
-    "text",
-    array("name" => "birthDay", "required" => true)
-);
+$personal[]= $form->field("text", array(
+    "label" => "Eesnimi:",
+    "name" => "firstName",
+    "required" => true
+));
+$personal[]= $form->field("text", array(
+    "label" => "Perenimi:",
+    "name" => "lastName",
+    "required" => true
+));
+$personal[]= $form->field("text", array(
+    "label" => "Sünniaeg:",
+    "name" => "birthDay",
+    "required" => true
+));
 $sections["Isikuandmed"] = $personal;
 
 $contact = array();
-$contact["Aadress:"] = $form->field(
-    "text",
-    array("name" => "address", "required" => true)
-);
-$contact["Telefon:"] = $form->field(
-    "text",
-    array("name" => "phone", "required" => true)
-);
-$contact["E-post:"] = $form->field(
-    "text",
-    array("name" => "email", "required" => true, "validator" => "email")
-);
-$contact["Skype kasutajatunnus:"] = $form->field(
-    "text",
-    array("name" => "skypeId")
-);
+$contact[]= $form->field("text", array(
+    "label" => "Aadress:",
+    "name" => "address",
+    "required" => true
+));
+$contact[]= $form->field("text", array(
+    "label" => "Telefon:",
+    "name" => "phone",
+    "required" => true
+));
+$contact[]= $form->field("text", array(
+    "label" => "E-post:",
+    "name" => "email",
+    "required" => true,
+    "validator" => "email"
+));
+$contact[]= $form->field("text", array(
+    "label" => "Skype kasutajatunnus:",
+    "name" => "skypeId"
+));
 $sections["Kontakt"] = $contact;
 
 $experience = array();
-$experience["Emakeel:"] = $form->field(
-    "text",
-    array("name" => "nativeLanguage", "required" => true)
-);
-$experience["Hariduskäik"] = $form->field(
-    "textarea",
-    array("name" => "education", "required" => true)
-);
-$experience["Tehtud tööd:"] = $form->field(
-    "textarea",
-    array("name" => "translationExperience", "required" => true)
-);
+$experience[]= $form->field("text", array(
+    "label" => "Emakeel:",
+    "name" => "nativeLanguage",
+    "required" => true
+));
+$experience[]= $form->field("textarea", array(
+    "label" => "Hariduskäik",
+    "name" => "education",
+    "required" => true
+));
+$experience[]= $form->field("textarea", array(
+    "label" => "Tehtud tööd:",
+    "name" => "translationExperience",
+    "required" => true
+));
 $sections["Kogemused"] = $experience;
 
 $skills = array();
-$skills["Tõlkesuunad:"] = $form->field(
-    "textarea",
-    array("name" => "languageCombinations", "required" => true)
-);
-$skills["Tõlkevaldkonnad:"] = $form->field(
-    "textarea",
-    array("name" => "education", "required" => true)
-);
-$skills["Kas teete suulist tõlget?:"] = $form->field(
-    "text",
-    array("name" => "oralTranslationSkills", "required" => true)
-);
-$skills["Notariaalne kinnitamine?:"] = $form->field(
-    "text",
-    array("name" => "notarisationPossibility", "required" => true)
-);
+$skills[]= $form->field("textarea", array(
+    "label" => "Tõlkesuunad:",
+    "name" => "languageCombinations",
+    "required" => true
+));
+$skills[]= $form->field("textarea", array(
+    "label" => "Tõlkevaldkonnad:",
+    "name" => "education",
+    "required" => true
+));
+$skills[]= $form->field("text", array(
+    "label" => "Kas teete suulist tõlget?:",
+    "name" => "oralTranslationSkills",
+    "required" => true
+));
+$skills[]= $form->field("text", array(
+    "label" => "Notariaalne kinnitamine?:",
+    "name" => "notarisationPossibility",
+    "required" => true
+));
 $sections["Tõlketeenused"] = $skills;
 
 $salary = array();
-$salary["Ühe lehekülje hind (neto):"] = $form->field(
-    "text",
-    array("name" => "pricePerPage", "required" => true)
-);
-$salary["Kas olete FIE või eraisik?"] = $form->field(
-    "text",
-    array("name" => "selfEmployedOrPrivate", "required" => true)
-);
+$salary[]= $form->field("text", array(
+    "label" => "Ühe lehekülje hind (neto):",
+    "name" => "pricePerPage",
+    "required" => true
+));
+$salary[]= $form->field("text", array(
+    "label" => "Kas olete FIE või eraisik?:",
+    "name" => "selfEmployedOrPrivate",
+    "required" => true
+));
 $sections["Palgasoov"] = $salary;
 
 
@@ -104,10 +120,10 @@ if (!empty($_POST)) {
   <fieldset>
     <legend><?=$sectionLabel?></legend>
 
-    <?php foreach ($section as $label => $field): ?>
+    <?php foreach ($section as $field): ?>
 
         <p class="<?=$field->cssCls();?>">
-          <label><?=$label ?></label>
+          <label><?=$field->label(); ?></label>
           <?=$field->html();?></p>
 
     <?php endforeach; ?>

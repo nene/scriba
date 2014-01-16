@@ -76,6 +76,7 @@ class Form
 class Field
 {
     protected $name;
+    protected $label;
     protected $required;
     protected $opts;
     protected $valid;
@@ -85,6 +86,7 @@ class Field
     function __construct($opts)
     {
         $this->name = $opts["name"];
+        $this->label = isset($opts["label"]) ? $opts["label"] : "";
         $this->required = isset($opts["required"]) && $opts["required"];
         $this->opts = $opts;
         $this->valid = true;
@@ -113,6 +115,14 @@ class Field
     function val()
     {
         return $this->value;
+    }
+
+    /**
+     * @return string Label text associated with the field.
+     */
+    function label()
+    {
+        return $this->label;
     }
 
     /**
