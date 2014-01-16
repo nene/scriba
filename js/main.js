@@ -6,6 +6,30 @@ $(function() {
 		navigation: {active: false, effect: "slide"}
 	});
 
+	/**
+	 * A simple Markdown editor to edit the given `text`.
+	 */
+	function Editor(cfg) {
+		var field = $("<textarea/>").text(cfg.text);
+		field.css({
+			width: "100%",
+			height: cfg.height
+		});
+		
+		// Save button that switches back the old content
+		var button = $("<button/>").text("Salvesta");
+		
+		var editor = $("<div class='markdown-editor'>");
+		editor.append(field);
+		editor.append(button);
+		
+		button.click(cfg.save);
+
+		this.getEl = function() {
+			return editor;
+		};
+	}
+
 	// Switch to editor when an editable area is clicked on.
 	$("article").on("click", ".editable", function() {
 		var editable = $(this);
@@ -18,18 +42,15 @@ $(function() {
 			data: {name: sectionName},
 			dataType: "text",
 			success: function(text) {
-				var field = $("<textarea class='markdown-editor'>"+text+"</textarea>");
-				field.css({
-					width: "100%",
-					height: oldHeight
+				var editor = new Editor({
+					text: text,
+					height: oldHeight,
+					save: function() {
+						editor.getEl().replaceWith(editable);
+					}
 				});
 
-				// switch back the old content
-				field.click(function() {
-					$(this).replaceWith(editable);
-				});
-
-				editable.replaceWith(field);
+				editable.replaceWith(editor.getEl());
 			}
 		});
 
