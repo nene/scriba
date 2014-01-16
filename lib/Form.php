@@ -242,7 +242,7 @@ class SelectField extends Field
         $opts = "";
         foreach ($this->opts["options"] as $v) {
             $selected = ($v == $this->val()) ? "selected='selected'" : "";
-            $opts .= "<option value='$v' $selected>$v</option>";
+            $opts .= "<option value='$v' {$selected}>$v</option>";
         }
         return $opts;
     }
@@ -255,6 +255,23 @@ class SelectField extends Field
         }
 
         return $this->valid;
+    }
+}
+
+/**
+ * Like SelectField, but lists all its options as radio buttons.
+ */
+class RadioField extends Field
+{
+    function html()
+    {
+        $radios = "";
+        foreach ($this->opts["options"] as $v) {
+            $checked = ($v == $this->val()) ? "checked='checked'" : "";
+            $button = "<input type='radio' name='{$this->name}' value='{$v}' {$checked}>";
+            $radios .= "<label class='radio'>{$button} {$v}</label>";
+        }
+        return $radios;
     }
 }
 

@@ -69,14 +69,16 @@ $form->field("textarea", array(
     "name" => "education",
     "required" => true
 ));
-$form->field("text", array(
+$form->field("radio", array(
     "label" => "Kas teete suulist tõlget?:",
     "name" => "oralTranslationSkills",
+    "options" => array("Jah", "Ei"),
     "required" => true
 ));
-$form->field("text", array(
+$form->field("radio", array(
     "label" => "Notariaalne kinnitamine?:",
     "name" => "notarisationPossibility",
+    "options" => array("Jah", "Ei"),
     "required" => true
 ));
 
@@ -86,9 +88,10 @@ $form->field("text", array(
     "name" => "pricePerPage",
     "required" => true
 ));
-$form->field("text", array(
+$form->field("radio", array(
     "label" => "Kas olete FIE või eraisik?:",
     "name" => "selfEmployedOrPrivate",
+    "options" => array("FIE", "Eraisik"),
     "required" => true
 ));
 
