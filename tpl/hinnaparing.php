@@ -2,46 +2,41 @@
 
 $form = new Form();
 
-$name = $form->field(
-    "text",
-    array("name" => "name", "required" => true)
-);
-$email = $form->field(
-    "text",
-    array("name" => "email", "size" => "small", "required" => true, "validator" => "email")
-);
-$phone = $form->field(
-    "text",
-    array("name" => "phone", "size" => "small", "required" => true)
-);
-$fromLang = $form->field(
-    "select",
-    array(
-        "name" => "from_lang",
-        "required" => true,
-        "options" => array_merge(array("keelest..."), $scriba->languages(), array("muu...")),
-    )
-);
-$toLang = $form->field(
-    "select",
-    array(
-        "name" => "to_lang",
-        "required" => true,
-        "options" => array_merge(array("keelde..."), $scriba->languages(), array("muu..."))
-    )
-);
-$description = $form->field(
-    "textarea",
-    array("name" => "description", "required" => true)
-);
-$deadline = $form->field(
-    "text",
-    array("name" => "deadline")
-);
-$files = $form->field(
-    "file",
-    array("name" => "files")
-);
+$name = $form->field("text", array(
+    "name" => "name",
+    "required" => true
+));
+$email = $form->field("text", array(
+    "name" => "email",
+    "size" => "small",
+    "required" => true,
+    "validator" => "email"
+));
+$phone = $form->field("text", array(
+    "name" => "phone",
+    "size" => "small",
+    "required" => true
+));
+$fromLang = $form->field("select", array(
+    "name" => "from_lang",
+    "required" => true,
+    "options" => array_merge(array("keelest..."), $scriba->languages(), array("muu...")),
+));
+$toLang = $form->field("select", array(
+    "name" => "to_lang",
+    "required" => true,
+    "options" => array_merge(array("keelde..."), $scriba->languages(), array("muu..."))
+));
+$description = $form->field("textarea", array(
+    "name" => "description",
+    "required" => true
+));
+$deadline = $form->field("text", array(
+    "name" => "deadline"
+));
+$files = $form->field("file", array(
+    "name" => "files"
+));
 
 if (!empty($_POST)) {
     $form->fill($_POST);
