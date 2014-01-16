@@ -2,6 +2,8 @@
 
 $form = new Form();
 
+$sections = array();
+
 $personal = array();
 $personal["Eesnimi:"] = $form->field(
     "text",
@@ -15,6 +17,7 @@ $personal["Sünniaeg:"] = $form->field(
     "text",
     array("name" => "birthDay", "required" => true)
 );
+$sections["Isikuandmed"] = $personal;
 
 $contact = array();
 $contact["Aadress:"] = $form->field(
@@ -33,7 +36,7 @@ $contact["Skype kasutajatunnus:"] = $form->field(
     "text",
     array("name" => "skypeId")
 );
-
+$sections["Kontakt"] = $contact;
 
 $experience = array();
 $experience["Emakeel:"] = $form->field(
@@ -48,6 +51,7 @@ $experience["Tehtud tööd:"] = $form->field(
     "textarea",
     array("name" => "translationExperience", "required" => true)
 );
+$sections["Kogemused"] = $experience;
 
 $skills = array();
 $skills["Tõlkesuunad:"] = $form->field(
@@ -66,6 +70,7 @@ $skills["Notariaalne kinnitamine?:"] = $form->field(
     "text",
     array("name" => "notarisationPossibility", "required" => true)
 );
+$sections["Tõlketeenused"] = $skills;
 
 $salary = array();
 $salary["Ühe lehekülje hind (neto):"] = $form->field(
@@ -76,6 +81,8 @@ $salary["Kas olete FIE või eraisik?"] = $form->field(
     "text",
     array("name" => "selfEmployedOrPrivate", "required" => true)
 );
+$sections["Palgasoov"] = $salary;
+
 
 if (!empty($_POST)) {
     $form->fill($_POST);
@@ -92,10 +99,12 @@ if (!empty($_POST)) {
   <p class="error-summary">Palun täitke kohustuslikud väljad!</p>
   <?php } ?>
 
-  <fieldset>
-    <legend>Isikuandmed</legend>
+  <?php foreach ($sections as $sectionLabel => $section): ?>
 
-    <?php foreach ($personal as $label => $field): ?>
+  <fieldset>
+    <legend><?=$sectionLabel?></legend>
+
+    <?php foreach ($section as $label => $field): ?>
 
         <p class="<?=$field->cssCls();?>">
           <label><?=$label ?></label>
@@ -105,57 +114,7 @@ if (!empty($_POST)) {
 
   </fieldset>
 
-  <fieldset>
-    <legend>Kontakt</legend>
-
-    <?php foreach ($contact as $label => $field): ?>
-
-        <p class="<?=$field->cssCls();?>">
-          <label><?=$label ?></label>
-          <?=$field->html();?></p>
-
-    <?php endforeach; ?>
-
-  </fieldset>
-
-  <fieldset>
-    <legend>Kogemused</legend>
-
-    <?php foreach ($experience as $label => $field): ?>
-
-        <p class="<?=$field->cssCls();?>">
-          <label><?=$label ?></label>
-          <?=$field->html();?></p>
-
-    <?php endforeach; ?>
-
-  </fieldset>
-
-  <fieldset>
-    <legend>Tõlketeenused</legend>
-
-    <?php foreach ($skills as $label => $field): ?>
-
-        <p class="<?=$field->cssCls();?>">
-          <label><?=$label ?></label>
-          <?=$field->html();?></p>
-
-    <?php endforeach; ?>
-
-  </fieldset>
-
-  <fieldset>
-    <legend>Palgasoov</legend>
-
-    <?php foreach ($salary as $label => $field): ?>
-
-        <p class="<?=$field->cssCls();?>">
-          <label><?=$label ?></label>
-          <?=$field->html();?></p>
-
-    <?php endforeach; ?>
-
-  </fieldset>
+  <?php endforeach; ?>
 
   <p class="submit"><button type="submit" class="button">Saada</button></p>
 
