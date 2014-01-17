@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Tõlkebüroo Scriba</title>
+  <title><?=_("Tõlkebüroo Scriba")?></title>
   <link rel="stylesheet/less" type="text/css" href="<?=$scriba->rootUrl()?>/css/styles.less">
   <script src="<?=$scriba->rootUrl()?>/js/less.js" type="text/javascript"></script>
   <script src="<?=$scriba->rootUrl()?>/js/jquery.js" type="text/javascript"></script>
