@@ -2,58 +2,58 @@
 
 $form = new Form();
 
-$form->group("Isikuandmed");
+$form->group(_("Isikuandmed"));
 $form->field("text", array(
-    "label" => "Eesnimi:",
+    "label" => _("Eesnimi:"),
     "name" => "firstName",
     "required" => true
 ));
 $form->field("text", array(
-    "label" => "Perenimi:",
+    "label" => _("Perenimi:"),
     "name" => "lastName",
     "required" => true
 ));
 $form->field("text", array(
-    "label" => "Sünniaeg:",
+    "label" => _("Sünniaeg:"),
     "name" => "birthDay",
     "size" => "small",
     "required" => true
 ));
 
-$form->group("Kontakt");
+$form->group(_("Kontakt"));
 $form->field("text", array(
-    "label" => "Aadress:",
+    "label" => _("Aadress:"),
     "name" => "address",
     "required" => true
 ));
 $form->field("text", array(
-    "label" => "Telefon:",
+    "label" => _("Telefon:"),
     "name" => "phone",
     "size" => "small",
     "required" => true
 ));
 $form->field("text", array(
-    "label" => "E-post:",
+    "label" => _("E-post:"),
     "name" => "email",
     "size" => "small",
     "required" => true,
     "validator" => "email"
 ));
 $form->field("text", array(
-    "label" => "Skype kasutajatunnus:",
+    "label" => _("Skype kasutajatunnus:"),
     "name" => "skypeId",
     "size" => "small",
 ));
 
-$form->group("Kogemused");
+$form->group(_("Kogemused"));
 $form->field("text", array(
-    "label" => "Emakeel:",
+    "label" => _("Emakeel:"),
     "name" => "nativeLanguage",
     "size" => "small",
     "required" => true
 ));
 $form->field("textarea", array(
-    "label" => "Hariduskäik",
+    "label" => _("Hariduskäik"),
     "name" => "education",
     "required" => true
 ));
@@ -63,41 +63,41 @@ $form->field("textarea", array(
     "required" => true
 ));
 
-$form->group("Tõlketeenused");
+$form->group(_("Tõlketeenused"));
 $form->field("textarea", array(
-    "label" => "Tõlkesuunad:",
+    "label" => _("Tõlkesuunad:"),
     "name" => "languageCombinations",
     "required" => true
 ));
 $form->field("textarea", array(
-    "label" => "Tõlkevaldkonnad:",
+    "label" => _("Tõlkevaldkonnad:"),
     "name" => "education",
     "required" => true
 ));
 $form->field("radio", array(
-    "label" => "Kas teete suulist tõlget?:",
+    "label" => _("Kas teete suulist tõlget?:"),
     "name" => "oralTranslationSkills",
-    "options" => array("Jah", "Ei"),
+    "options" => array(_("Jah"), _("Ei")),
     "required" => true
 ));
 $form->field("radio", array(
-    "label" => "Notariaalne kinnitamine?:",
+    "label" => _("Notariaalne kinnitamine?:"),
     "name" => "notarisationPossibility",
-    "options" => array("Jah", "Ei"),
+    "options" => array(_("Jah"), _("Ei")),
     "required" => true
 ));
 
-$form->group("Palgasoov");
+$form->group(_("Palgasoov"));
 $form->field("text", array(
-    "label" => "Ühe lehekülje hind (neto):",
+    "label" => _("Ühe lehekülje hind (neto):"),
     "name" => "pricePerPage",
     "size" => "small",
     "required" => true
 ));
 $form->field("radio", array(
-    "label" => "Kas olete FIE või eraisik?:",
+    "label" => _("Kas olete FIE või eraisik?:"),
     "name" => "selfEmployedOrPrivate",
-    "options" => array("FIE", "Eraisik"),
+    "options" => array(_("FIE"), _("Eraisik")),
     "required" => true
 ));
 
@@ -114,7 +114,7 @@ if (!empty($_POST)) {
 <form action="" method="post" id="job-offer-form">
 
   <?php if (!$form->valid()) { ?>
-  <p class="error-summary">Palun täitke kohustuslikud väljad!</p>
+    <p class="error-summary"><?=_("Palun täitke kohustuslikud väljad!")?></p>
   <?php } ?>
 
   <?php foreach ($form->allGroups() as $label => $group): ?>
@@ -134,7 +134,7 @@ if (!empty($_POST)) {
 
   <?php endforeach; ?>
 
-  <p class="submit"><button type="submit" class="button">Saada</button></p>
+  <p class="submit"><button type="submit" class="button"><?=_("Saada")?></button></p>
 
 </form>
 
