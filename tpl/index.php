@@ -33,7 +33,7 @@
 
     <ul id="top-menu">
 <?php
-    foreach ($main_menu as $name => $title) {
+    foreach ($scriba->mainMenu() as $name => $title) {
         if ($page_name==$name) {
             echo "<li><strong>$title</strong></li>";
         } else {

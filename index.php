@@ -44,7 +44,6 @@ class Scriba {
             "article" => $article,
             "show_ask_price_button" => $this->hasAskButton($page_name),
             "page_name" => $page_name,
-            "main_menu" => $this->mainMenu(),
         ));
     }
 
@@ -154,7 +153,7 @@ class Scriba {
     /**
      * Generates data for main menu.
      */
-    private function mainMenu()
+    public function mainMenu()
     {
         return array(
             "hinnakiri" => _("Hinnakiri"),
