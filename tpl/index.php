@@ -18,20 +18,24 @@
   <div id="container">
 
   <header>
+    <?php
+     // Instead of linking "/front-page", just link to "/"
+     $page = $scriba->currentPage() == "front-page" ? "" : $scriba->currentPage();
+    ?>
     <ul id="language-menu">
-        <li><a href="<?=$scriba->rootUrl()?>/et/<?=$scriba->currentPage()?>" title="Eesti keeles">
+        <li><a href="<?=$scriba->rootUrl()?>/et/<?=$page?>" title="Eesti keeles">
           <img src="<?=$scriba->rootUrl()?>/images/et.gif"/>
         </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/en/<?=$scriba->currentPage()?>" title="In English">
+        <li><a href="<?=$scriba->rootUrl()?>/en/<?=$page?>" title="In English">
           <img src="<?=$scriba->rootUrl()?>/images/en.gif"/>
         </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/fi/<?=$scriba->currentPage()?>" title="Suomen kielen">
+        <li><a href="<?=$scriba->rootUrl()?>/fi/<?=$page?>" title="Suomen kielen">
           <img src="<?=$scriba->rootUrl()?>/images/fi.gif"/>
         </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/sv/<?=$scriba->currentPage()?>" title="På svenska">
+        <li><a href="<?=$scriba->rootUrl()?>/sv/<?=$page?>" title="På svenska">
           <img src="<?=$scriba->rootUrl()?>/images/sv.gif"/>
         </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/ru/<?=$scriba->currentPage()?>" title="По русски">
+        <li><a href="<?=$scriba->rootUrl()?>/ru/<?=$page?>" title="По русски">
           <img src="<?=$scriba->rootUrl()?>/images/ru.gif"/>
         </a></li>
     </ul>
