@@ -9,10 +9,10 @@
  */
 class Template {
     /**
-     * Applies template with a given name to given variables.
+     * Renders template with a given name and given variables.
      * @return sting The rendered template as a string.
      */
-    public function apply($name, $vars=array())
+    public function render($name, $vars=array())
     {
         ob_start();
         extract($vars, EXTR_SKIP);

@@ -47,7 +47,7 @@ class Scriba {
             echo $this->markdown($this->currentPage());
             return;
         } elseif ($this->template->exists($this->currentPage())) {
-            $article = $this->template->apply($this->currentPage(), array(
+            $article = $this->template->render($this->currentPage(), array(
                 "scriba" => $this,
             ));
         } elseif ($this->content->exists($this->currentPage())) {
@@ -57,7 +57,7 @@ class Scriba {
             $article = $this->markdown("404");
         }
 
-        echo $this->template->apply("index", array(
+        echo $this->template->render("index", array(
             "article" => $article,
             "scriba" => $this,
         ));
