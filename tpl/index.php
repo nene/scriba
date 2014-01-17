@@ -9,6 +9,7 @@
   <script src="js/jquery.slides/jquery.slides.js" type="text/javascript"></script>
   <script src="js/main.js" type="text/javascript"></script>
   <?php if ($scriba->isAdmin()): ?>
+    <script> var SCRIBA_BASE_URL = "<?=$scriba->baseUrl()?>"; </script>
     <script src="js/admin.js" type="text/javascript"></script>
   <?php endif; ?>
 </head>

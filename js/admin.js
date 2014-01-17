@@ -29,7 +29,7 @@ $(function() {
 
     function getHtml(sectionName, text, callback) {
         $.ajax({
-            url: "/scriba/"+sectionName,
+            url: SCRIBA_BASE_URL+"/"+sectionName,
             method: "POST",
             data: {
                 admin: true,
@@ -49,7 +49,7 @@ $(function() {
         var sectionName = $(this).data("name");
 
         $.ajax({
-            url: "/scriba/"+sectionName,
+            url: SCRIBA_BASE_URL+"/"+sectionName,
             data: {markdownSource: true},
             dataType: "text",
             success: function(text) {
