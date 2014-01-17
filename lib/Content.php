@@ -29,4 +29,12 @@ class Content {
     {
         file_put_contents("content/".$name.".md", $text);
     }
+
+    /**
+     * True when content page with given name exists;
+     */
+    public function exists($name)
+    {
+        return file_exists("content/".$name.".md");
+    }
 }

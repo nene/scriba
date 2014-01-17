@@ -47,7 +47,7 @@ class Scriba {
             $article = $this->template($this->currentPage(), array(
                 "scriba" => $this,
             ));
-        } elseif ($this->isContentPage($this->currentPage())) {
+        } elseif ($this->content->exists($this->currentPage())) {
             $article = $this->markdown($this->currentPage());
         } else {
             header('HTTP/1.0 404 Not Found');
@@ -142,14 +142,6 @@ class Scriba {
      */
     public function isAdmin() {
         return $this->admin;
-    }
-
-    /**
-     * True when Markdown content-page exists with given name.
-     */
-    private function isContentPage($name)
-    {
-        return file_exists("content/".$name.".md");
     }
 
     /**
