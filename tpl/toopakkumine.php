@@ -137,5 +137,3 @@ if (!empty($_POST)) {
   <p class="submit"><button type="submit" class="button"><?=_("Saada")?></button></p>
 
 </form>
-
-<script src="js/fileupload.js"></script>
