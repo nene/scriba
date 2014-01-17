@@ -99,32 +99,32 @@ class Scriba {
     public function languages()
     {
         return array(
-            "aserbaidžaani keel",
-            "bulgaaria keel",
-            "hiina keel",
-            "hispaania keel",
-            "hollandi keel",
-            "inglise keel",
-            "itaalia keel",
-            "jaapani keel",
-            "kreeka keel",
-            "ladina keel",
-            "leedu keel",
-            "läti keel",
-            "norra keel",
-            "poola keel",
-            "portugali keel",
-            "prantsuse keel",
-            "rootsi keel",
-            "rumeenia keel",
-            "saksa keel",
-            "soome keel",
-            "taani keel",
-            "tšehhi keel",
-            "türgi keel",
-            "ungari keel",
-            "ukraina keel",
-            "vene keel",
+            _("aserbaidžaani keel"),
+            _("bulgaaria keel"),
+            _("hiina keel"),
+            _("hispaania keel"),
+            _("hollandi keel"),
+            _("inglise keel"),
+            _("itaalia keel"),
+            _("jaapani keel"),
+            _("kreeka keel"),
+            _("ladina keel"),
+            _("leedu keel"),
+            _("läti keel"),
+            _("norra keel"),
+            _("poola keel"),
+            _("portugali keel"),
+            _("prantsuse keel"),
+            _("rootsi keel"),
+            _("rumeenia keel"),
+            _("saksa keel"),
+            _("soome keel"),
+            _("taani keel"),
+            _("tšehhi keel"),
+            _("türgi keel"),
+            _("ungari keel"),
+            _("ukraina keel"),
+            _("vene keel"),
         );
     }
 
@@ -150,10 +150,10 @@ class Scriba {
     private function mainMenu()
     {
         return array(
-            "hinnakiri" => "Hinnakiri",
-            "kkk" => "KKK",
-            "toopakkumine" => "Tule tööle",
-            "kontakt" => "Kontakt",
+            "hinnakiri" => _("Hinnakiri"),
+            "kkk" => _("KKK"),
+            "toopakkumine" => _("Tule tööle"),
+            "kontakt" => _("Kontakt"),
         );
     }
 
