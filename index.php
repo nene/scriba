@@ -129,6 +129,13 @@ class Scriba {
     }
 
     /**
+     * True when the working in administrator-mode.
+     */
+    public function isAdmin() {
+        return $this->admin;
+    }
+
+    /**
      * True when Markdown content-page exists with given name.
      */
     private function isContentPage($name)
