@@ -32,6 +32,7 @@ $(function() {
             url: "/scriba/"+sectionName,
             method: "POST",
             data: {
+                admin: true,
                 markdown: true,
                 text: text
             },

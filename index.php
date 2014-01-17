@@ -21,6 +21,10 @@ class Scriba {
      */
     public function route($request)
     {
+        if (isset($request["admin"])) {
+            $this->admin = true;
+        }
+
         if (!empty($request["page"])) {
             $this->currentPage = $request["page"];
         }
