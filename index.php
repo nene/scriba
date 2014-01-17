@@ -5,11 +5,13 @@ require_once "lib/Form.php";
 
 class Scriba {
     private $config;
+    private $currentPage;
     private $admin;
 
     public function __construct($config)
     {
         $this->config = $config;
+        $this->currentPage = "front-page";
         $this->admin = false;
     }
 
@@ -19,32 +21,40 @@ class Scriba {
      */
     public function route($request)
     {
-        $page_name = (isset($request["page"]) && $request["page"]) ? $request["page"] : "front-page";
+        if (!empty($request["page"])) {
+            $this->currentPage = $request["page"];
+        }
 
-        if ($page_name == "markdownSource" && isset($request["name"])) {
+        if ($this->currentPage() == "markdownSource" && isset($request["name"])) {
             // An ajax request for Markdown source
             header("Content-type: text/plain");
             echo $this->markdownSource($request["name"]);
             return;
-        } elseif ($page_name == "markdown" && isset($request["text"])) {
+        } elseif ($this->currentPage() == "markdown" && isset($request["text"])) {
             // An ajax request to render Markdown into HTML
             header("Content-type: text/html");
             echo $this->toMarkdown($request["name"], $request["text"]);
             return;
-        } elseif ($this->isTemplatePage($page_name)) {
-            $article = $this->template($page_name);
-        } elseif ($this->isContentPage($page_name)) {
-            $article = $this->markdown($page_name);
+        } elseif ($this->isTemplatePage($this->currentPage())) {
+            $article = $this->template($this->currentPage());
+        } elseif ($this->isContentPage($this->currentPage())) {
+            $article = $this->markdown($this->currentPage());
         } else {
             header('HTTP/1.0 404 Not Found');
             $article = $this->markdown("404");
         }
 
         echo $this->template("index", array(
-            "article" => $article,
-            "show_ask_price_button" => $this->hasAskButton($page_name),
-            "page_name" => $page_name,
+            "article" => $article
         ));
+    }
+
+    /**
+     * @return string The name of the current page
+     */
+    public function currentPage()
+    {
+        return $this->currentPage;
     }
 
     /**
@@ -164,16 +174,17 @@ class Scriba {
     }
 
     /**
-     * True when the ask price button should be shown on given page.
+     * True when the ask price button should be shown on the current
+     * page.
      */
-    private function hasAskButton($page_name)
+    public function isAskPriceButtonVisible()
     {
         $exclude = array(
             "hinnaparing" => true,
             "kontakt" => true,
             "toopakkumine" => true,
         );
-        return !array_key_exists($page_name, $exclude);
+        return !array_key_exists($this->currentPage(), $exclude);
     }
 
 }

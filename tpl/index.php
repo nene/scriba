@@ -34,7 +34,7 @@
     <ul id="top-menu">
 <?php
     foreach ($scriba->mainMenu() as $name => $title) {
-        if ($page_name==$name) {
+        if ($scriba->currentPage() == $name) {
             echo "<li><strong>$title</strong></li>";
         } else {
             echo "<li><a href='$base_url/$name'>$title</a></li>";
@@ -48,11 +48,11 @@
 
     <?=$article?>
 
-    <?php if ($show_ask_price_button) { ?>
+    <?php if ($scriba->isAskPriceButtonVisible()): ?>
     <p class="clear">
       <a href="<?=$base_url?>/hinnaparing" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a>
     </p>
-    <?php } ?>
+    <?php endif; ?>
 
 
   </article>
