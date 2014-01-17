@@ -13,7 +13,7 @@ class Scriba {
     public function __construct($config)
     {
         $this->config = $config;
-        $this->admin = true;
+        $this->admin = false;
     }
 
     /**
