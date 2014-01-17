@@ -17,7 +17,7 @@ example:
 
 Make files in `/content` directory writable by PHP:
 
-    chmod a+w content/*
+    chmod -R a+w content/*
 
 
 

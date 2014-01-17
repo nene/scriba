@@ -16,7 +16,6 @@ class Scriba {
         $this->config = $config;
         $this->currentPage = "front-page";
         $this->admin = false;
-        $this->content = new Content();
         $this->template = new Template();
     }
 
@@ -29,6 +28,10 @@ class Scriba {
         if (isset($request["admin"])) {
             $this->admin = true;
         }
+
+        // Switch content directory depending on selected language
+        $lang = (empty($request["lang"])) ? "et" : $request["lang"];
+        $this->content = new Content("content/".$lang);
 
         if (!empty($request["page"])) {
             $this->currentPage = $request["page"];

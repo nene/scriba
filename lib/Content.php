@@ -5,6 +5,16 @@ require_once "lib/php-markdown/Michelf/Markdown.inc.php";
  * Handles loading and saving Markdown content.
  */
 class Content {
+    private $path;
+
+    /**
+     * Initializes with path to the content directory.
+     */
+    public function __construct($path)
+    {
+        $this->path = $path;
+    }
+
     /**
      * Returns HTML-rendered markdown content of a page.
      */
@@ -19,7 +29,11 @@ class Content {
      */
     public function source($name)
     {
-        return file_get_contents("content/".$name.".md");
+        if ($this->exists($name)) {
+            return file_get_contents($this->filename($name));
+        } else {
+            return "## "._("404 Lehekülge ei leitud");
+        }
     }
 
     /**
@@ -27,7 +41,7 @@ class Content {
      */
     public function save($name, $text)
     {
-        file_put_contents("content/".$name.".md", $text);
+        file_put_contents($this->filename($name), $text);
     }
 
     /**
@@ -35,6 +49,14 @@ class Content {
      */
     public function exists($name)
     {
-        return file_exists("content/".$name.".md");
+        return file_exists($this->filename($name));
+    }
+
+    /**
+     * Turns content identifier into filename.
+     */
+    private function filename($name)
+    {
+        return $this->path."/".$name.".md";
     }
 }
