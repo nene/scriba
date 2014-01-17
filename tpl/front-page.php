@@ -43,59 +43,59 @@
 
   <ul id="services">
     <li class="written-translation">
-      <h3><a href="<?=$base_url?>/kirjalik-tolge"><?=_("Kirjalik tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/kirjalik-tolge"><?=_("Kirjalik tõlge")?></a></h3>
       <p><?=_("Tõlke saadame tagasi võimalikult originaalilähedase kujundusega. Keerukamate formaatide ja trükiste puhul pakume ka küljendusteenust.")?>
-      <a href="<?=$base_url?>/kirjalik-tolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/kirjalik-tolge"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="oral-translation">
-      <h3><a href="<?=$base_url?>/suuline-tolge"><?=_("Suuline tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/suuline-tolge"><?=_("Suuline tõlge")?></a></h3>
       <p><?=_("Konverentsidel, koosolekutel kui ka muudel üritustel, kus on oluline, et info jõuaks kõikide kuulajateni võimalikult kiiresti.")?>
-      <a href="<?=$base_url?>/suuline-tolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/suuline-tolge"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="referative-translation">
-      <h3><a href="<?=$base_url?>/referatiivne-tolge"><?=_("Referatiivne tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/referatiivne-tolge"><?=_("Referatiivne tõlge")?></a></h3>
       <p><?=_("Kui teil pole tarvis täielikku viimistletud tõlget, vaid tarvis saada pigem kirjalik või suuline ülevaade teksti sisust.")?>
-      <a href="<?=$base_url?>/referatiivne-tolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/referatiivne-tolge"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="proofreading">
-      <h3><a href="<?=$base_url?>/korrektuur-ja-toimetamine"><?=_("Korrektuur ja toimetamine")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/korrektuur-ja-toimetamine"><?=_("Korrektuur ja toimetamine")?></a></h3>
       <p><?=_("Teksti korrektuur tähendab teksti õigekeelsusnõuetega vastavusse viimist ja trükivigade parandamist.  Toimetamine sisaldab teksti keelelist ja ka sisulist parandamist.")?>
-      <a href="<?=$base_url?>/korrektuur-ja-toimetamine"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/korrektuur-ja-toimetamine"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="notarisation">
-      <h3><a href="<?=$base_url?>/notariaalne-kinnitamine"><?=_("Notariaalne kinnitamine")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/notariaalne-kinnitamine"><?=_("Notariaalne kinnitamine")?></a></h3>
       <p><?=_("Tõlgitud dokumentide välisriigis kasutamiseks võidakse nõuda notariaalselt kinnitatud tõlkeid.")?>
-      <a href="<?=$base_url?>/notariaalne-kinnitamine"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/notariaalne-kinnitamine"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="apostilling">
-      <h3><a href="<?=$base_url?>/apostillimine"><?=_("Apostillimine")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/apostillimine"><?=_("Apostillimine")?></a></h3>
       <p><?=_("Apostill näitab välisriigi ametnikule, et mis tahes apostilliga kinnitatud dokumendi välja andnud asutus eksisteerib ning tohib taolisi dokumente välja anda.")?>
-      <a href="<?=$base_url?>/apostillimine"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/apostillimine"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="legal-translation">
-      <h3><a href="<?=$base_url?>/oigustolge"><?=_("Õigustõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/oigustolge"><?=_("Õigustõlge")?></a></h3>
       <p><?=_("Õigustekstide tõlke alla kuuluvad tõlkijalt ülimat täpsust ja korrektsust nõudvad õigusaktide ja muude juriidiliste dokumentide tõlked.")?>
-      <a href="<?=$base_url?>/oigustolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/oigustolge"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="technical-translation">
-      <h3><a href="<?=$base_url?>/tehnikatolge"><?=_("Tehnikatõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/tehnikatolge"><?=_("Tehnikatõlge")?></a></h3>
       <p><?=_("Tehnikatõlge on ala, kus saavad kokku tõlkijate keelelised teadmised ja tehnikainimeste erialateadmised.")?>
-      <a href="<?=$base_url?>/tehnikatolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/tehnikatolge"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="web-translation">
-      <h3><a href="<?=$base_url?>/kodulehe-tolge"><?=_("Kodulehe tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/kodulehe-tolge"><?=_("Kodulehe tõlge")?></a></h3>
       <p><?=_("Meil on laialdased kogemused kodulehtede tõlkimisel: oleme teinud nii eesti- kui ka võõrkeelsele tekstile korrektuuri, parandanud trüki- ja kirjavigu.")?>
-      <a href="<?=$base_url?>/kodulehe-tolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/kodulehe-tolge"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="manual-translation">
-      <h3><a href="<?=$base_url?>/kasutusjuhendi-tolge"><?=_("Kasutusjuhendi tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/kasutusjuhendi-tolge"><?=_("Kasutusjuhendi tõlge")?></a></h3>
       <p><?=_("Kasutusjuhendid erinevad teistest tekstidest oma ülesehituse ja keelekasutuse poolest, mistõttu on vajalik, et tõlkijal oleks selles vallas piisavalt kogemust, et tagada parim tulemus.")?>
-      <a href="<?=$base_url?>/kasutusjuhendi-tolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/kasutusjuhendi-tolge"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="movie-translation">
-      <h3><a href="<?=$base_url?>/filmitolge"><?=_("Filmitõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/filmitolge"><?=_("Filmitõlge")?></a></h3>
       <p><?=_("Kuigi filmiklipp võib lühike tunduda, võib tõlkimist vajav tekst üsnagi pikk tulla ning seega soovitame selleks tööks piisavalt aega varuda.")?>
-      <a href="<?=$base_url?>/filmitolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/filmitolge"><?=_("Loe edasi")?></a></p>
     </li>
   </ul>
 

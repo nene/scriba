@@ -25,10 +25,10 @@
         <li><a href="ru.html" title="По русски"><img src="images/ru.gif"/></a></li>
     </ul>
 
-     <h1 id="logo"><a href="<?=$base_url?>/"><?=_("Scriba &ndash; kirjalik ja suuline tõlge")?></a></h1>
+     <h1 id="logo"><a href="<?=$scriba->baseUrl()?>/"><?=_("Scriba &ndash; kirjalik ja suuline tõlge")?></a></h1>
 
     <div id="iso-9001">
-      <a href="<?=$base_url?>/kontakt"><img src="images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/></a>
+      <a href="<?=$scriba->baseUrl()?>/kontakt"><img src="images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/></a>
     </div>
 
     <ul id="top-menu">
@@ -37,7 +37,7 @@
         if ($scriba->currentPage() == $name) {
             echo "<li><strong>$title</strong></li>";
         } else {
-            echo "<li><a href='$base_url/$name'>$title</a></li>";
+            echo "<li><a href='{$scriba->baseUrl()}/{$name}'>{$title}</a></li>";
         }
     }
 ?>
@@ -50,7 +50,7 @@
 
     <?php if ($scriba->isAskPriceButtonVisible()): ?>
     <p class="clear">
-      <a href="<?=$base_url?>/hinnaparing" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a>
+      <a href="<?=$scriba->baseUrl()?>/hinnaparing" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a>
     </p>
     <?php endif; ?>
 

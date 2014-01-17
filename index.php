@@ -65,7 +65,6 @@ class Scriba {
     {
         ob_start();
         extract($vars, EXTR_SKIP);
-        $base_url = $this->config["base_url"];
         $scriba = $this;
         include "tpl/".$name.".php";
         return ob_get_clean();
@@ -135,6 +134,13 @@ class Scriba {
             _("ukraina keel"),
             _("vene keel"),
         );
+    }
+
+    /**
+     * Returns the base-url of the app.
+     */
+    public function baseUrl() {
+        return $this->config["base_url"];
     }
 
     /**
