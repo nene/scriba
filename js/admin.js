@@ -30,6 +30,7 @@ $(function() {
     function getHtml(sectionName, text, callback) {
         $.ajax({
             url: "/scriba/"+sectionName,
+            method: "POST",
             data: {
                 markdown: true,
                 text: text

@@ -200,7 +200,7 @@ $config = include("config.php");
 
 $scriba = new Scriba($config);
 
-$scriba->route($_GET);
+$scriba->route($_REQUEST);
 
 
 
