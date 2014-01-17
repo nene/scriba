@@ -44,7 +44,9 @@ class Scriba {
             echo $this->markdown($this->currentPage());
             return;
         } elseif ($this->isTemplatePage($this->currentPage())) {
-            $article = $this->template($this->currentPage());
+            $article = $this->template($this->currentPage(), array(
+                "scriba" => $this,
+            ));
         } elseif ($this->isContentPage($this->currentPage())) {
             $article = $this->markdown($this->currentPage());
         } else {
@@ -53,7 +55,8 @@ class Scriba {
         }
 
         echo $this->template("index", array(
-            "article" => $article
+            "article" => $article,
+            "scriba" => $this,
         ));
     }
 
@@ -73,7 +76,6 @@ class Scriba {
     {
         ob_start();
         extract($vars, EXTR_SKIP);
-        $scriba = $this;
         include "tpl/".$name.".php";
         return ob_get_clean();
     }
