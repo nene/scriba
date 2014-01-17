@@ -27,6 +27,19 @@ $(function() {
         };
     }
 
+    function getMarkdown(sectionName, callback) {
+        $.ajax({
+            url: SCRIBA_BASE_URL+"/"+sectionName,
+            method: "GET",
+            data: {
+                admin: true,
+                markdownSource: true
+            },
+            dataType: "text",
+            success: callback
+        });
+    }
+
     function getHtml(sectionName, text, callback) {
         $.ajax({
             url: SCRIBA_BASE_URL+"/"+sectionName,
@@ -48,23 +61,18 @@ $(function() {
         var oldHeight = editable.height();
         var sectionName = $(this).data("name");
 
-        $.ajax({
-            url: SCRIBA_BASE_URL+"/"+sectionName,
-            data: {markdownSource: true},
-            dataType: "text",
-            success: function(text) {
-                var editor = new Editor({
-                    text: text,
-                    height: oldHeight,
-                    save: function() {
-                        getHtml(sectionName, editor.getText(), function(html) {
-                            editor.getEl().replaceWith(html);
-                        });
-                    }
-                });
+        getMarkdown(sectionName, function(text) {
+            var editor = new Editor({
+                text: text,
+                height: oldHeight,
+                save: function() {
+                    getHtml(sectionName, editor.getText(), function(html) {
+                        editor.getEl().replaceWith(html);
+                    });
+                }
+            });
 
-                editable.replaceWith(editor.getEl());
-            }
+            editable.replaceWith(editor.getEl());
         });
 
     });
