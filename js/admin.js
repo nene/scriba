@@ -27,26 +27,26 @@ $(function() {
         };
     }
 
-    function getMarkdown(sectionName, callback) {
+    function loadMarkdown(sectionName, callback) {
         $.ajax({
             url: SCRIBA_BASE_URL+"/"+sectionName,
             method: "GET",
             data: {
                 admin: true,
-                markdownSource: true
+                source: true
             },
             dataType: "text",
             success: callback
         });
     }
 
-    function getHtml(sectionName, text, callback) {
+    function saveMarkdown(sectionName, text, callback) {
         $.ajax({
             url: SCRIBA_BASE_URL+"/"+sectionName,
             method: "POST",
             data: {
                 admin: true,
-                markdown: true,
+                save: true,
                 text: text
             },
             dataType: "html",
@@ -61,12 +61,12 @@ $(function() {
         var oldHeight = editable.height();
         var sectionName = $(this).data("name");
 
-        getMarkdown(sectionName, function(text) {
+        loadMarkdown(sectionName, function(text) {
             var editor = new Editor({
                 text: text,
                 height: oldHeight,
                 save: function() {
-                    getHtml(sectionName, editor.getText(), function(html) {
+                    saveMarkdown(sectionName, editor.getText(), function(html) {
                         editor.getEl().replaceWith(html);
                     });
                 }

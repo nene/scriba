@@ -29,16 +29,17 @@ class Scriba {
             $this->currentPage = $request["page"];
         }
 
-        if (isset($request["markdownSource"])) {
+        if (isset($request["source"])) {
             // An ajax request for Markdown source
             header("Content-type: text/plain");
             echo $this->markdownSource($this->currentPage());
             return;
-        } elseif (isset($request["markdown"])) {
-            // An ajax request to render Markdown into HTML
+        } elseif (isset($request["save"])) {
+            // An ajax request to save Markdown source
             header("Content-type: text/html");
             $text = isset($request["text"]) ? $request["text"] : "";
-            echo $this->toMarkdown($this->currentPage(), $text);
+            $this->saveMarkdown($this->currentPage(), $text);
+            echo $this->markdown($this->currentPage());
             return;
         } elseif ($this->isTemplatePage($this->currentPage())) {
             $article = $this->template($this->currentPage());
@@ -76,18 +77,11 @@ class Scriba {
     }
 
     /**
-     * Helper function for markdown conversion of content.
+     * Returns HTML-rendered markdown content of a page.
      */
     public function markdown($name)
     {
         $text = $this->markdownSource($name);
-        return $this->toMarkdown($name, $text);
-    }
-
-    /**
-     * Renders given markdown text as HTML
-     */
-    private function toMarkdown($name, $text) {
         $html = \Michelf\Markdown::defaultTransform($text);
 
         if ($this->admin) {
@@ -104,6 +98,14 @@ class Scriba {
     private function markdownSource($name)
     {
         return file_get_contents("content/".$name.".md");
+    }
+
+    /**
+     * Saves the markdown content.
+     */
+    private function saveMarkdown($name, $text)
+    {
+        file_put_contents("content/".$name.".md", $text);
     }
 
     /**
