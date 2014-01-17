@@ -29,7 +29,7 @@
      <h1 id="logo"><a href="<?=$scriba->baseUrl()?>/"><?=_("Scriba &ndash; kirjalik ja suuline tõlge")?></a></h1>
 
     <div id="iso-9001">
-      <a href="<?=$scriba->baseUrl()?>/kontakt"><img src="images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/></a>
+      <a href="<?=$scriba->baseUrl()?>/contact"><img src="images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/></a>
     </div>
 
     <ul id="top-menu">
@@ -51,7 +51,7 @@
 
     <?php if ($scriba->isAskPriceButtonVisible()): ?>
     <p class="clear">
-      <a href="<?=$scriba->baseUrl()?>/hinnaparing" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a>
+      <a href="<?=$scriba->baseUrl()?>/price-query" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a>
     </p>
     <?php endif; ?>
 

@@ -179,10 +179,10 @@ class Scriba {
     public function mainMenu()
     {
         return array(
-            "hinnakiri" => _("Hinnakiri"),
-            "kkk" => _("KKK"),
-            "toopakkumine" => _("Tule tööle"),
-            "kontakt" => _("Kontakt"),
+            "price-list" => _("Hinnakiri"),
+            "faq" => _("KKK"),
+            "job-offer" => _("Tule tööle"),
+            "contact" => _("Kontakt"),
         );
     }
 
@@ -193,9 +193,9 @@ class Scriba {
     public function isAskPriceButtonVisible()
     {
         $exclude = array(
-            "hinnaparing" => true,
-            "kontakt" => true,
-            "toopakkumine" => true,
+            "price-query" => true,
+            "contact" => true,
+            "job-offer" => true,
         );
         return !array_key_exists($this->currentPage(), $exclude);
     }

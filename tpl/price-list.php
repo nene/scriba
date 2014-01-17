@@ -1,7 +1,7 @@
 <?php
 
 // Pull the content from Markdown file
-$content = $scriba->markdown("hinnakiri");
+$content = $scriba->markdown("price-list");
 
 // Generate table of all supported languages
 $languages_table = "<ul>";

@@ -109,7 +109,7 @@ if (!empty($_POST)) {
 
 ?>
 
-<?=$scriba->markdown("toopakkumine");?>
+<?=$scriba->markdown("job-offer");?>
 
 <form action="" method="post" id="job-offer-form">
 

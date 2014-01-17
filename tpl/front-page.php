@@ -34,7 +34,7 @@
 
 </div>
 
-<p class="ask-price"><a href="<?=$base_url?>/hinnaparing" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a></p>
+<p class="ask-price"><a href="<?=$base_url?>/price-query" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a></p>
 </div>
 
 
@@ -43,14 +43,14 @@
 
   <ul id="services">
     <li class="written-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/kirjalik-tolge"><?=_("Kirjalik tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/written-translation"><?=_("Kirjalik tõlge")?></a></h3>
       <p><?=_("Tõlke saadame tagasi võimalikult originaalilähedase kujundusega. Keerukamate formaatide ja trükiste puhul pakume ka küljendusteenust.")?>
-      <a href="<?=$scriba->baseUrl()?>/kirjalik-tolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/written-translation"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="oral-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/suuline-tolge"><?=_("Suuline tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/oral-translation"><?=_("Suuline tõlge")?></a></h3>
       <p><?=_("Konverentsidel, koosolekutel kui ka muudel üritustel, kus on oluline, et info jõuaks kõikide kuulajateni võimalikult kiiresti.")?>
-      <a href="<?=$scriba->baseUrl()?>/suuline-tolge"><?=_("Loe edasi")?></a></p>
+      <a href="<?=$scriba->baseUrl()?>/oral-translation"><?=_("Loe edasi")?></a></p>
     </li>
     <li class="referative-translation">
       <h3><a href="<?=$scriba->baseUrl()?>/referatiivne-tolge"><?=_("Referatiivne tõlge")?></a></h3>

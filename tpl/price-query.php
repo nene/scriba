@@ -45,7 +45,7 @@ if (!empty($_POST)) {
 
 ?>
 
-<?=$scriba->markdown("hinnaparing")?>
+<?=$scriba->markdown("price-query")?>
 
 <form action="" method="post" id="ask-price-form">
 
