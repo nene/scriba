@@ -3,16 +3,48 @@ require_once "lib/php-markdown/Michelf/Markdown.inc.php";
 
 require_once "lib/Form.php";
 
+/**
+ * Handles loading and saving Markdown content.
+ */
+class Content {
+    /**
+     * Returns HTML-rendered markdown content of a page.
+     */
+    public function html($name)
+    {
+        $text = $this->source($name);
+        return \Michelf\Markdown::defaultTransform($text);
+    }
+
+    /**
+     * Retrieves the source markdown text.
+     */
+    public function source($name)
+    {
+        return file_get_contents("content/".$name.".md");
+    }
+
+    /**
+     * Saves the markdown content.
+     */
+    public function save($name, $text)
+    {
+        file_put_contents("content/".$name.".md", $text);
+    }
+}
+
 class Scriba {
     private $config;
     private $currentPage;
     private $admin;
+    private $content;
 
     public function __construct($config)
     {
         $this->config = $config;
         $this->currentPage = "front-page";
         $this->admin = false;
+        $this->content = new Content();
     }
 
     /**
@@ -32,13 +64,13 @@ class Scriba {
         if (isset($request["source"])) {
             // An ajax request for Markdown source
             header("Content-type: text/plain");
-            echo $this->markdownSource($this->currentPage());
+            echo $this->content->source($this->currentPage());
             return;
         } elseif (isset($request["save"])) {
             // An ajax request to save Markdown source
             header("Content-type: text/html");
             $text = isset($request["text"]) ? $request["text"] : "";
-            $this->saveMarkdown($this->currentPage(), $text);
+            $this->content->save($this->currentPage(), $text);
             echo $this->markdown($this->currentPage());
             return;
         } elseif ($this->isTemplatePage($this->currentPage())) {
@@ -81,8 +113,7 @@ class Scriba {
      */
     public function markdown($name)
     {
-        $text = $this->markdownSource($name);
-        $html = \Michelf\Markdown::defaultTransform($text);
+        $html = $this->content->html($name);
 
         if ($this->admin) {
             return "<div class='editable' data-name='{$name}'>{$html}</div>";
@@ -90,22 +121,6 @@ class Scriba {
         else {
             return $html;
         }
-    }
-
-    /**
-     * Retrieves the source markdown text.
-     */
-    private function markdownSource($name)
-    {
-        return file_get_contents("content/".$name.".md");
-    }
-
-    /**
-     * Saves the markdown content.
-     */
-    private function saveMarkdown($name, $text)
-    {
-        file_put_contents("content/".$name.".md", $text);
     }
 
     /**
