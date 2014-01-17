@@ -27,11 +27,11 @@ $(function() {
         };
     }
 
-    function getHtml(name, text, callback) {
+    function getHtml(sectionName, text, callback) {
         $.ajax({
-            url: "/scriba/markdown",
+            url: "/scriba/"+sectionName,
             data: {
-                name: name,
+                markdown: true,
                 text: text
             },
             dataType: "html",
@@ -47,8 +47,8 @@ $(function() {
         var sectionName = $(this).data("name");
 
         $.ajax({
-            url: "/scriba/markdownSource",
-            data: {name: sectionName},
+            url: "/scriba/"+sectionName,
+            data: {markdownSource: true},
             dataType: "text",
             success: function(text) {
                 var editor = new Editor({

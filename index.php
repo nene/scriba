@@ -25,15 +25,16 @@ class Scriba {
             $this->currentPage = $request["page"];
         }
 
-        if ($this->currentPage() == "markdownSource" && isset($request["name"])) {
+        if (isset($request["markdownSource"])) {
             // An ajax request for Markdown source
             header("Content-type: text/plain");
-            echo $this->markdownSource($request["name"]);
+            echo $this->markdownSource($this->currentPage());
             return;
-        } elseif ($this->currentPage() == "markdown" && isset($request["text"])) {
+        } elseif (isset($request["markdown"])) {
             // An ajax request to render Markdown into HTML
             header("Content-type: text/html");
-            echo $this->toMarkdown($request["name"], $request["text"]);
+            $text = isset($request["text"]) ? $request["text"] : "";
+            echo $this->toMarkdown($this->currentPage(), $text);
             return;
         } elseif ($this->isTemplatePage($this->currentPage())) {
             $article = $this->template($this->currentPage());
