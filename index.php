@@ -1,6 +1,5 @@
 <?php
 require_once "lib/php-markdown/Michelf/Markdown.inc.php";
-use \Michelf\Markdown;
 
 require_once "lib/Form.php";
 
@@ -76,7 +75,7 @@ class Scriba {
      * Renders given markdown text as HTML
      */
     private function toMarkdown($name, $text) {
-        $html = Markdown::defaultTransform($text);
+        $html = \Michelf\Markdown::defaultTransform($text);
 
         if ($this->admin) {
             return "<div class='editable' data-name='{$name}'>{$html}</div>";
