@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Tõlkebüroo Scriba</title>
-  <link rel="stylesheet/less" type="text/css" href="css/styles.less">
-  <script src="js/less.js" type="text/javascript"></script>
-  <script src="js/jquery.js" type="text/javascript"></script>
-  <script src="js/jquery.slides/jquery.slides.js" type="text/javascript"></script>
-  <script src="js/main.js" type="text/javascript"></script>
+  <link rel="stylesheet/less" type="text/css" href="<?=$scriba->rootUrl()?>/css/styles.less">
+  <script src="<?=$scriba->rootUrl()?>/js/less.js" type="text/javascript"></script>
+  <script src="<?=$scriba->rootUrl()?>/js/jquery.js" type="text/javascript"></script>
+  <script src="<?=$scriba->rootUrl()?>/js/jquery.slides/jquery.slides.js" type="text/javascript"></script>
+  <script src="<?=$scriba->rootUrl()?>/js/main.js" type="text/javascript"></script>
   <?php if ($scriba->isAdmin()): ?>
     <script> var SCRIBA_BASE_URL = "<?=$scriba->baseUrl()?>"; </script>
-    <script src="js/admin.js" type="text/javascript"></script>
+    <script src="<?=$scriba->rootUrl()?>/js/admin.js" type="text/javascript"></script>
   <?php endif; ?>
 </head>
 <body>
@@ -19,17 +19,27 @@
 
   <header>
     <ul id="language-menu">
-        <li><a href="et.html" title="Eesti keeles"><img src="images/et.gif"/></a></li>
-        <li><a href="en.html" title="In English"><img src="images/en.gif"/></a></li>
-        <li><a href="fi.html" title="Suomen kielen"><img src="images/fi.gif"/></a></li>
-        <li><a href="sv.html" title="På svenska"><img src="images/sv.gif"/></a></li>
-        <li><a href="ru.html" title="По русски"><img src="images/ru.gif"/></a></li>
+        <li><a href="<?=$scriba->rootUrl()?>/et/<?=$scriba->currentPage()?>" title="Eesti keeles">
+          <img src="<?=$scriba->rootUrl()?>/images/et.gif"/>
+        </a></li>
+        <li><a href="<?=$scriba->rootUrl()?>/en/<?=$scriba->currentPage()?>" title="In English">
+          <img src="<?=$scriba->rootUrl()?>/images/en.gif"/>
+        </a></li>
+        <li><a href="<?=$scriba->rootUrl()?>/fi/<?=$scriba->currentPage()?>" title="Suomen kielen">
+          <img src="<?=$scriba->rootUrl()?>/images/fi.gif"/>
+        </a></li>
+        <li><a href="<?=$scriba->rootUrl()?>/sv/<?=$scriba->currentPage()?>" title="På svenska">
+          <img src="<?=$scriba->rootUrl()?>/images/sv.gif"/>
+        </a></li>
+        <li><a href="<?=$scriba->rootUrl()?>/ru/<?=$scriba->currentPage()?>" title="По русски">
+          <img src="<?=$scriba->rootUrl()?>/images/ru.gif"/>
+        </a></li>
     </ul>
 
      <h1 id="logo"><a href="<?=$scriba->baseUrl()?>/"><?=_("Scriba &ndash; kirjalik ja suuline tõlge")?></a></h1>
 
     <div id="iso-9001">
-      <a href="<?=$scriba->baseUrl()?>/contact"><img src="images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/></a>
+      <a href="<?=$scriba->baseUrl()?>/contact"><img src="<?=$scriba->rootUrl()?>/images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/></a>
     </div>
 
     <ul id="top-menu">

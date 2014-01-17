@@ -108,4 +108,4 @@ if (!empty($_POST)) {
 
 </form>
 
-<script src="js/fileupload.js"></script>
+<script src="<?=$scriba->rootUrl()?>js/fileupload.js"></script>

@@ -6,6 +6,7 @@ require_once "lib/Form.php";
 
 class Scriba {
     private $config;
+    private $lang;
     private $currentPage;
     private $admin;
     private $content;
@@ -14,6 +15,7 @@ class Scriba {
     public function __construct($config)
     {
         $this->config = $config;
+        $this->lang = "et";
         $this->currentPage = "front-page";
         $this->admin = false;
         $this->template = new Template();
@@ -30,8 +32,10 @@ class Scriba {
         }
 
         // Switch content directory depending on selected language
-        $lang = (empty($request["lang"])) ? "et" : $request["lang"];
-        $this->content = new Content("content/".$lang);
+        if (!empty($request["lang"])) {
+            $this->lang = $request["lang"];
+        }
+        $this->content = new Content("content/".$this->lang);
 
         if (!empty($request["page"])) {
             $this->currentPage = $request["page"];
@@ -125,9 +129,18 @@ class Scriba {
     }
 
     /**
-     * Returns the base-url of the app.
+     * Returns the ruut URL + language code.
+     * Use this to as a base for all normal links.
      */
     public function baseUrl() {
+        return $this->rootUrl() . "/" . $this->lang;
+    }
+
+    /**
+     * Returns the true root URL of the app.
+     * Use this as a base when linking assets (CSS, JS, images).
+     */
+    public function rootUrl() {
         return $this->config["base_url"];
     }
 

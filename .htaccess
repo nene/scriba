@@ -1,2 +1,4 @@
 RewriteEngine on
-RewriteRule ^([\w-]*)$ index.php?page=$1 [QSA]
+RewriteRule ^(\w{2})/([\w-]*)/?$ index.php?lang=$1&page=$2 [QSA]
+RewriteRule ^(\w{2})/?$ index.php?lang=$1 [QSA]
+RewriteRule ^([\w-]*)/?$ index.php?page=$1 [QSA]
