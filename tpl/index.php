@@ -66,14 +66,7 @@
     </div>
 
     <div id="contact">
-      <h2>Scriba OÜ</h2>
-      <p>
-        <span class="label">Juhataja:</span> Esper Linask<br>
-        <span class="label">Aadress:</span> Õpetaja 9, 51003 Tartu<br>
-        <span class="label">Registrikood:</span> 11439609<br>
-        <span class="label">Tel:</span> 738 0806 /  528 6768<br>
-        <span class="label">E-post:</span> info@scriba.ee
-      </p>
+      <?=$scriba->markdown("footer-contact")?>
     </div>
 
     <div class="clear"></div>
