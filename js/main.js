@@ -47,7 +47,7 @@ $(function() {
     }
 
     // Switch to editor when an editable area is clicked on.
-    $("article").on("click", ".editable", function() {
+    $("body").on("click", ".editable", function() {
         var editable = $(this);
         var oldWidth = editable.width();
         var oldHeight = editable.height();
