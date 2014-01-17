@@ -1,5 +1,6 @@
 <?php
 require_once "lib/Content.php";
+require_once "lib/Template.php";
 require_once "lib/Form.php";
 
 
@@ -8,6 +9,7 @@ class Scriba {
     private $currentPage;
     private $admin;
     private $content;
+    private $template;
 
     public function __construct($config)
     {
@@ -15,6 +17,7 @@ class Scriba {
         $this->currentPage = "front-page";
         $this->admin = false;
         $this->content = new Content();
+        $this->template = new Template();
     }
 
     /**
@@ -43,8 +46,8 @@ class Scriba {
             $this->content->save($this->currentPage(), $text);
             echo $this->markdown($this->currentPage());
             return;
-        } elseif ($this->isTemplatePage($this->currentPage())) {
-            $article = $this->template($this->currentPage(), array(
+        } elseif ($this->template->exists($this->currentPage())) {
+            $article = $this->template->apply($this->currentPage(), array(
                 "scriba" => $this,
             ));
         } elseif ($this->content->exists($this->currentPage())) {
@@ -54,7 +57,7 @@ class Scriba {
             $article = $this->markdown("404");
         }
 
-        echo $this->template("index", array(
+        echo $this->template->apply("index", array(
             "article" => $article,
             "scriba" => $this,
         ));
@@ -66,18 +69,6 @@ class Scriba {
     public function currentPage()
     {
         return $this->currentPage;
-    }
-
-    /**
-     * Applies template to given variables.
-     * Returns the rendered template as a string.
-     */
-    public function template($name, $vars=array())
-    {
-        ob_start();
-        extract($vars, EXTR_SKIP);
-        include "tpl/".$name.".php";
-        return ob_get_clean();
     }
 
     /**
@@ -142,14 +133,6 @@ class Scriba {
      */
     public function isAdmin() {
         return $this->admin;
-    }
-
-    /**
-     * True when Markdown content-page exists with given name.
-     */
-    private function isTemplatePage($name)
-    {
-        return file_exists("tpl/".$name.".php");
     }
 
     /**
