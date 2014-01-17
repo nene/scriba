@@ -45,14 +45,7 @@ if (!empty($_POST)) {
 
 ?>
 
-<h2>Hinnapäring</h2>
-
-<p>Scriba tõlkebüroo kindlustab tellimusele lühikese tarneaja,
-  tasemel küljenduse ja <i>native speaker</i>’i korrektuuri.</p>
-
-<p>Kui soovid tellida tõlkeid võrdlemisi tihti,
-  <a href="<?=$base_url?>/kontakt">küsi püsikliendilepingut</a>,
-  millega kaasneb <strong>hinnaalandus</strong>.</p>
+<?=$scriba->markdown("hinnaparing")?>
 
 <form action="" method="post" id="ask-price-form">
 
