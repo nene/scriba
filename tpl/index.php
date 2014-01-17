@@ -22,10 +22,10 @@
         <li><a href="ru.html" title="По русски"><img src="images/ru.gif"/></a></li>
     </ul>
 
-    <h1 id="logo"><a href="<?=$base_url?>/">Scriba &ndash; kirjalik ja suuline tõlge</a></h1>
+     <h1 id="logo"><a href="<?=$base_url?>/"><?=_("Scriba &ndash; kirjalik ja suuline tõlge")?></a></h1>
 
     <div id="iso-9001">
-      <a href="<?=$base_url?>/kontakt"><img src="images/ISO9001.png" alt="ISO 9001" width="147"/></a>
+      <a href="<?=$base_url?>/kontakt"><img src="images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/></a>
     </div>
 
     <ul id="top-menu">
@@ -47,7 +47,7 @@
 
     <?php if ($show_ask_price_button) { ?>
     <p class="clear">
-        <a href="<?=$base_url?>/hinnaparing" class="button">Küsi hinnapakkumist &nbsp; &gt;</a>
+      <a href="<?=$base_url?>/hinnaparing" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a>
     </p>
     <?php } ?>
 
@@ -59,7 +59,7 @@
   <div id="footer-container">
   <footer>
     <div id="languages">
-      <h2>Keelevalik</h2>
+     <h2><?=_("Keelevalik")?></h2>
       <ul>
           <?php foreach($scriba->languages() as $lang) { echo "<li>$lang</li>"; } ?>
       </ul>
