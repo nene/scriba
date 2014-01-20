@@ -3,6 +3,7 @@
 ## System requirements
 
 - PHP 5.3 (that's what's running in virtuaal.com)
+- Grunt (NodeJS build tool)
 
 ## Setup
 
@@ -18,6 +19,25 @@ example:
 Make files in `/content` directory writable by PHP:
 
     chmod -R a+w content/*
+
+### Setup Grunt
+
+Install the Grunt command line interface:
+
+    npm install -g grunt-cli
+
+Install local Grunt runner and all other NodeJS dependencies locally.
+Just `cd` to project root directory and execute:
+
+    npm install
+
+### Generate Gettext binary resource files
+
+Now that Grunt and NodeJS modules are set up, we can locale-data for
+Gettext:
+
+    grunt generate-mo
+
 
 
 
