@@ -34,7 +34,7 @@
 
 </div>
 
-<p class="ask-price"><a href="<?=$base_url?>/price-query" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a></p>
+<p class="ask-price"><a href="<?=$scriba->baseUrl()?>/price-query" class="button"><?=_("Küsi hinnapakkumist")?> &nbsp; &gt;</a></p>
 </div>
 
 
