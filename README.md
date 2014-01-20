@@ -16,6 +16,25 @@ example:
         "base_url" => "http://scriba.ee",
     );
 
+### Setup admin login
+
+Inside this same `config.php` file create a `users` entry with as many
+user accounts as needed:
+
+    "users" => array(
+        array(
+            "name" => "admin",
+            "salt" => "someRandomString...",
+            "hash" => "a4d5s64s654da64d...",
+        ),
+    ),
+
+The hash is calculated with the PHP `hash()` function using the
+Whirlpool algorithm and the value of `salt` config:
+
+    hash("whirlpool", $salt . $password)
+
+
 ### Setup Grunt
 
 Install the Grunt command line interface:

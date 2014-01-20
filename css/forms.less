@@ -58,7 +58,7 @@ fieldset {
 
 // Form fields
 
-input[type="text"], textarea, select {
+input[type="text"], input[type="password"], textarea, select {
     border: 2px solid @highlight-color;
     background: lighten(@background-color, 5%);
     color: @text-color;
@@ -67,7 +67,7 @@ input[type="text"], textarea, select {
     .border-radius(3px);
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
     width: @field-width;
 }
 
@@ -89,7 +89,7 @@ select+select {
 // Small size for fields
 
 .small {
-    input[type="text"], textarea {
+    input[type="text"], input[type="password"], textarea {
         width: (@field-width / 2);
     }
 }

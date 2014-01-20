@@ -2,6 +2,7 @@
 require_once "lib/Content.php";
 require_once "lib/Template.php";
 require_once "lib/Locale.php";
+require_once "lib/Auth.php";
 require_once "lib/Form.php";
 
 
@@ -10,7 +11,6 @@ class Scriba {
     private $lang;
     private $locale;
     private $currentPage;
-    private $admin;
     private $content;
     private $template;
     private $subTitle;
@@ -21,7 +21,6 @@ class Scriba {
         $this->lang = "et";
         $this->locale = new Locale("locale");
         $this->currentPage = "front-page";
-        $this->admin = false;
         $this->template = new Template();
     }
 
@@ -31,10 +30,6 @@ class Scriba {
      */
     public function route($request)
     {
-        if (isset($request["admin"])) {
-            $this->admin = true;
-        }
-
         // Switch content directory depending on selected language
         if (!empty($request["lang"])) {
             $this->lang = $request["lang"];
@@ -91,7 +86,7 @@ class Scriba {
     {
         $html = $this->content->html($name);
 
-        if ($this->admin) {
+        if ($this->isAdmin()) {
             return "<div class='editable' data-name='{$name}'>{$html}</div>";
         }
         else {
@@ -135,6 +130,32 @@ class Scriba {
     }
 
     /**
+     * Attempts a login with given user and pass.
+     * @return boolean True on success.
+     */
+    public function login($user, $pass)
+    {
+        $auth = new Auth($this->config["users"]);
+
+        if ($auth->login($user, $pass)) {
+            $_SESSION['user'] = $user;
+            $_SESSION['admin'] = true;
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * Logs the current user out.
+     */
+    public function logout()
+    {
+        unset($_SESSION['user']);
+        unset($_SESSION['admin']);
+    }
+
+    /**
      * Returns the ruut URL + language code.
      * Use this to as a base for all normal links.
      */
@@ -154,7 +175,7 @@ class Scriba {
      * True when the working in administrator-mode.
      */
     public function isAdmin() {
-        return $this->admin;
+        return isset($_SESSION['admin']) && $_SESSION['admin'] === true;
     }
 
     /**
@@ -169,12 +190,19 @@ class Scriba {
      */
     public function mainMenu()
     {
-        return array(
+        $menu = array(
             "price-list" => _("Hinnakiri"),
             "faq" => _("KKK"),
             "job-offer" => _("Tule tööle"),
             "contact" => _("Kontakt"),
         );
+
+        // When admin is logged in, add logout button
+        if ($this->isAdmin()) {
+            $menu["logout"] = _("Logi välja");
+        }
+
+        return $menu;
     }
 
     /**
@@ -204,11 +232,14 @@ class Scriba {
             "price-query" => true,
             "contact" => true,
             "job-offer" => true,
+            "admin" => true,
         );
         return !array_key_exists($this->currentPage(), $exclude);
     }
 
 }
+
+session_start();
 
 $config = include("config.php");
 
