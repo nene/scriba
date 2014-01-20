@@ -1,4 +1,5 @@
 <?php
+$scriba->setSubTitle(_("Tule tööle"));
 
 $form = new Form();
 

@@ -53,6 +53,20 @@ class Content {
     }
 
     /**
+     * Returns the title of the page from first line of the Markdown
+     * file.
+     */
+    public function title($name)
+    {
+        $text = $this->source($name);
+        if (preg_match('/^#+ *(.*?)\r?\n/', $text, $m)) {
+            return $m[1];
+        } else {
+            return "";
+        }
+    }
+
+    /**
      * Turns content identifier into filename.
      */
     private function filename($name)

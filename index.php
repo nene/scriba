@@ -13,6 +13,7 @@ class Scriba {
     private $admin;
     private $content;
     private $template;
+    private $subTitle;
 
     public function __construct($config)
     {
@@ -63,6 +64,7 @@ class Scriba {
             ));
         } elseif ($this->content->exists($this->currentPage())) {
             $article = $this->markdown($this->currentPage());
+            $this->setSubTitle($this->content->title($this->currentPage()));
         } else {
             header('HTTP/1.0 404 Not Found');
             $article = $this->markdown("404");
@@ -173,6 +175,23 @@ class Scriba {
             "job-offer" => _("Tule tööle"),
             "contact" => _("Kontakt"),
         );
+    }
+
+    /**
+     * Returns the full title of the current page.
+     */
+    public function getFullTitle()
+    {
+        $prefix = ($this->subTitle) ? $this->subTitle . " - " : "";
+        return $prefix . _("Tõlkebüroo Scriba");
+    }
+
+    /**
+     * Sets the page title (this will be prepended to the site title).
+     */
+    public function setSubTitle($title)
+    {
+        $this->subTitle = $title;
     }
 
     /**

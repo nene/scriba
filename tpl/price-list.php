@@ -1,4 +1,5 @@
 <?php
+$scriba->setSubTitle(_("Hinnakiri"));
 
 // Pull the content from Markdown file
 $content = $scriba->markdown("price-list");

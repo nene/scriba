@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title><?=_("Tõlkebüroo Scriba")?></title>
+  <title><?=$scriba->getFullTitle()?></title>
 
   <?php if ($scriba->isDebug()): ?>
   <link rel="stylesheet/less" type="text/css" href="<?=$scriba->rootUrl()?>/css/styles.less">

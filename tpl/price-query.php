@@ -1,4 +1,5 @@
 <?php
+$scriba->setSubTitle(_("Hinnapäring"));
 
 $form = new Form();
 
