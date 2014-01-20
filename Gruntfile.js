@@ -50,4 +50,9 @@ module.exports = function(grunt) {
       ['shell:generate-mo']
   );
 
+  grunt.registerTask(
+      'default',
+      'Generates all resources for production app.',
+      ['generate-mo', 'less']
+  );
 };

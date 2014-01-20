@@ -31,14 +31,12 @@ Just `cd` to project root directory and execute:
 
     npm install
 
-### Generate Gettext binary resource files
+### Build the app
 
-Now that Grunt and NodeJS modules are set up, we can locale-data for
-Gettext:
+Now that Grunt and NodeJS modules are set up, we can build all the
+assets of our app by just running the default task:
 
-    grunt generate-mo
-
-
+    grunt
 
 
 ## Images
