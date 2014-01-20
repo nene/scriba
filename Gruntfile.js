@@ -59,9 +59,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'js/slides.js',
-                'js/fileupload.js',
-                'js/admin.js'
+                'js/*.js'
             ]
         }
     });

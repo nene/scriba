@@ -147,5 +147,5 @@
 
 </div>
 
-<script src="<?=$scriba->rootUrl()?>/js/jquery.slides/jquery.slides.js" type="text/javascript"></script>
+<script src="<?=$scriba->rootUrl()?>/js/lib/jquery.slides/jquery.slides.js" type="text/javascript"></script>
 <script src="<?=$scriba->rootUrl()?>/js/slider.js" type="text/javascript"></script>
