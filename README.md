@@ -18,25 +18,25 @@ example:
 
 Make files in `/content` directory writable by PHP:
 
-    chmod -R a+w content/*
+    $ chmod -R a+w content/*
 
 ### Setup Grunt
 
 Install the Grunt command line interface:
 
-    npm install -g grunt-cli
+    $ npm install -g grunt-cli
 
 Install local Grunt runner and all other NodeJS dependencies locally.
 Just `cd` to project root directory and execute:
 
-    npm install
+    $ npm install
 
 ### Build the app
 
 Now that Grunt and NodeJS modules are set up, we can build all the
 assets of our app by just running the default task:
 
-    grunt
+    $ grunt
 
 
 ## Images
