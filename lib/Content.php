@@ -32,7 +32,7 @@ class Content {
         if ($this->exists($name)) {
             return file_get_contents($this->filename($name));
         } else {
-            return "## "._("404 Lehekülge ei leitud");
+            return _("Sisu puudub...");
         }
     }
 
