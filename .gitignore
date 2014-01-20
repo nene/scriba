@@ -11,3 +11,6 @@ locale/ru_RU/LC_MESSAGES/*.mo
 
 # NodeJS modules
 node_modules
+
+# Compiled LESS stylesheets
+css/styles.min.css

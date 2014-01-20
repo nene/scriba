@@ -156,6 +156,13 @@ class Scriba {
     }
 
     /**
+     * True when debug mode is enabled;
+     */
+    public function isDebug() {
+        return isset($this->config["debug"]) && $this->config["debug"];
+    }
+
+    /**
      * Generates data for main menu.
      */
     public function mainMenu()

@@ -3,13 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title><?=_("Tõlkebüroo Scriba")?></title>
+
+  <?php if ($scriba->isDebug()): ?>
   <link rel="stylesheet/less" type="text/css" href="<?=$scriba->rootUrl()?>/css/styles.less">
   <script src="<?=$scriba->rootUrl()?>/js/less.js" type="text/javascript"></script>
+  <?php else: ?>
+  <link rel="stylesheet" type="text/css" href="<?=$scriba->rootUrl()?>/css/styles.min.css">
+  <?php endif; ?>
+
   <script src="<?=$scriba->rootUrl()?>/js/jquery.js" type="text/javascript"></script>
+
   <?php if ($scriba->isAdmin()): ?>
     <script> var SCRIBA_BASE_URL = "<?=$scriba->baseUrl()?>"; </script>
     <script src="<?=$scriba->rootUrl()?>/js/admin.js" type="text/javascript"></script>
   <?php endif; ?>
+
 </head>
 <body>
 

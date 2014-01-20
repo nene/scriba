@@ -22,10 +22,21 @@ module.exports = function(grunt) {
                 "msgfmt -o locale/ru_RU/LC_MESSAGES/ru_RU.mo locale/ru_RU/LC_MESSAGES/ru_RU.po"
             ].join("&&")
         }
+    },
+    less: {
+        production: {
+            options: {
+                cleancss: true
+            },
+            files: {
+                "css/styles.min.css": "css/styles.less"
+            }
+        }
     }
   });
 
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask(
       'refresh-po',
