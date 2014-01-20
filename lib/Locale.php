@@ -3,6 +3,8 @@
  * Handles initialization of Gettext localization.
  */
 class Locale {
+    private $dir;
+
     /**
      * Initializes with path to the locale directory.
      * @param string $dir
