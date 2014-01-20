@@ -35,11 +35,40 @@ module.exports = function(grunt) {
                 "css/styles.min.css": "css/styles.less"
             }
         }
+    },
+    jshint: {
+        options: {
+            camelcase: true,
+            curly: true,
+            eqeqeq: true,
+            forin: true,
+            freeze: true,
+            immed: true,
+            //indent: true,
+            latedef: true,
+            newcap: true,
+            noarg: true,
+            noempty: true,
+            undef: true,
+            unused: true,
+            trailing: true,
+            browser: true,
+            jquery: true,
+            node: true,
+            globals: {"SCRIBA_BASE_URL": true}
+        },
+        all: [
+            'Gruntfile.js',
+            'js/slides.js',
+            'js/fileupload.js',
+            'js/admin.js'
+        ]
     }
   });
 
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask(
       'permissions',
