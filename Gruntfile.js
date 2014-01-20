@@ -4,6 +4,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     shell: {
+        "permissions": {
+            command: "chmod -R a+w content/*"
+        },
         "refresh-po": {
             command: [
                 "find . -name '*.php' | xargs xgettext -L PHP --from-code UTF-8 -o locale/messages.pot",
@@ -39,6 +42,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask(
+      'permissions',
+      'Grant PHP write permissions to content/ dir.',
+      ['shell:permissions']
+  );
+
+  grunt.registerTask(
       'refresh-po',
       'Scan PHP files for new translatable messages.',
       ['shell:refresh-po']
@@ -53,6 +62,6 @@ module.exports = function(grunt) {
   grunt.registerTask(
       'default',
       'Generates all resources for production app.',
-      ['generate-mo', 'less']
+      ['permissions', 'generate-mo', 'less']
   );
 };

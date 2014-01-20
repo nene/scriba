@@ -16,10 +16,6 @@ example:
         "base_url" => "http://scriba.ee",
     );
 
-Make files in `/content` directory writable by PHP:
-
-    $ chmod -R a+w content/*
-
 ### Setup Grunt
 
 Install the Grunt command line interface:
