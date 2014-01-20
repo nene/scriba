@@ -1,0 +1,487 @@
+# English translations for Scriba website.
+# This file is distributed under the same license as the Scriba website.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Scriba website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-17 16:12+0200\n"
+"PO-Revision-Date: 2014-01-18 15:17+0200\n"
+"Last-Translator:  <nene@triin.net>\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/Content.php:35
+msgid "404 Lehekülge ei leitud"
+msgstr "404 Page not found"
+
+#: tpl/front-page.php:2
+msgid "Tõlketöö tellimine:"
+msgstr "Translation ordering:"
+
+#: tpl/front-page.php:6
+msgid "Saada päring"
+msgstr "Send enquiry"
+
+#: tpl/front-page.php:7
+msgid ""
+"Kirjuta meile, mis keelest mis keelde kirjalikku või suulist tõlget soovid."
+msgstr "Write to us from which language into which language you require an oral or written translation."
+
+#: tpl/front-page.php:12
+msgid "Teeme pakkumise"
+msgstr "We make an offer"
+
+#: tpl/front-page.php:13
+msgid "Vastame esimesel võimalusel ja teatame tõlketöö maksumuse ning tähtaja."
+msgstr "We shall respond at the first opportunity, specifying the price and deadline of translation."
+
+#: tpl/front-page.php:18
+msgid "Kinnita tellimus"
+msgstr "Confirm the order"
+
+#: tpl/front-page.php:19
+msgid "Kui oled hinnapakkumisega nõus, saada e-postiga tellimuse kinnitus."
+msgstr "If you accept our price quote, send an order confirmation by e-mail."
+
+#: tpl/front-page.php:24
+msgid "Tõlkimine"
+msgstr "Translation"
+
+#: tpl/front-page.php:25
+msgid ""
+"Pärast tõlke valmimist toimub materjali kujundamine, korrektuur ja ülevaatus "
+"toimetaja poolt."
+msgstr "Text translation is followed by styling, proofreading and overview by project manager."
+
+#: tpl/front-page.php:30
+msgid "Valmis"
+msgstr "Ready"
+
+#: tpl/front-page.php:31
+msgid "Toimetame tõlgitud materjalid sinuni."
+msgstr "Translated materials are sent to you."
+
+#: tpl/front-page.php:37 tpl/index.php:71
+msgid "Küsi hinnapakkumist"
+msgstr "Ask for price offer"
+
+#: tpl/front-page.php:42
+msgid "Teenused"
+msgstr "Services"
+
+#: tpl/front-page.php:46
+msgid "Kirjalik tõlge"
+msgstr "Written translation"
+
+#: tpl/front-page.php:47
+msgid ""
+"Tõlke saadame tagasi võimalikult originaalilähedase kujundusega. Keerukamate "
+"formaatide ja trükiste puhul pakume ka küljendusteenust."
+msgstr "We return the translation with styling as true to the original as possible. We offer additional styling service for more complex formats and prints."
+
+#: tpl/front-page.php:48 tpl/front-page.php:53 tpl/front-page.php:58
+#: tpl/front-page.php:63 tpl/front-page.php:68 tpl/front-page.php:73
+#: tpl/front-page.php:78 tpl/front-page.php:83 tpl/front-page.php:88
+#: tpl/front-page.php:93 tpl/front-page.php:98
+msgid "Loe edasi"
+msgstr "Read on"
+
+#: tpl/front-page.php:51
+msgid "Suuline tõlge"
+msgstr "Oral translation"
+
+#: tpl/front-page.php:52
+msgid ""
+"Konverentsidel, koosolekutel kui ka muudel üritustel, kus on oluline, et "
+"info jõuaks kõikide kuulajateni võimalikult kiiresti."
+msgstr "At conferences, meetings and in other events where it is important that information reach all listeners as quickly as possible."
+
+#: tpl/front-page.php:56
+msgid "Referatiivne tõlge"
+msgstr "Referative translation"
+
+#: tpl/front-page.php:57
+msgid ""
+"Kui teil pole tarvis täielikku viimistletud tõlget, vaid tarvis saada pigem "
+"kirjalik või suuline ülevaade teksti sisust."
+msgstr ""
+
+#: tpl/front-page.php:61
+msgid "Korrektuur ja toimetamine"
+msgstr "Proofreading and editing"
+
+#: tpl/front-page.php:62
+msgid ""
+"Teksti korrektuur tähendab teksti õigekeelsusnõuetega vastavusse viimist ja "
+"trükivigade parandamist.  Toimetamine sisaldab teksti keelelist ja ka "
+"sisulist parandamist."
+msgstr ""
+
+#: tpl/front-page.php:66
+msgid "Notariaalne kinnitamine"
+msgstr "Notarisation"
+
+#: tpl/front-page.php:67
+msgid ""
+"Tõlgitud dokumentide välisriigis kasutamiseks võidakse nõuda notariaalselt "
+"kinnitatud tõlkeid."
+msgstr ""
+
+#: tpl/front-page.php:71
+msgid "Apostillimine"
+msgstr "Apostilling"
+
+#: tpl/front-page.php:72
+msgid ""
+"Apostill näitab välisriigi ametnikule, et mis tahes apostilliga kinnitatud "
+"dokumendi välja andnud asutus eksisteerib ning tohib taolisi dokumente välja "
+"anda."
+msgstr ""
+
+#: tpl/front-page.php:76
+msgid "Õigustõlge"
+msgstr "Legal translation"
+
+#: tpl/front-page.php:77
+msgid ""
+"Õigustekstide tõlke alla kuuluvad tõlkijalt ülimat täpsust ja korrektsust "
+"nõudvad õigusaktide ja muude juriidiliste dokumentide tõlked."
+msgstr ""
+
+#: tpl/front-page.php:81
+msgid "Tehnikatõlge"
+msgstr "Technical translation"
+
+#: tpl/front-page.php:82
+msgid ""
+"Tehnikatõlge on ala, kus saavad kokku tõlkijate keelelised teadmised ja "
+"tehnikainimeste erialateadmised."
+msgstr ""
+
+#: tpl/front-page.php:86
+msgid "Kodulehe tõlge"
+msgstr "Webpage translation"
+
+#: tpl/front-page.php:87
+msgid ""
+"Meil on laialdased kogemused kodulehtede tõlkimisel: oleme teinud nii eesti- "
+"kui ka võõrkeelsele tekstile korrektuuri, parandanud trüki- ja kirjavigu."
+msgstr ""
+
+#: tpl/front-page.php:91
+msgid "Kasutusjuhendi tõlge"
+msgstr "Manual translation"
+
+#: tpl/front-page.php:92
+msgid ""
+"Kasutusjuhendid erinevad teistest tekstidest oma ülesehituse ja "
+"keelekasutuse poolest, mistõttu on vajalik, et tõlkijal oleks selles vallas "
+"piisavalt kogemust, et tagada parim tulemus."
+msgstr ""
+
+#: tpl/front-page.php:96
+msgid "Filmitõlge"
+msgstr "Movie translation"
+
+#: tpl/front-page.php:97
+msgid ""
+"Kuigi filmiklipp võib lühike tunduda, võib tõlkimist vajav tekst üsnagi pikk "
+"tulla ning seega soovitame selleks tööks piisavalt aega varuda."
+msgstr ""
+
+#: tpl/front-page.php:106
+msgid "Kliendid meist"
+msgstr "Clients about us"
+
+#: tpl/job-offer.php:5
+msgid "Isikuandmed"
+msgstr "Personal details"
+
+#: tpl/job-offer.php:7
+msgid "Eesnimi:"
+msgstr "First name:"
+
+#: tpl/job-offer.php:12
+msgid "Perenimi:"
+msgstr "Surname:"
+
+#: tpl/job-offer.php:17
+msgid "Sünniaeg:"
+msgstr "Date of birth:"
+
+#: tpl/job-offer.php:23 index.php:163
+msgid "Kontakt"
+msgstr "Contact"
+
+#: tpl/job-offer.php:25
+msgid "Aadress:"
+msgstr "Address:"
+
+#: tpl/job-offer.php:30
+msgid "Telefon:"
+msgstr "Telephone:"
+
+#: tpl/job-offer.php:36 tpl/price-query.php:64
+msgid "E-post:"
+msgstr "E-mail:"
+
+#: tpl/job-offer.php:43
+msgid "Skype kasutajatunnus:"
+msgstr "Skype username:"
+
+#: tpl/job-offer.php:48
+msgid "Kogemused"
+msgstr "Experience"
+
+#: tpl/job-offer.php:50
+msgid "Emakeel:"
+msgstr "Native language:"
+
+#: tpl/job-offer.php:56
+msgid "Hariduskäik"
+msgstr "Education"
+
+#: tpl/job-offer.php:66
+msgid "Tõlketeenused"
+msgstr "Translation services"
+
+#: tpl/job-offer.php:68
+msgid "Tõlkesuunad:"
+msgstr "Language combinations:"
+
+#: tpl/job-offer.php:73
+msgid "Tõlkevaldkonnad:"
+msgstr "Translation areas:"
+
+#: tpl/job-offer.php:78
+msgid "Kas teete suulist tõlget?:"
+msgstr "Oral translation skills?:"
+
+#: tpl/job-offer.php:80 tpl/job-offer.php:86
+msgid "Jah"
+msgstr "Yes"
+
+#: tpl/job-offer.php:80 tpl/job-offer.php:86
+msgid "Ei"
+msgstr "No"
+
+#: tpl/job-offer.php:84
+msgid "Notariaalne kinnitamine?:"
+msgstr "Notarisation possibility?:"
+
+#: tpl/job-offer.php:90
+msgid "Palgasoov"
+msgstr "Salary expectations"
+
+#: tpl/job-offer.php:92
+msgid "Ühe lehekülje hind (neto):"
+msgstr "Price per one page:"
+
+#: tpl/job-offer.php:98
+msgid "Kas olete FIE või eraisik?:"
+msgstr "Self-employed/private?:"
+
+#: tpl/job-offer.php:100
+msgid "FIE"
+msgstr "Self-employed"
+
+#: tpl/job-offer.php:100
+msgid "Eraisik"
+msgstr "Private"
+
+#: tpl/job-offer.php:117 tpl/price-query.php:53
+msgid "Palun täitke kohustuslikud väljad!"
+msgstr "Please fill out all required fields!"
+
+#: tpl/job-offer.php:137 tpl/price-query.php:107
+msgid "Saada"
+msgstr "Send"
+
+#: tpl/index.php:5
+msgid "Tõlkebüroo Scriba"
+msgstr "Scriba translation agency"
+
+#: tpl/index.php:42
+msgid "Scriba &ndash; kirjalik ja suuline tõlge"
+msgstr "Scriba &ndash; written and oral translation"
+
+#: tpl/index.php:47
+msgid "ISO 9001"
+msgstr "ISO 9001"
+
+#: tpl/index.php:84
+msgid "Keelevalik"
+msgstr ""
+
+#: tpl/price-query.php:23
+msgid "keelest..."
+msgstr "from language..."
+
+#: tpl/price-query.php:23 tpl/price-query.php:28
+msgid "muu..."
+msgstr "other..."
+
+#: tpl/price-query.php:28
+msgid "keelde..."
+msgstr "to language..."
+
+#: tpl/price-query.php:57
+msgid "Tellija"
+msgstr ""
+
+#: tpl/price-query.php:60
+msgid "Firma või eraisiku nimi:"
+msgstr ""
+
+#: tpl/price-query.php:68
+msgid "Telefoninumber:"
+msgstr ""
+
+#: tpl/price-query.php:73
+msgid "Tõlge"
+msgstr ""
+
+#: tpl/price-query.php:76
+msgid "Tõlkesuund:"
+msgstr ""
+
+#: tpl/price-query.php:82
+msgid "Lisainformatsioon:"
+msgstr ""
+
+#: tpl/price-query.php:86
+msgid "Tõlke tähtaeg:"
+msgstr ""
+
+#: tpl/price-query.php:91
+msgid "Failid"
+msgstr ""
+
+#: tpl/price-query.php:93
+msgid "Lisa tõlkimist vajav tekst, et saaksime täpsema pakkumise teha."
+msgstr ""
+
+#: tpl/price-query.php:96
+msgid "Vali failid..."
+msgstr ""
+
+#: index.php:102
+msgid "aserbaidžaani keel"
+msgstr ""
+
+#: index.php:103
+msgid "bulgaaria keel"
+msgstr ""
+
+#: index.php:104
+msgid "hiina keel"
+msgstr ""
+
+#: index.php:105
+msgid "hispaania keel"
+msgstr ""
+
+#: index.php:106
+msgid "hollandi keel"
+msgstr ""
+
+#: index.php:107
+msgid "inglise keel"
+msgstr ""
+
+#: index.php:108
+msgid "itaalia keel"
+msgstr ""
+
+#: index.php:109
+msgid "jaapani keel"
+msgstr ""
+
+#: index.php:110
+msgid "kreeka keel"
+msgstr ""
+
+#: index.php:111
+msgid "ladina keel"
+msgstr ""
+
+#: index.php:112
+msgid "leedu keel"
+msgstr ""
+
+#: index.php:113
+msgid "läti keel"
+msgstr ""
+
+#: index.php:114
+msgid "norra keel"
+msgstr ""
+
+#: index.php:115
+msgid "poola keel"
+msgstr ""
+
+#: index.php:116
+msgid "portugali keel"
+msgstr ""
+
+#: index.php:117
+msgid "prantsuse keel"
+msgstr ""
+
+#: index.php:118
+msgid "rootsi keel"
+msgstr ""
+
+#: index.php:119
+msgid "rumeenia keel"
+msgstr ""
+
+#: index.php:120
+msgid "saksa keel"
+msgstr ""
+
+#: index.php:121
+msgid "soome keel"
+msgstr ""
+
+#: index.php:122
+msgid "taani keel"
+msgstr ""
+
+#: index.php:123
+msgid "tšehhi keel"
+msgstr ""
+
+#: index.php:124
+msgid "türgi keel"
+msgstr ""
+
+#: index.php:125
+msgid "ungari keel"
+msgstr ""
+
+#: index.php:126
+msgid "ukraina keel"
+msgstr ""
+
+#: index.php:127
+msgid "vene keel"
+msgstr ""
+
+#: index.php:160
+msgid "Hinnakiri"
+msgstr "Price list"
+
+#: index.php:161
+msgid "KKK"
+msgstr "FAQ"
+
+#: index.php:162
+msgid "Tule tööle"
+msgstr "Work in Scriba"

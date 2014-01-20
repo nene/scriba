@@ -1,1 +1,10 @@
 config.php
+
+# Gettext template file
+locale/messages.pot
+
+# Compiled Gettext resources
+locale/en/LC_MESSAGES/*.mo
+locale/fi/LC_MESSAGES/*.mo
+locale/sv/LC_MESSAGES/*.mo
+locale/ru/LC_MESSAGES/*.mo
