@@ -1,12 +1,14 @@
 <?php
 require_once "lib/Content.php";
 require_once "lib/Template.php";
+require_once "lib/Locale.php";
 require_once "lib/Form.php";
 
 
 class Scriba {
     private $config;
     private $lang;
+    private $locale;
     private $currentPage;
     private $admin;
     private $content;
@@ -16,6 +18,7 @@ class Scriba {
     {
         $this->config = $config;
         $this->lang = "et";
+        $this->locale = new Locale("locale");
         $this->currentPage = "front-page";
         $this->admin = false;
         $this->template = new Template();
@@ -34,6 +37,7 @@ class Scriba {
         // Switch content directory depending on selected language
         if (!empty($request["lang"])) {
             $this->lang = $request["lang"];
+            $this->locale->set($this->lang);
         }
         $this->content = new Content("content/".$this->lang);
 
