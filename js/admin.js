@@ -10,13 +10,17 @@ $(function() {
         });
 
         // Save button that switches back the old content
-        var button = $("<button/>").text("Salvesta");
+        var saveButton = $("<button/>").text("Salvesta");
+        // Save button that switches back the old content
+        var cancelButton = $("<button/>").text("Katkesta");
 
         var editor = $("<div class='markdown-editor'>");
         editor.append(field);
-        editor.append(button);
+        editor.append(saveButton);
+        editor.append(cancelButton);
 
-        button.click(cfg.save);
+        saveButton.click(cfg.save);
+        cancelButton.click(cfg.cancel);
 
         this.getEl = function() {
             return editor;
@@ -68,6 +72,9 @@ $(function() {
                     saveMarkdown(sectionName, editor.getText(), function(html) {
                         editor.getEl().replaceWith(html);
                     });
+                },
+                cancel: function() {
+                    editor.getEl().replaceWith(editable);
                 }
             });
 
