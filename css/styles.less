@@ -54,6 +54,11 @@
     box-sizing: @type;
 }
 
+// Text shadow mixin
+.text-shadow (@x:1px; @y:1px; @blur:1px; @color:rgba(100,100,100, 0.3)) {
+    text-shadow: @arguments;
+}
+
 
 html, body {
     padding: 0;
@@ -93,7 +98,7 @@ article {
 
     h2 {
         color: @highlight-color;
-        text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
+        .text-shadow();
     }
 
 }
