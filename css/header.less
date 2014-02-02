@@ -1,3 +1,6 @@
+@header-text-color: #fafafa;
+@header-hover-color: lighten(@highlight-color, 50%); // @highlight-color
+
 header {
     display: block;
 
@@ -52,10 +55,10 @@ header {
             display: block;
         }
         a {
-            color: #fafafa;
+            color: @header-text-color;
         }
         strong, a:hover {
-            color: @highlight-color;
+            color: @header-hover-color;
         }
     }
 

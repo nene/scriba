@@ -1,3 +1,10 @@
+.highlight(@color) {
+    .text-shadow(
+        1px 1px 1px @color,
+        1px -1px 1px @color,
+        -1px 1px 1px @color,
+        -1px -1px 1px @color);
+}
 
 #ordering-presentation {
     position: relative;
@@ -9,7 +16,8 @@
         top: 20px;
         left: 33px;
         z-index: 500;
-        .text-shadow(1px; 1px; 2px; rgba(55, 55, 55, 1));
+        //.text-shadow: 1px 1px 2px rgba(55, 55, 55, 1);
+        .highlight(rgba(90%,90%,90%,1));
     }
 
     .ask-price {
@@ -134,7 +142,7 @@ article {
         height: 37px;
         padding-top: 7px;
         padding-right: 10px;
-        background: url("@{img-path}quote.png") no-repeat 0 7px;
+        background: url("@{img-path}quote-blue.png") no-repeat 0 7px;
     }
 
     .client {
