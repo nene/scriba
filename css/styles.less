@@ -7,6 +7,7 @@
 @link-color: @highlight-color; // darken(@highlight-color, 10%);
 // @background-color: #f1efec; // very light orange
 @background-color: #f9f9ff; // very light blue
+@button-color: orange; // @highlight-color;
 
 // Boxes
 @default-border-radius: 10px;
@@ -107,11 +108,11 @@ article {
 // Shared styles for buttons
 .button {
     display: inline-block;
-    background: @highlight-color;
-    border: 2px solid @highlight-color;
+    background: @button-color;
+    border: 2px solid @button-color;
     .border-radius(20px);
     //.box-shadow(@default-box-shadow);
-    .box-shadow(2px 2px 5px 0px darken(@highlight-color, 15%));
+    .box-shadow(2px 2px 5px 0px darken(@button-color, 15%));
     padding: 0 2em;
     color: white;
     font-size: 20px;
@@ -123,7 +124,7 @@ article {
     &:hover {
         background: white;
         opacity: 0.8;
-        color: @highlight-color;
+        color: @button-color;
         text-decoration: none;
     }
 }
