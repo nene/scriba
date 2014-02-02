@@ -1,9 +1,15 @@
+@footer-bg-color: @highlight-color; //#0a0a0a;
+@footer-text-color: white; //#888;
+@footer-heading-color: lighten(@highlight-color, 60%); // #ccc;
+@footer-label-color: lighten(@highlight-color, 60%); // #666;
+@footer-border-color: lighten(@highlight-color, 10%); // gray;
+
 #footer-container {
     clear: both;
-    background-color: #0a0a0a;
-    border-top: 1px solid gray;
+    background-color: @footer-bg-color;
+    border-top: 1px solid @footer-border-color;
     margin-top: 3em;
-    color: #888;
+    color: @footer-text-color;
 }
 
 footer {
@@ -15,7 +21,7 @@ footer {
     padding: 0 @page-padding 3em @page-padding;
 
     h2 {
-        color: #ccc;
+        color: @footer-heading-color;
         margin-top: 1.3em;
         font-size: 1em;
     }
@@ -39,7 +45,7 @@ footer {
         width: 25%;
 
         strong {
-            color: #666;
+            color: @footer-label-color;
             font-style: italic;
             font-weight: normal;
             padding-right: 0.3em;
