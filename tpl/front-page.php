@@ -3,8 +3,8 @@
 
 <div id="slides">
   <div class="slide slide-1">
-  <p><span class="nr">1</span> <strong><?=_("Saada päring")?></strong>
-  <?=_("Kirjuta meile, mis keelest mis keelde kirjalikku või suulist tõlget soovid.")?>
+  <p><span class="nr">1</span> <strong><?=_("Saatke päring")?></strong>
+  <?=_("Kirjutage meile, mis keelest mis keelde kirjalikku või suulist tõlget soovite.")?>
   <a class="slidesjs-next slidesjs-navigation" href="#">&gt;</a></p>
   </div>
 
@@ -15,8 +15,8 @@
   </div>
 
   <div class="slide slide-3">
-  <p><span class="nr">3</span> <strong><?=_("Kinnita tellimus")?></strong>
-  <?=_("Kui oled hinnapakkumisega nõus, saada e-postiga tellimuse kinnitus.")?>
+  <p><span class="nr">3</span> <strong><?=_("Kinnitage tellimus")?></strong>
+  <?=_("Kui olete hinnapakkumisega nõus, saatke e-postiga tellimuse kinnitus.")?>
   <a class="slidesjs-next slidesjs-navigation" href="#">&gt;</a></p>
   </div>
 
@@ -28,7 +28,7 @@
 
   <div class="slide slide-5">
   <p><span class="nr">5</span> <strong><?=_("Valmis")?></strong>
-  <?=_("Toimetame tõlgitud materjalid sinuni.")?>
+  <?=_("Toimetame tõlgitud materjalid teieni.")?>
   <a class="slidesjs-next slidesjs-navigation" href="#">&gt;</a></p>
   </div>
 
