@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Scriba website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-10 11:36+0200\n"
+"POT-Creation-Date: 2016-12-10 20:46+0200\n"
 "PO-Revision-Date: 2014-01-18 15:17+0200\n"
 "Last-Translator:  <nene@triin.net>\n"
 "Language-Team: English\n"
@@ -125,7 +125,7 @@ msgstr "Contact"
 
 #: index.php:199
 msgid "Logi välja"
-msgstr ""
+msgstr "Log out"
 
 #: index.php:211
 msgid "Tõlkebüroo Scriba"
@@ -133,15 +133,15 @@ msgstr "Scriba translation agency"
 
 #: lib/Content.php:35
 msgid "Sisu puudub..."
-msgstr ""
+msgstr "Content missing..."
 
 #: tpl/admin.php:2
 msgid "Administreerimisliides"
-msgstr ""
+msgstr "Admin interface"
 
 #: tpl/admin.php:22
 msgid "Vale kasutajanimi või parool."
-msgstr ""
+msgstr "Wrong username or password."
 
 #: tpl/admin.php:25
 msgid "Kasutajanimi:"
@@ -156,17 +156,15 @@ msgid "Tõlketöö tellimine:"
 msgstr "Translation ordering:"
 
 #: tpl/front-page.php:6
-#, fuzzy
 msgid "Saatke päring"
-msgstr "Send enquiry"
+msgstr "Send an inquiry"
 
 #: tpl/front-page.php:7
-#, fuzzy
 msgid ""
 "Kirjutage meile, mis keelest mis keelde kirjalikku või suulist tõlget "
 "soovite."
 msgstr ""
-"Write to us from which language into which language you require an oral or "
+"State your required language direction and specify whether you want oral or "
 "written translation."
 
 #: tpl/front-page.php:12
@@ -180,12 +178,10 @@ msgstr ""
 "of translation."
 
 #: tpl/front-page.php:18
-#, fuzzy
 msgid "Kinnitage tellimus"
 msgstr "Confirm the order"
 
 #: tpl/front-page.php:19
-#, fuzzy
 msgid "Kui olete hinnapakkumisega nõus, saatke e-postiga tellimuse kinnitus."
 msgstr "If you accept our price quote, send an order confirmation by e-mail."
 
@@ -206,11 +202,10 @@ msgid "Valmis"
 msgstr "Ready"
 
 #: tpl/front-page.php:31
-#, fuzzy
 msgid "Toimetame tõlgitud materjalid teieni."
-msgstr "Translated materials are sent to you."
+msgstr "Translated materials will be sent to you."
 
-#: tpl/front-page.php:37 tpl/index.php:79
+#: tpl/front-page.php:37 tpl/index.php:67
 msgid "Küsi hinnapakkumist"
 msgstr "Ask for price offer"
 
@@ -346,17 +341,13 @@ msgstr ""
 msgid "Kliendid meist"
 msgstr "Clients about us"
 
-#: tpl/index.php:50
+#: tpl/index.php:44
 msgid "Scriba &ndash; kirjalik ja suuline tõlge"
 msgstr "Scriba &ndash; written and oral translation"
 
-#: tpl/index.php:55
-msgid "ISO 9001"
-msgstr "ISO 9001"
-
-#: tpl/index.php:92
+#: tpl/index.php:80
 msgid "Keelevalik"
-msgstr ""
+msgstr "Working languages"
 
 #: tpl/job-offer.php:6
 msgid "Isikuandmed"
@@ -401,6 +392,10 @@ msgstr "Native language:"
 #: tpl/job-offer.php:57
 msgid "Hariduskäik"
 msgstr "Education"
+
+#: tpl/job-offer.php:62
+msgid "Tehtud tööd:"
+msgstr "Completed projects:"
 
 #: tpl/job-offer.php:67
 msgid "Tõlketeenused"
@@ -459,13 +454,12 @@ msgid "Saada"
 msgstr "Send"
 
 #: tpl/price-query.php:2
-#, fuzzy
 msgid "Hinnapäring"
-msgstr "Price list"
+msgstr "Inquiry"
 
 #: tpl/price-query.php:24
 msgid "keelest..."
-msgstr "from language..."
+msgstr "from..."
 
 #: tpl/price-query.php:24 tpl/price-query.php:29
 msgid "muu..."
@@ -473,7 +467,7 @@ msgstr "other..."
 
 #: tpl/price-query.php:29
 msgid "keelde..."
-msgstr "to language..."
+msgstr "to..."
 
 #: tpl/price-query.php:58
 msgid "Tellija"
@@ -510,10 +504,15 @@ msgstr "Files"
 #: tpl/price-query.php:94
 msgid "Lisa tõlkimist vajav tekst, et saaksime täpsema pakkumise teha."
 msgstr ""
+"Add the text you need to have translated so that we could prepare a specific "
+"offer for you."
 
 #: tpl/price-query.php:97
 msgid "Vali failid..."
 msgstr "Choose files..."
+
+#~ msgid "ISO 9001"
+#~ msgstr "ISO 9001"
 
 #~ msgid "404 Lehekülge ei leitud"
 #~ msgstr "404 Page not found"

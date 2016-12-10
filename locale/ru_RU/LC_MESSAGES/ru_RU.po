@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Scriba website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-10 11:36+0200\n"
+"POT-Creation-Date: 2016-12-10 20:46+0200\n"
 "PO-Revision-Date: 2014-01-18 14:02+0200\n"
 "Last-Translator:  <nene@triin.net>\n"
 "Language-Team: Russian\n"
@@ -200,7 +200,7 @@ msgstr ""
 msgid "Toimetame tõlgitud materjalid teieni."
 msgstr ""
 
-#: tpl/front-page.php:37 tpl/index.php:79
+#: tpl/front-page.php:37 tpl/index.php:67
 msgid "Küsi hinnapakkumist"
 msgstr ""
 
@@ -332,15 +332,11 @@ msgstr ""
 msgid "Kliendid meist"
 msgstr ""
 
-#: tpl/index.php:50
+#: tpl/index.php:44
 msgid "Scriba &ndash; kirjalik ja suuline tõlge"
 msgstr ""
 
-#: tpl/index.php:55
-msgid "ISO 9001"
-msgstr ""
-
-#: tpl/index.php:92
+#: tpl/index.php:80
 msgid "Keelevalik"
 msgstr ""
 
@@ -386,6 +382,10 @@ msgstr ""
 
 #: tpl/job-offer.php:57
 msgid "Hariduskäik"
+msgstr ""
+
+#: tpl/job-offer.php:62
+msgid "Tehtud tööd:"
 msgstr ""
 
 #: tpl/job-offer.php:67
