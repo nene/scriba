@@ -50,12 +50,6 @@
        <?=_("Scriba &ndash; kirjalik ja suuline tõlge")?>
      </a></h1>
 
-    <div id="iso-9001">
-      <a href="<?=$scriba->baseUrl()?>/contact">
-        <img src="<?=$scriba->rootUrl()?>/images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/>
-      </a>
-    </div>
-
     <ul id="top-menu">
 <?php
     foreach ($scriba->mainMenu() as $name => $title) {
