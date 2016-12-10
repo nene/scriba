@@ -100,7 +100,6 @@ class Scriba {
     public function languages()
     {
         return array(
-            _("aserbaidžaani keel"),
             _("bulgaaria keel"),
             _("hiina keel"),
             _("hispaania keel"),
@@ -114,13 +113,11 @@ class Scriba {
             _("läti keel"),
             _("norra keel"),
             _("poola keel"),
-            _("portugali keel"),
             _("prantsuse keel"),
             _("rootsi keel"),
             _("rumeenia keel"),
             _("saksa keel"),
             _("soome keel"),
-            _("taani keel"),
             _("tšehhi keel"),
             _("türgi keel"),
             _("ungari keel"),
