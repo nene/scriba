@@ -1,6 +1,6 @@
 ## Scriba LLC
 
-**Scriba Translation Agency engineers towards opportunities that would
+**Scriba Translation Agency offers opportunities that
 enhance the effectiveness of the business of our clients and
 facilitate the achievement of established aims together.**
 
@@ -19,14 +19,9 @@ of Scriba.
 
 ### Contact data
 
-**Company:** Scriba LLC<br>
-**Location:** Estonia<br>
-**Contact:** Esper Linask<br>
+**Address:** Õpetaja 9, 51003, Tartu, Estonia<br>
+**Contact:** Kudrun Tamm<br>
 **Registry code:** 11439609<br>
 **E-mail:** info[ät]scriba.ee<br>
 **Telephone:** + 372 52 86 768<br>
 **Skype:** scriba_tb<br>
-**Bank details:** EE753300334421510007<br>
-**Bank:** Sampo Pank<br>
-**VAT number:** EE101201465<br>
-**SWIFT:** FOREEE2X
