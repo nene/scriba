@@ -114,7 +114,7 @@ msgstr ""
 
 #: index.php:192
 msgid "KKK"
-msgstr ""
+msgstr "ЧаВо"
 
 #: index.php:193 tpl/job-offer.php:2
 msgid "Tule tööle"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: index.php:194 tpl/job-offer.php:24
 msgid "Kontakt"
-msgstr ""
+msgstr "Контакт"
 
 #: index.php:199
 msgid "Logi välja"
