@@ -145,11 +145,11 @@ msgstr ""
 
 #: tpl/admin.php:25
 msgid "Kasutajanimi:"
-msgstr ""
+msgstr "Username:"
 
 #: tpl/admin.php:28
 msgid "Parool:"
-msgstr ""
+msgstr "Password:"
 
 #: tpl/front-page.php:2
 msgid "Tõlketöö tellimine:"
@@ -477,35 +477,35 @@ msgstr "to language..."
 
 #: tpl/price-query.php:58
 msgid "Tellija"
-msgstr ""
+msgstr "Client"
 
 #: tpl/price-query.php:61
 msgid "Firma või eraisiku nimi:"
-msgstr ""
+msgstr "Name or company name:"
 
 #: tpl/price-query.php:69
 msgid "Telefoninumber:"
-msgstr ""
+msgstr "Phone number:"
 
 #: tpl/price-query.php:74
 msgid "Tõlge"
-msgstr ""
+msgstr "Translation"
 
 #: tpl/price-query.php:77
 msgid "Tõlkesuund:"
-msgstr ""
+msgstr "Translation direction:"
 
 #: tpl/price-query.php:83
 msgid "Lisainformatsioon:"
-msgstr ""
+msgstr "Additional information:"
 
 #: tpl/price-query.php:87
 msgid "Tõlke tähtaeg:"
-msgstr ""
+msgstr "Requested deadline:"
 
 #: tpl/price-query.php:92
 msgid "Failid"
-msgstr ""
+msgstr "Files"
 
 #: tpl/price-query.php:94
 msgid "Lisa tõlkimist vajav tekst, et saaksime täpsema pakkumise teha."
@@ -513,7 +513,7 @@ msgstr ""
 
 #: tpl/price-query.php:97
 msgid "Vali failid..."
-msgstr ""
+msgstr "Choose files..."
 
 #~ msgid "404 Lehekülge ei leitud"
 #~ msgstr "404 Page not found"
