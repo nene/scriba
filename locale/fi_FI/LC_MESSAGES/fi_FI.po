@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Scriba website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-17 16:12+0200\n"
+"POT-Creation-Date: 2016-12-10 11:36+0200\n"
 "PO-Revision-Date: 2014-01-18 14:03+0200\n"
 "Last-Translator:  <nene@triin.net>\n"
 "Language-Team: Finnish\n"
@@ -15,8 +15,140 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: index.php:103
+msgid "bulgaaria keel"
+msgstr ""
+
+#: index.php:104
+msgid "hiina keel"
+msgstr ""
+
+#: index.php:105
+msgid "hispaania keel"
+msgstr ""
+
+#: index.php:106
+msgid "hollandi keel"
+msgstr ""
+
+#: index.php:107
+msgid "inglise keel"
+msgstr ""
+
+#: index.php:108
+msgid "itaalia keel"
+msgstr ""
+
+#: index.php:109
+msgid "jaapani keel"
+msgstr ""
+
+#: index.php:110
+msgid "kreeka keel"
+msgstr ""
+
+#: index.php:111
+msgid "ladina keel"
+msgstr ""
+
+#: index.php:112
+msgid "leedu keel"
+msgstr ""
+
+#: index.php:113
+msgid "läti keel"
+msgstr ""
+
+#: index.php:114
+msgid "norra keel"
+msgstr ""
+
+#: index.php:115
+msgid "poola keel"
+msgstr ""
+
+#: index.php:116
+msgid "prantsuse keel"
+msgstr ""
+
+#: index.php:117
+msgid "rootsi keel"
+msgstr ""
+
+#: index.php:118
+msgid "rumeenia keel"
+msgstr ""
+
+#: index.php:119
+msgid "saksa keel"
+msgstr ""
+
+#: index.php:120
+msgid "soome keel"
+msgstr ""
+
+#: index.php:121
+msgid "tšehhi keel"
+msgstr ""
+
+#: index.php:122
+msgid "türgi keel"
+msgstr ""
+
+#: index.php:123
+msgid "ungari keel"
+msgstr ""
+
+#: index.php:124
+msgid "ukraina keel"
+msgstr ""
+
+#: index.php:125
+msgid "vene keel"
+msgstr ""
+
+#: index.php:191 tpl/price-list.php:2
+msgid "Hinnakiri"
+msgstr ""
+
+#: index.php:192
+msgid "KKK"
+msgstr ""
+
+#: index.php:193 tpl/job-offer.php:2
+msgid "Tule tööle"
+msgstr ""
+
+#: index.php:194 tpl/job-offer.php:24
+msgid "Kontakt"
+msgstr ""
+
+#: index.php:199
+msgid "Logi välja"
+msgstr ""
+
+#: index.php:211
+msgid "Tõlkebüroo Scriba"
+msgstr ""
+
 #: lib/Content.php:35
-msgid "404 Lehekülge ei leitud"
+msgid "Sisu puudub..."
+msgstr ""
+
+#: tpl/admin.php:2
+msgid "Administreerimisliides"
+msgstr ""
+
+#: tpl/admin.php:22
+msgid "Vale kasutajanimi või parool."
+msgstr ""
+
+#: tpl/admin.php:25
+msgid "Kasutajanimi:"
+msgstr ""
+
+#: tpl/admin.php:28
+msgid "Parool:"
 msgstr ""
 
 #: tpl/front-page.php:2
@@ -24,12 +156,13 @@ msgid "Tõlketöö tellimine:"
 msgstr ""
 
 #: tpl/front-page.php:6
-msgid "Saada päring"
+msgid "Saatke päring"
 msgstr ""
 
 #: tpl/front-page.php:7
 msgid ""
-"Kirjuta meile, mis keelest mis keelde kirjalikku või suulist tõlget soovid."
+"Kirjutage meile, mis keelest mis keelde kirjalikku või suulist tõlget "
+"soovite."
 msgstr ""
 
 #: tpl/front-page.php:12
@@ -41,11 +174,11 @@ msgid "Vastame esimesel võimalusel ja teatame tõlketöö maksumuse ning tähta
 msgstr ""
 
 #: tpl/front-page.php:18
-msgid "Kinnita tellimus"
+msgid "Kinnitage tellimus"
 msgstr ""
 
 #: tpl/front-page.php:19
-msgid "Kui oled hinnapakkumisega nõus, saada e-postiga tellimuse kinnitus."
+msgid "Kui olete hinnapakkumisega nõus, saatke e-postiga tellimuse kinnitus."
 msgstr ""
 
 #: tpl/front-page.php:24
@@ -63,10 +196,10 @@ msgid "Valmis"
 msgstr ""
 
 #: tpl/front-page.php:31
-msgid "Toimetame tõlgitud materjalid sinuni."
+msgid "Toimetame tõlgitud materjalid teieni."
 msgstr ""
 
-#: tpl/front-page.php:37 tpl/index.php:71
+#: tpl/front-page.php:37 tpl/index.php:79
 msgid "Küsi hinnapakkumist"
 msgstr ""
 
@@ -198,290 +331,170 @@ msgstr ""
 msgid "Kliendid meist"
 msgstr ""
 
-#: tpl/job-offer.php:5
-msgid "Isikuandmed"
-msgstr ""
-
-#: tpl/job-offer.php:7
-msgid "Eesnimi:"
-msgstr ""
-
-#: tpl/job-offer.php:12
-msgid "Perenimi:"
-msgstr ""
-
-#: tpl/job-offer.php:17
-msgid "Sünniaeg:"
-msgstr ""
-
-#: tpl/job-offer.php:23 index.php:163
-msgid "Kontakt"
-msgstr ""
-
-#: tpl/job-offer.php:25
-msgid "Aadress:"
-msgstr ""
-
-#: tpl/job-offer.php:30
-msgid "Telefon:"
-msgstr ""
-
-#: tpl/job-offer.php:36 tpl/price-query.php:64
-msgid "E-post:"
-msgstr ""
-
-#: tpl/job-offer.php:43
-msgid "Skype kasutajatunnus:"
-msgstr ""
-
-#: tpl/job-offer.php:48
-msgid "Kogemused"
-msgstr ""
-
-#: tpl/job-offer.php:50
-msgid "Emakeel:"
-msgstr ""
-
-#: tpl/job-offer.php:56
-msgid "Hariduskäik"
-msgstr ""
-
-#: tpl/job-offer.php:66
-msgid "Tõlketeenused"
-msgstr ""
-
-#: tpl/job-offer.php:68
-msgid "Tõlkesuunad:"
-msgstr ""
-
-#: tpl/job-offer.php:73
-msgid "Tõlkevaldkonnad:"
-msgstr ""
-
-#: tpl/job-offer.php:78
-msgid "Kas teete suulist tõlget?:"
-msgstr ""
-
-#: tpl/job-offer.php:80 tpl/job-offer.php:86
-msgid "Jah"
-msgstr ""
-
-#: tpl/job-offer.php:80 tpl/job-offer.php:86
-msgid "Ei"
-msgstr ""
-
-#: tpl/job-offer.php:84
-msgid "Notariaalne kinnitamine?:"
-msgstr ""
-
-#: tpl/job-offer.php:90
-msgid "Palgasoov"
-msgstr ""
-
-#: tpl/job-offer.php:92
-msgid "Ühe lehekülje hind (neto):"
-msgstr ""
-
-#: tpl/job-offer.php:98
-msgid "Kas olete FIE või eraisik?:"
-msgstr ""
-
-#: tpl/job-offer.php:100
-msgid "FIE"
-msgstr ""
-
-#: tpl/job-offer.php:100
-msgid "Eraisik"
-msgstr ""
-
-#: tpl/job-offer.php:117 tpl/price-query.php:53
-msgid "Palun täitke kohustuslikud väljad!"
-msgstr ""
-
-#: tpl/job-offer.php:137 tpl/price-query.php:107
-msgid "Saada"
-msgstr ""
-
-#: tpl/index.php:5
-msgid "Tõlkebüroo Scriba"
-msgstr ""
-
-#: tpl/index.php:42
+#: tpl/index.php:50
 msgid "Scriba &ndash; kirjalik ja suuline tõlge"
 msgstr ""
 
-#: tpl/index.php:47
+#: tpl/index.php:55
 msgid "ISO 9001"
 msgstr ""
 
-#: tpl/index.php:84
+#: tpl/index.php:92
 msgid "Keelevalik"
 msgstr ""
 
-#: tpl/price-query.php:23
+#: tpl/job-offer.php:6
+msgid "Isikuandmed"
+msgstr ""
+
+#: tpl/job-offer.php:8
+msgid "Eesnimi:"
+msgstr ""
+
+#: tpl/job-offer.php:13
+msgid "Perenimi:"
+msgstr ""
+
+#: tpl/job-offer.php:18
+msgid "Sünniaeg:"
+msgstr ""
+
+#: tpl/job-offer.php:26
+msgid "Aadress:"
+msgstr ""
+
+#: tpl/job-offer.php:31
+msgid "Telefon:"
+msgstr ""
+
+#: tpl/job-offer.php:37 tpl/price-query.php:65
+msgid "E-post:"
+msgstr ""
+
+#: tpl/job-offer.php:44
+msgid "Skype kasutajatunnus:"
+msgstr ""
+
+#: tpl/job-offer.php:49
+msgid "Kogemused"
+msgstr ""
+
+#: tpl/job-offer.php:51
+msgid "Emakeel:"
+msgstr ""
+
+#: tpl/job-offer.php:57
+msgid "Hariduskäik"
+msgstr ""
+
+#: tpl/job-offer.php:67
+msgid "Tõlketeenused"
+msgstr ""
+
+#: tpl/job-offer.php:69
+msgid "Tõlkesuunad:"
+msgstr ""
+
+#: tpl/job-offer.php:74
+msgid "Tõlkevaldkonnad:"
+msgstr ""
+
+#: tpl/job-offer.php:79
+msgid "Kas teete suulist tõlget?:"
+msgstr ""
+
+#: tpl/job-offer.php:81 tpl/job-offer.php:87
+msgid "Jah"
+msgstr ""
+
+#: tpl/job-offer.php:81 tpl/job-offer.php:87
+msgid "Ei"
+msgstr ""
+
+#: tpl/job-offer.php:85
+msgid "Notariaalne kinnitamine?:"
+msgstr ""
+
+#: tpl/job-offer.php:91
+msgid "Palgasoov"
+msgstr ""
+
+#: tpl/job-offer.php:93
+msgid "Ühe lehekülje hind (neto):"
+msgstr ""
+
+#: tpl/job-offer.php:99
+msgid "Kas olete FIE või eraisik?:"
+msgstr ""
+
+#: tpl/job-offer.php:101
+msgid "FIE"
+msgstr ""
+
+#: tpl/job-offer.php:101
+msgid "Eraisik"
+msgstr ""
+
+#: tpl/job-offer.php:118 tpl/price-query.php:54
+msgid "Palun täitke kohustuslikud väljad!"
+msgstr ""
+
+#: tpl/job-offer.php:138 tpl/price-query.php:108
+msgid "Saada"
+msgstr ""
+
+#: tpl/price-query.php:2
+msgid "Hinnapäring"
+msgstr ""
+
+#: tpl/price-query.php:24
 msgid "keelest..."
 msgstr ""
 
-#: tpl/price-query.php:23 tpl/price-query.php:28
+#: tpl/price-query.php:24 tpl/price-query.php:29
 msgid "muu..."
 msgstr ""
 
-#: tpl/price-query.php:28
+#: tpl/price-query.php:29
 msgid "keelde..."
 msgstr ""
 
-#: tpl/price-query.php:57
+#: tpl/price-query.php:58
 msgid "Tellija"
 msgstr ""
 
-#: tpl/price-query.php:60
+#: tpl/price-query.php:61
 msgid "Firma või eraisiku nimi:"
 msgstr ""
 
-#: tpl/price-query.php:68
+#: tpl/price-query.php:69
 msgid "Telefoninumber:"
 msgstr ""
 
-#: tpl/price-query.php:73
+#: tpl/price-query.php:74
 msgid "Tõlge"
 msgstr ""
 
-#: tpl/price-query.php:76
+#: tpl/price-query.php:77
 msgid "Tõlkesuund:"
 msgstr ""
 
-#: tpl/price-query.php:82
+#: tpl/price-query.php:83
 msgid "Lisainformatsioon:"
 msgstr ""
 
-#: tpl/price-query.php:86
+#: tpl/price-query.php:87
 msgid "Tõlke tähtaeg:"
 msgstr ""
 
-#: tpl/price-query.php:91
+#: tpl/price-query.php:92
 msgid "Failid"
 msgstr ""
 
-#: tpl/price-query.php:93
+#: tpl/price-query.php:94
 msgid "Lisa tõlkimist vajav tekst, et saaksime täpsema pakkumise teha."
 msgstr ""
 
-#: tpl/price-query.php:96
+#: tpl/price-query.php:97
 msgid "Vali failid..."
-msgstr ""
-
-#: index.php:102
-msgid "aserbaidžaani keel"
-msgstr ""
-
-#: index.php:103
-msgid "bulgaaria keel"
-msgstr ""
-
-#: index.php:104
-msgid "hiina keel"
-msgstr ""
-
-#: index.php:105
-msgid "hispaania keel"
-msgstr ""
-
-#: index.php:106
-msgid "hollandi keel"
-msgstr ""
-
-#: index.php:107
-msgid "inglise keel"
-msgstr ""
-
-#: index.php:108
-msgid "itaalia keel"
-msgstr ""
-
-#: index.php:109
-msgid "jaapani keel"
-msgstr ""
-
-#: index.php:110
-msgid "kreeka keel"
-msgstr ""
-
-#: index.php:111
-msgid "ladina keel"
-msgstr ""
-
-#: index.php:112
-msgid "leedu keel"
-msgstr ""
-
-#: index.php:113
-msgid "läti keel"
-msgstr ""
-
-#: index.php:114
-msgid "norra keel"
-msgstr ""
-
-#: index.php:115
-msgid "poola keel"
-msgstr ""
-
-#: index.php:116
-msgid "portugali keel"
-msgstr ""
-
-#: index.php:117
-msgid "prantsuse keel"
-msgstr ""
-
-#: index.php:118
-msgid "rootsi keel"
-msgstr ""
-
-#: index.php:119
-msgid "rumeenia keel"
-msgstr ""
-
-#: index.php:120
-msgid "saksa keel"
-msgstr ""
-
-#: index.php:121
-msgid "soome keel"
-msgstr ""
-
-#: index.php:122
-msgid "taani keel"
-msgstr ""
-
-#: index.php:123
-msgid "tšehhi keel"
-msgstr ""
-
-#: index.php:124
-msgid "türgi keel"
-msgstr ""
-
-#: index.php:125
-msgid "ungari keel"
-msgstr ""
-
-#: index.php:126
-msgid "ukraina keel"
-msgstr ""
-
-#: index.php:127
-msgid "vene keel"
-msgstr ""
-
-#: index.php:160
-msgid "Hinnakiri"
-msgstr ""
-
-#: index.php:161
-msgid "KKK"
-msgstr ""
-
-#: index.php:162
-msgid "Tule tööle"
 msgstr ""
