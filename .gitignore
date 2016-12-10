@@ -5,8 +5,6 @@ locale/messages.pot
 
 # Compiled Gettext resources
 locale/en_US/LC_MESSAGES/*.mo
-locale/fi_FI/LC_MESSAGES/*.mo
-locale/sv_SE/LC_MESSAGES/*.mo
 locale/ru_RU/LC_MESSAGES/*.mo
 
 # NodeJS modules

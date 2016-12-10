@@ -35,12 +35,6 @@
         <li><a href="<?=$scriba->rootUrl()?>/en/<?=$page?>" title="In English">
           <img src="<?=$scriba->rootUrl()?>/images/en.gif"/>
         </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/fi/<?=$page?>" title="Suomen kielen">
-          <img src="<?=$scriba->rootUrl()?>/images/fi.gif"/>
-        </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/sv/<?=$page?>" title="På svenska">
-          <img src="<?=$scriba->rootUrl()?>/images/sv.gif"/>
-        </a></li>
         <li><a href="<?=$scriba->rootUrl()?>/ru/<?=$page?>" title="По русски">
           <img src="<?=$scriba->rootUrl()?>/images/ru.gif"/>
         </a></li>

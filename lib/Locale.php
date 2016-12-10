@@ -38,8 +38,6 @@ class Locale {
         $map = array(
             "et" => "et_EE",
             "en" => "en_US",
-            "fi" => "fi_FI",
-            "sv" => "sv_SE",
             "ru" => "ru_RU",
         );
         return $map[$lang];
