@@ -233,27 +233,27 @@ msgstr "Нотариальное заверение"
 
 #: tpl/front-page.php:58
 msgid "Apostillimine"
-msgstr ""
+msgstr "Апостиль"
 
 #: tpl/front-page.php:61
 msgid "Õigustõlge"
-msgstr ""
+msgstr "Юридический перевод"
 
 #: tpl/front-page.php:64
 msgid "Tehnikatõlge"
-msgstr ""
+msgstr "Технический перевод"
 
 #: tpl/front-page.php:67
 msgid "Kodulehe tõlge"
-msgstr ""
+msgstr "Перевод и корректура интернет-сайтов"
 
 #: tpl/front-page.php:70
 msgid "Kasutusjuhendi tõlge"
-msgstr ""
+msgstr "Перевод инструкции по эксплуатации"
 
 #: tpl/front-page.php:73
 msgid "Filmitõlge"
-msgstr ""
+msgstr "Перевод фильмов"
 
 #: tpl/front-page.php:81
 msgid "Kliendid meist"
