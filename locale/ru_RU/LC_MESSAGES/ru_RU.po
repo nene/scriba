@@ -118,7 +118,7 @@ msgstr "ЧаВо"
 
 #: index.php:193 tpl/job-offer.php:2
 msgid "Tule tööle"
-msgstr ""
+msgstr "Работате в Scriba"
 
 #: index.php:194 tpl/job-offer.php:24
 msgid "Kontakt"
