@@ -22,6 +22,6 @@ of Scriba.
 **Address:** Õpetaja 9, 51003, Tartu, Estonia<br>
 **Contact:** Kudrun Tamm<br>
 **Registry code:** 11439609<br>
-**E-mail:** info[ät]scriba.ee<br>
+**E-mail:** info@scriba.ee<br>
 **Telephone:** + 372 52 86 768<br>
 **Skype:** scriba_tb<br>

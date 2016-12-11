@@ -20,6 +20,6 @@ tavapäratute päringutega.
 **Registrikood:** 11439609<br>
 **KMKR:** EE101201465<br>
 **Kontakt:** Kudrun Tamm<br>
-**E-post:** info[ät]scriba.ee<br>
+**E-post:** info@scriba.ee<br>
 **Telefon:** + 372 52 86 768<br>
 **Skype:** scriba_tb<br>
