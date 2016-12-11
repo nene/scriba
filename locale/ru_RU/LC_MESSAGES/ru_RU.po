@@ -217,11 +217,11 @@ msgstr ""
 
 #: tpl/front-page.php:46
 msgid "Kirjalik tõlge"
-msgstr ""
+msgstr "Письменный перевод"
 
 #: tpl/front-page.php:49
 msgid "Suuline tõlge"
-msgstr ""
+msgstr "Устный перевод"
 
 #: tpl/front-page.php:52
 msgid "Korrektuur ja toimetamine"
