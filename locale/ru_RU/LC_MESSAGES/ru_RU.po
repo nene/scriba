@@ -18,95 +18,95 @@ msgstr ""
 
 #: index.php:103
 msgid "bulgaaria keel"
-msgstr ""
+msgstr "болгарский"
 
 #: index.php:104
 msgid "hiina keel"
-msgstr ""
+msgstr "китайский"
 
 #: index.php:105
 msgid "hispaania keel"
-msgstr ""
+msgstr "испанский"
 
 #: index.php:106
 msgid "hollandi keel"
-msgstr ""
+msgstr "голландский"
 
 #: index.php:107
 msgid "inglise keel"
-msgstr ""
+msgstr "английский"
 
 #: index.php:108
 msgid "itaalia keel"
-msgstr ""
+msgstr "итальянский"
 
 #: index.php:109
 msgid "jaapani keel"
-msgstr ""
+msgstr "японский"
 
 #: index.php:110
 msgid "kreeka keel"
-msgstr ""
+msgstr "греческий"
 
 #: index.php:111
 msgid "ladina keel"
-msgstr ""
+msgstr "латинский"
 
 #: index.php:112
 msgid "leedu keel"
-msgstr ""
+msgstr "литовский"
 
 #: index.php:113
 msgid "läti keel"
-msgstr ""
+msgstr "латышский"
 
 #: index.php:114
 msgid "norra keel"
-msgstr ""
+msgstr "норвежский"
 
 #: index.php:115
 msgid "poola keel"
-msgstr ""
+msgstr "польский"
 
 #: index.php:116
 msgid "prantsuse keel"
-msgstr ""
+msgstr "французский"
 
 #: index.php:117
 msgid "rootsi keel"
-msgstr ""
+msgstr "шведский"
 
 #: index.php:118
 msgid "rumeenia keel"
-msgstr ""
+msgstr "румынский"
 
 #: index.php:119
 msgid "saksa keel"
-msgstr ""
+msgstr "немецкий"
 
 #: index.php:120
 msgid "soome keel"
-msgstr ""
+msgstr "финский"
 
 #: index.php:121
 msgid "tšehhi keel"
-msgstr ""
+msgstr "чешский"
 
 #: index.php:122
 msgid "türgi keel"
-msgstr ""
+msgstr "турецкий"
 
 #: index.php:123
 msgid "ungari keel"
-msgstr ""
+msgstr "венгерский"
 
 #: index.php:124
 msgid "ukraina keel"
-msgstr ""
+msgstr "украинский"
 
 #: index.php:125
 msgid "vene keel"
-msgstr ""
+msgstr "русский"
 
 #: index.php:191 tpl/price-list.php:2
 msgid "Hinnakiri"
