@@ -26,7 +26,7 @@ käibemaks 20%.
 ## Muud teenused
 
 - Suuline tõlge - alates 38 €/h
-- Teksti korrektuur - alates 3.80 €/h
+- Teksti korrektuur - alates 3.50 €/lk
 - Apostillimine - 30 € dokument
 - Notariaalne kinnitamine - 20 € dokument
 
