@@ -170,13 +170,13 @@ msgstr ""
 
 #: tpl/front-page.php:12
 msgid "Teeme pakkumise"
-msgstr "Бюро переводов делает предложение"
+msgstr "Бюро делает предложение"
 
 #: tpl/front-page.php:13
 msgid "Vastame esimesel võimalusel ja teatame tõlketöö maksumuse ning tähtaja."
 msgstr ""
-"После получения запроса клиента мы отвечаем при первой возможности и сообщае "
-"стоимость и срок выполнения заказа."
+"После получения запроса отвечаем при первой возможности и сообщаем "
+"стои&shy;мость и срок выполнения заказа."
 
 #: tpl/front-page.php:18
 msgid "Kinnitage tellimus"
@@ -185,8 +185,8 @@ msgstr "Клиент подтверждает заказ"
 #: tpl/front-page.php:19
 msgid "Kui olete hinnapakkumisega nõus, saatke e-postiga tellimuse kinnitus."
 msgstr ""
-"Если клиент согласен с нашим ценовым предложением, то он отправляет нам по "
-"электронной почте подтверждение заказа."
+"Если клиент согласен с ценовым предложением, то он отправляет нам по "
+"э-почте подтверждение заказа."
 
 #: tpl/front-page.php:24
 msgid "Tõlkimine"
