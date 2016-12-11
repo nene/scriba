@@ -229,7 +229,7 @@ msgstr "Корректура и редактирование текста"
 
 #: tpl/front-page.php:55
 msgid "Notariaalne kinnitamine"
-msgstr ""
+msgstr "Нотариальное заверение"
 
 #: tpl/front-page.php:58
 msgid "Apostillimine"
