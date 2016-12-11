@@ -1,9 +1,9 @@
 .highlight(@color) {
-        text-shadow:
-            1px 1px 1px @color,
-            1px -1px 1px @color,
-            -1px 1px 1px @color,
-            -1px -1px 1px @color;
+    text-shadow:
+        1px 1px 1px @color,
+        1px -1px 1px @color,
+        -1px 1px 1px @color,
+        -1px -1px 1px @color;
 }
 
 #ordering-presentation {
@@ -16,7 +16,7 @@
         top: 20px;
         left: 33px;
         z-index: 500;
-        //text-shadow: 1px 1px 2px rgba(55, 55, 55, 1);
+        //.text-shadow: 1px 1px 2px rgba(55, 55, 55, 1);
         .highlight(rgba(90%,90%,90%,1));
     }
 
@@ -161,7 +161,7 @@ article {
     padding: 0;
 
     li {
-        box-sizing: border-box;
+        .box-sizing(border-box);
         width: 50%;
         float: left;
         list-style: none;
@@ -172,25 +172,17 @@ article {
             background-size: 100%;
             background-repeat: no-repeat;
             padding-top: 75px;
-            margin: 0;
+            margin: 0 0 10px 0;
             a {
                 text-decoration: none;
                 color: @highlight-color;
-                text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
+                .text-shadow();
                 padding-top: 0.4em;
                 background-color: @background-color;
                 display: block;
             }
-        }
-        p {
-            margin-top: 0.5em;
-            a {
-                display: block;
-                font-size: smaller;
-                margin-top: 0.5em;
-            }
-            a:after {
-                content: "...";
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
