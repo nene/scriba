@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Scriba website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-10 20:46+0200\n"
+"POT-Creation-Date: 2016-12-11 12:43+0200\n"
 "PO-Revision-Date: 2014-01-18 14:02+0200\n"
 "Last-Translator:  <nene@triin.net>\n"
 "Language-Team: Russian\n"
@@ -164,7 +164,9 @@ msgstr "Клиент отправляет запрос"
 msgid ""
 "Kirjutage meile, mis keelest mis keelde kirjalikku või suulist tõlget "
 "soovite."
-msgstr "Клиент пишет нам, с какого на какой язык ему необходим письменный или устный перевод."
+msgstr ""
+"Клиент пишет нам, с какого на какой язык ему необходим письменный или устный "
+"перевод."
 
 #: tpl/front-page.php:12
 msgid "Teeme pakkumise"
@@ -172,7 +174,9 @@ msgstr "Бюро переводов делает предложение"
 
 #: tpl/front-page.php:13
 msgid "Vastame esimesel võimalusel ja teatame tõlketöö maksumuse ning tähtaja."
-msgstr "После получения запроса клиента мы отвечаем при первой возможности и сообщае стоимость и срок выполнения заказа."
+msgstr ""
+"После получения запроса клиента мы отвечаем при первой возможности и сообщае "
+"стоимость и срок выполнения заказа."
 
 #: tpl/front-page.php:18
 msgid "Kinnitage tellimus"
@@ -180,7 +184,9 @@ msgstr "Клиент подтверждает заказ"
 
 #: tpl/front-page.php:19
 msgid "Kui olete hinnapakkumisega nõus, saatke e-postiga tellimuse kinnitus."
-msgstr "Если клиент согласен с нашим ценовым предложением, то он отправляет нам по электронной почте подтверждение заказа."
+msgstr ""
+"Если клиент согласен с нашим ценовым предложением, то он отправляет нам по "
+"электронной почте подтверждение заказа."
 
 #: tpl/front-page.php:24
 msgid "Tõlkimine"
@@ -190,7 +196,8 @@ msgstr "Выполнение перевода"
 msgid ""
 "Pärast tõlke valmimist toimub materjali kujundamine, korrektuur ja ülevaatus "
 "toimetaja poolt."
-msgstr "После выполнения перевода происходит оформление и корректура материала."
+msgstr ""
+"После выполнения перевода происходит оформление и корректура материала."
 
 #: tpl/front-page.php:30
 msgid "Valmis"
@@ -212,123 +219,47 @@ msgstr ""
 msgid "Kirjalik tõlge"
 msgstr ""
 
-#: tpl/front-page.php:47
-msgid ""
-"Tõlke saadame tagasi võimalikult originaalilähedase kujundusega. Keerukamate "
-"formaatide ja trükiste puhul pakume ka küljendusteenust."
-msgstr ""
-
-#: tpl/front-page.php:48 tpl/front-page.php:53 tpl/front-page.php:58
-#: tpl/front-page.php:63 tpl/front-page.php:68 tpl/front-page.php:73
-#: tpl/front-page.php:78 tpl/front-page.php:83 tpl/front-page.php:88
-#: tpl/front-page.php:93 tpl/front-page.php:98
-msgid "Loe edasi"
-msgstr ""
-
-#: tpl/front-page.php:51
+#: tpl/front-page.php:49
 msgid "Suuline tõlge"
 msgstr ""
 
 #: tpl/front-page.php:52
-msgid ""
-"Konverentsidel, koosolekutel kui ka muudel üritustel, kus on oluline, et "
-"info jõuaks kõikide kuulajateni võimalikult kiiresti."
-msgstr ""
-
-#: tpl/front-page.php:56
 msgid "Referatiivne tõlge"
 msgstr ""
 
-#: tpl/front-page.php:57
-msgid ""
-"Kui teil pole tarvis täielikku viimistletud tõlget, vaid tarvis saada pigem "
-"kirjalik või suuline ülevaade teksti sisust."
-msgstr ""
-
-#: tpl/front-page.php:61
+#: tpl/front-page.php:55
 msgid "Korrektuur ja toimetamine"
 msgstr ""
 
-#: tpl/front-page.php:62
-msgid ""
-"Teksti korrektuur tähendab teksti õigekeelsusnõuetega vastavusse viimist ja "
-"trükivigade parandamist.  Toimetamine sisaldab teksti keelelist ja ka "
-"sisulist parandamist."
-msgstr ""
-
-#: tpl/front-page.php:66
+#: tpl/front-page.php:58
 msgid "Notariaalne kinnitamine"
 msgstr ""
 
-#: tpl/front-page.php:67
-msgid ""
-"Tõlgitud dokumentide välisriigis kasutamiseks võidakse nõuda notariaalselt "
-"kinnitatud tõlkeid."
-msgstr ""
-
-#: tpl/front-page.php:71
+#: tpl/front-page.php:61
 msgid "Apostillimine"
 msgstr ""
 
-#: tpl/front-page.php:72
-msgid ""
-"Apostill näitab välisriigi ametnikule, et mis tahes apostilliga kinnitatud "
-"dokumendi välja andnud asutus eksisteerib ning tohib taolisi dokumente välja "
-"anda."
-msgstr ""
-
-#: tpl/front-page.php:76
+#: tpl/front-page.php:64
 msgid "Õigustõlge"
 msgstr ""
 
-#: tpl/front-page.php:77
-msgid ""
-"Õigustekstide tõlke alla kuuluvad tõlkijalt ülimat täpsust ja korrektsust "
-"nõudvad õigusaktide ja muude juriidiliste dokumentide tõlked."
-msgstr ""
-
-#: tpl/front-page.php:81
+#: tpl/front-page.php:67
 msgid "Tehnikatõlge"
 msgstr ""
 
-#: tpl/front-page.php:82
-msgid ""
-"Tehnikatõlge on ala, kus saavad kokku tõlkijate keelelised teadmised ja "
-"tehnikainimeste erialateadmised."
-msgstr ""
-
-#: tpl/front-page.php:86
+#: tpl/front-page.php:70
 msgid "Kodulehe tõlge"
 msgstr ""
 
-#: tpl/front-page.php:87
-msgid ""
-"Meil on laialdased kogemused kodulehtede tõlkimisel: oleme teinud nii eesti- "
-"kui ka võõrkeelsele tekstile korrektuuri, parandanud trüki- ja kirjavigu."
-msgstr ""
-
-#: tpl/front-page.php:91
+#: tpl/front-page.php:73
 msgid "Kasutusjuhendi tõlge"
 msgstr ""
 
-#: tpl/front-page.php:92
-msgid ""
-"Kasutusjuhendid erinevad teistest tekstidest oma ülesehituse ja "
-"keelekasutuse poolest, mistõttu on vajalik, et tõlkijal oleks selles vallas "
-"piisavalt kogemust, et tagada parim tulemus."
-msgstr ""
-
-#: tpl/front-page.php:96
+#: tpl/front-page.php:76
 msgid "Filmitõlge"
 msgstr ""
 
-#: tpl/front-page.php:97
-msgid ""
-"Kuigi filmiklipp võib lühike tunduda, võib tõlkimist vajav tekst üsnagi pikk "
-"tulla ning seega soovitame selleks tööks piisavalt aega varuda."
-msgstr ""
-
-#: tpl/front-page.php:106
+#: tpl/front-page.php:84
 msgid "Kliendid meist"
 msgstr ""
 
