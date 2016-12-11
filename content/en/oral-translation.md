@@ -154,8 +154,6 @@ meetings of delegations), press conferences and in foreign missions.
 
 ### Price of interpretation
 
-**Starting from 700 EEK per hour.**
-
 Interpretation is priced by the hour. The hourly rate may at first
 seem rather high, but one must not forget that interpretation is
 preceded by thorough preparation, during which interpreter learns
