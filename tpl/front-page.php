@@ -48,9 +48,6 @@
     <li class="oral-translation">
       <h3><a href="<?=$scriba->baseUrl()?>/oral-translation"><?=_("Suuline tõlge")?></a></h3>
     </li>
-    <li class="referative-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/referative-translation"><?=_("Referatiivne tõlge")?></a></h3>
-    </li>
     <li class="proofreading">
       <h3><a href="<?=$scriba->baseUrl()?>/proofreading"><?=_("Korrektuur ja toimetamine")?></a></h3>
     </li>

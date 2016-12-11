@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Scriba website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-11 12:43+0200\n"
+"POT-Creation-Date: 2016-12-11 12:47+0200\n"
 "PO-Revision-Date: 2014-01-18 14:02+0200\n"
 "Last-Translator:  <nene@triin.net>\n"
 "Language-Team: Russian\n"
@@ -224,42 +224,38 @@ msgid "Suuline tõlge"
 msgstr ""
 
 #: tpl/front-page.php:52
-msgid "Referatiivne tõlge"
-msgstr ""
-
-#: tpl/front-page.php:55
 msgid "Korrektuur ja toimetamine"
 msgstr ""
 
-#: tpl/front-page.php:58
+#: tpl/front-page.php:55
 msgid "Notariaalne kinnitamine"
 msgstr ""
 
-#: tpl/front-page.php:61
+#: tpl/front-page.php:58
 msgid "Apostillimine"
 msgstr ""
 
-#: tpl/front-page.php:64
+#: tpl/front-page.php:61
 msgid "Õigustõlge"
 msgstr ""
 
-#: tpl/front-page.php:67
+#: tpl/front-page.php:64
 msgid "Tehnikatõlge"
 msgstr ""
 
-#: tpl/front-page.php:70
+#: tpl/front-page.php:67
 msgid "Kodulehe tõlge"
 msgstr ""
 
-#: tpl/front-page.php:73
+#: tpl/front-page.php:70
 msgid "Kasutusjuhendi tõlge"
 msgstr ""
 
-#: tpl/front-page.php:76
+#: tpl/front-page.php:73
 msgid "Filmitõlge"
 msgstr ""
 
-#: tpl/front-page.php:84
+#: tpl/front-page.php:81
 msgid "Kliendid meist"
 msgstr ""
 
