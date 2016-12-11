@@ -53,7 +53,7 @@
     </ul>
   </header>
 
-  <article>
+  <article class="article--<?=$scriba->currentPage()?>">
 
     <?=$article?>
 

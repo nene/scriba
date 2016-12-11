@@ -89,6 +89,11 @@ body {
 article {
     clear: both;
     line-height: 1.5;
+    max-width: 700px;
+
+    &.article--front-page {
+        max-width: none;
+    }
 
     a {
         color: @link-color;
