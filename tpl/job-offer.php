@@ -59,7 +59,7 @@ $form->field("textarea", array(
     "required" => true
 ));
 $form->field("textarea", array(
-    "label" => "Tehtud tööd:",
+    "label" => _("Tehtud tööd:"),
     "name" => "translationExperience",
     "required" => true
 ));

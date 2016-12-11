@@ -35,12 +35,6 @@
         <li><a href="<?=$scriba->rootUrl()?>/en/<?=$page?>" title="In English">
           <img src="<?=$scriba->rootUrl()?>/images/en.gif"/>
         </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/fi/<?=$page?>" title="Suomen kielen">
-          <img src="<?=$scriba->rootUrl()?>/images/fi.gif"/>
-        </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/sv/<?=$page?>" title="På svenska">
-          <img src="<?=$scriba->rootUrl()?>/images/sv.gif"/>
-        </a></li>
         <li><a href="<?=$scriba->rootUrl()?>/ru/<?=$page?>" title="По русски">
           <img src="<?=$scriba->rootUrl()?>/images/ru.gif"/>
         </a></li>
@@ -49,12 +43,6 @@
      <h1 id="logo"><a href="<?=$scriba->baseUrl()?>/">
        <?=_("Scriba &ndash; kirjalik ja suuline tõlge")?>
      </a></h1>
-
-    <div id="iso-9001">
-      <a href="<?=$scriba->baseUrl()?>/contact">
-        <img src="<?=$scriba->rootUrl()?>/images/ISO9001.png" alt="<?=_('ISO 9001')?>" width="147"/>
-      </a>
-    </div>
 
     <ul id="top-menu">
 <?php
