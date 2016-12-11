@@ -43,34 +43,34 @@
 
   <ul id="services">
     <li class="written-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/written-translation"><?=_("Kirjalik tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/written-translation"><span><?=_("Kirjalik tõlge")?></span></a></h3>
     </li>
     <li class="oral-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/oral-translation"><?=_("Suuline tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/oral-translation"><span><?=_("Suuline tõlge")?></span></a></h3>
     </li>
     <li class="proofreading">
-      <h3><a href="<?=$scriba->baseUrl()?>/proofreading"><?=_("Korrektuur ja toimetamine")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/proofreading"><span><?=_("Korrektuur ja toimetamine")?></span></a></h3>
     </li>
     <li class="notarisation">
-      <h3><a href="<?=$scriba->baseUrl()?>/notarisation"><?=_("Notariaalne kinnitamine")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/notarisation"><span><?=_("Notariaalne kinnitamine")?></span></a></h3>
     </li>
     <li class="apostilling">
-      <h3><a href="<?=$scriba->baseUrl()?>/apostilling"><?=_("Apostillimine")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/apostilling"><span><?=_("Apostillimine")?></span></a></h3>
     </li>
     <li class="legal-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/legal-translation"><?=_("Õigustõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/legal-translation"><span><?=_("Õigustõlge")?></span></a></h3>
     </li>
     <li class="technical-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/technical-translation"><?=_("Tehnikatõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/technical-translation"><span><?=_("Tehnikatõlge")?></span></a></h3>
     </li>
     <li class="web-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/web-translation"><?=_("Kodulehe tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/web-translation"><span><?=_("Kodulehe tõlge")?></span></a></h3>
     </li>
     <li class="manual-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/manual-translation"><?=_("Kasutusjuhendi tõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/manual-translation"><span><?=_("Kasutusjuhendi tõlge")?></span></a></h3>
     </li>
     <li class="movie-translation">
-      <h3><a href="<?=$scriba->baseUrl()?>/movie-translation"><?=_("Filmitõlge")?></a></h3>
+      <h3><a href="<?=$scriba->baseUrl()?>/movie-translation"><span><?=_("Filmitõlge")?></span></a></h3>
     </li>
   </ul>
 
