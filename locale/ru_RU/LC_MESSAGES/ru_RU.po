@@ -225,7 +225,7 @@ msgstr "Устный перевод"
 
 #: tpl/front-page.php:52
 msgid "Korrektuur ja toimetamine"
-msgstr ""
+msgstr "Корректура и редактирование текста"
 
 #: tpl/front-page.php:55
 msgid "Notariaalne kinnitamine"
