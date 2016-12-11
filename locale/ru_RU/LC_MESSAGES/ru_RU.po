@@ -154,51 +154,51 @@ msgstr ""
 
 #: tpl/front-page.php:2
 msgid "Tõlketöö tellimine:"
-msgstr ""
+msgstr "Заказ переводческих услуг:"
 
 #: tpl/front-page.php:6
 msgid "Saatke päring"
-msgstr ""
+msgstr "Клиент отправляет запрос"
 
 #: tpl/front-page.php:7
 msgid ""
 "Kirjutage meile, mis keelest mis keelde kirjalikku või suulist tõlget "
 "soovite."
-msgstr ""
+msgstr "Клиент пишет нам, с какого на какой язык ему необходим письменный или устный перевод."
 
 #: tpl/front-page.php:12
 msgid "Teeme pakkumise"
-msgstr ""
+msgstr "Бюро переводов делает предложение"
 
 #: tpl/front-page.php:13
 msgid "Vastame esimesel võimalusel ja teatame tõlketöö maksumuse ning tähtaja."
-msgstr ""
+msgstr "После получения запроса клиента мы отвечаем при первой возможности и сообщае стоимость и срок выполнения заказа."
 
 #: tpl/front-page.php:18
 msgid "Kinnitage tellimus"
-msgstr ""
+msgstr "Клиент подтверждает заказ"
 
 #: tpl/front-page.php:19
 msgid "Kui olete hinnapakkumisega nõus, saatke e-postiga tellimuse kinnitus."
-msgstr ""
+msgstr "Если клиент согласен с нашим ценовым предложением, то он отправляет нам по электронной почте подтверждение заказа."
 
 #: tpl/front-page.php:24
 msgid "Tõlkimine"
-msgstr ""
+msgstr "Выполнение перевода"
 
 #: tpl/front-page.php:25
 msgid ""
 "Pärast tõlke valmimist toimub materjali kujundamine, korrektuur ja ülevaatus "
 "toimetaja poolt."
-msgstr ""
+msgstr "После выполнения перевода происходит оформление и корректура материала."
 
 #: tpl/front-page.php:30
 msgid "Valmis"
-msgstr ""
+msgstr "Выполненная работа"
 
 #: tpl/front-page.php:31
 msgid "Toimetame tõlgitud materjalid teieni."
-msgstr ""
+msgstr "Работа передаётся заказчику."
 
 #: tpl/front-page.php:37 tpl/index.php:67
 msgid "Küsi hinnapakkumist"

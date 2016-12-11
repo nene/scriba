@@ -153,7 +153,7 @@ msgstr "Password:"
 
 #: tpl/front-page.php:2
 msgid "Tõlketöö tellimine:"
-msgstr "Translation ordering:"
+msgstr "Ordering a translation:"
 
 #: tpl/front-page.php:6
 msgid "Saatke päring"
