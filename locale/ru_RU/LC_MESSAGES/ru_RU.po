@@ -110,7 +110,7 @@ msgstr "русский"
 
 #: index.php:191 tpl/price-list.php:2
 msgid "Hinnakiri"
-msgstr ""
+msgstr "Прейскурант"
 
 #: index.php:192
 msgid "KKK"
