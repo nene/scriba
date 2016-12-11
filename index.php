@@ -202,6 +202,11 @@ class Scriba {
         return $menu;
     }
 
+    public function languageMenu()
+    {
+        return $this->locale->getMenu();
+    }
+
     /**
      * Returns the full title of the current page.
      */
@@ -243,11 +248,3 @@ $config = include("config.php");
 $scriba = new Scriba($config);
 
 $scriba->route($_REQUEST);
-
-
-
-
-
-
-
-

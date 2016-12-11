@@ -29,15 +29,11 @@
      $page = $scriba->currentPage() == "front-page" ? "" : $scriba->currentPage();
     ?>
     <ul id="language-menu">
-        <li><a href="<?=$scriba->rootUrl()?>/et/<?=$page?>" title="Eesti keeles">
-          <img src="<?=$scriba->rootUrl()?>/images/et.gif"/>
-        </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/en/<?=$page?>" title="In English">
-          <img src="<?=$scriba->rootUrl()?>/images/en.gif"/>
-        </a></li>
-        <li><a href="<?=$scriba->rootUrl()?>/ru/<?=$page?>" title="По русски">
-          <img src="<?=$scriba->rootUrl()?>/images/ru.gif"/>
-        </a></li>
+        <?php foreach ($scriba->languageMenu() as $lang => $data) { ?>
+            <li><a href="<?=$scriba->rootUrl()?>/<?=$lang?>/<?=$page?>" class="<?=$data["active"] ? "active" : ""?>">
+                <?=$data["label"]?>
+            </a></li>
+        <?php } ?>
     </ul>
 
      <h1 id="logo"><a href="<?=$scriba->baseUrl()?>/">

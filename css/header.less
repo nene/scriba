@@ -11,6 +11,17 @@ header {
             list-style: none;
             margin-left: 0.5em;
         }
+        a {
+          color: @header-text-color;
+          text-decoration: none;
+          font-size: smaller;
+        }
+        a:hover {
+          color: @header-hover-color;
+        }
+        a.active {
+          text-decoration: underline;
+        }
     }
 
     #logo {
